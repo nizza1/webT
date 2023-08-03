@@ -28,7 +28,7 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: 'transparent'}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Wie sieht's mit Wartung und Pflege aus?
+          Wie siehts mit Wartung und Pflege aus?
 
         </Box>
          <AccordionIcon />
