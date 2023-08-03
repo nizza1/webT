@@ -1,0 +1,77 @@
+
+/* require('dotenv').config()
+const PASSWORD = process.env.password */
+
+import { mailOptions, transporter } from "/config/nodemailer";
+
+/* sollte SMTP stattdessen Port 587 nutzen  */
+
+  const handler = async(req, res) => {
+
+    if (req.method === 'POST'){
+      const data = req.body;
+      if (!data.name ) {
+        return res.status(400).json({message:'name is required'})
+      }
+
+      try {
+        await transporter.sendMail({
+          ...mailOptions,
+          subject: data.subject,
+          text: 'this is a test string',
+          html: `<h3>E-Mail : ${data.email}</h3> 
+          <h4>Name : ${data.name}</h4>
+          <h3> message :<br>  <br> ${data.message}</h3>`
+        })
+
+      } catch (error) {
+        console.log(error);
+        return res.status(400).json({message: error.message});
+      }
+    }
+  
+    return res.status(400).json({message:'bad request'});
+  };
+   export default handler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: "smtp.gmail.com",
+    auth: {
+      user: 'nizar.code@gmail.com',
+      pass: 'wobjdmxcarlsaiau',
+    },
+    secure: true,
+   });
+
+   const mailData = {
+    from: 'demo@demo.com',
+    to: 'nizardjassim@gmail.com',
+    subject: `Message From ${req.body.name}`,
+    text: req.body.message,
+    html: <div>{req.body.message}</div>
+   }
+   transporter.sendMail(mailData, function (err, info) {
+    if(err)
+      console.log(err)
+    else
+      console.log(info)
+  })
+  res.status(200)
+    console.log(req.body) */

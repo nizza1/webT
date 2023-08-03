@@ -1,0 +1,67 @@
+.contactButton {
+    /* background-color: var(--dark-background); */
+    background: linear-gradient(0deg, rgba(0,0,0,1) 18%, rgba(0, 0, 0, 0.803) 94%);
+    border: none ;
+    border-radius: 2.3rem;
+    color: var(--primary-background);
+    padding: .5rem .8rem;
+    cursor: pointer;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:.5rem;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+
+}
+
+.contactButton:hover {
+    background: var(--highlight-color);
+   /*  background-color: var(--highlight-color); */
+    color: var(--dark-background);
+   /*  border: 1px solid white; */
+   
+}
+
+.contactButton:hover .spot {
+    background-color: black;
+}
+
+.spot {
+    width: 7px ;
+    height: 7px;
+    background-color: var(--highlight-color);
+    border-radius: 50%;
+    animation: spotAnimation .7s infinite;
+}
+@keyframes spotAnimation {
+    0% {
+      transform: scale(.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  .span {
+
+    transform: scale(.9);
+    opacity: .4;
+}
+
+
+.contactButton:hover .span {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .icon {
+    transition-duration: .5s;
+  }
+
+  .contactButton:hover .span .icon {
+  /*   transform: rotate(45deg); */
+  transform: rotate(360deg);
+  }

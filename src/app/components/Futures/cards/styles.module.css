@@ -1,0 +1,10 @@
+.container {
+    background-color: rgb(247, 191, 191);
+}
+
+.show {
+    opacity: 1;
+}
+.hide {
+    opacity: 0;
+}

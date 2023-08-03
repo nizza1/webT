@@ -1,0 +1,17 @@
+.container {
+    max-width: 44ch;
+}
+
+.title {
+    font-size: 2.3rem;
+    background-image:linear-gradient(50deg, #000000, #9a9a9a 130%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:700px ) {
+     .title {
+        font-size: 2rem;
+     }
+}

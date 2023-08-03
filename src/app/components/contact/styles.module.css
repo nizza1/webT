@@ -1,0 +1,114 @@
+.container {
+ /*    background-color: black; */
+}
+
+.innerContainer {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding: 50px .6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.socialContainer {
+    margin-top: auto;
+}
+
+
+.contactForm {
+    border-radius: 1rem;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    max-width: 500px;
+    row-gap: .2rem;
+    position: relative;
+    background: var(--border-gradient);
+  
+}
+
+.contactForm::after {
+    position: absolute;
+    content: '';
+    inset: 2px;
+    border-radius: .9rem;
+    background: var(--primary-background);
+/*    background-color: rgba(226, 226, 226, 0.948); */
+
+   backdrop-filter: blur(50px);
+    z-index: 1;
+}
+
+.contactForm::before {
+    position: absolute;
+    content: '';
+    inset: 2px;
+    border-radius: .9rem;
+    /* background: var(--gradient-card); */
+    z-index: 2;
+}
+
+
+.inputContainer {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+  
+    font-size: 1.1rem;
+    color: rgb(26, 26, 26);
+    padding-left: .2rem;
+    pointer-events: none;
+    transition-duration: .3s;
+    letter-spacing: .15rem;
+    margin-bottom: .5rem ;
+} 
+
+.inputField {
+    min-width: 300px;
+    max-width: 100%;
+    padding: .7rem .4rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.4rem;
+    border: none;
+    font-size: 1.1rem;
+    border: 1px solid var(--border-light);
+    opacity: .8;
+    border-radius: .6rem;
+    background-color: transparent ;
+}
+
+.inputField:focus {
+    outline: none;
+}
+
+/* .inputField:focus ~ .label,
+ .inputField:valid ~ .label {
+    opacity: 0;
+  } */
+
+
+.buttonContainer {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    padding-top: 0rem;
+}
+
+@media (max-width: 700px) {
+    .innerContainer {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}

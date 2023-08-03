@@ -1,0 +1,25 @@
+.container {
+    position: fixed ;
+   /*  position: sticky; */
+   width: 100%;
+    top: 0px;
+    background-color: #ffffff72;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(12px);
+    -moz-backdrop-filter: blur(12px) ;
+    border-bottom: 1px solid var(--border-light);
+    z-index: 10;
+}
+.logButContainer {
+    margin-inline: auto;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem .6rem;
+}
+
+.logo {
+    font-size: 30px;
+    color: var(--dark-background); 
+}

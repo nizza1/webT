@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@pages/*": ["pages/*"],
+      "@api/*": ["api/*"],
+      "@app/*": ["src/app/*"],
+      "@helpers/*": ["lib/helpers/*"],
+      "react-icons/Tb": ["node_modules/react-icons/Tb"]
     }
+    
   }
 }

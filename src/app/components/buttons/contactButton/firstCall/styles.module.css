@@ -1,0 +1,56 @@
+.contactButton {
+    color: var(--dark-background);
+    border: none ;
+   /*  outline: none; */
+    border-radius: 2.2rem;
+    background-color: var(--highlight-color);
+    padding: 1rem 1rem;
+    cursor: pointer;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:.5rem;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    transition-duration: .3s;
+ /*    outline: 1px solid var(--border-light); */
+   /*  outline-offset: 1px;  */
+    z-index: 5;
+}
+
+.contactButton:hover {
+    background-color: transparent;
+    color: var(--dark-background);
+    outline: 1px solid var(--dark-background);
+    padding-inline: 1.3rem;
+ /*   outline: 1px solid var(--dark-background); */
+   
+}
+
+  .span {
+
+    transform: scale(.7);
+    opacity: .4;
+}
+
+
+.contactButton:hover .span {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .icon {
+
+    transition-duration: .5s;
+
+  }
+
+  .contactButton:hover .span .icon {
+  transform: rotate(90deg);
+  }
+
+  @media (max-width: 650px) {
+    .contactButton {
+        font-size: 1.2rem;
+    }
+}
