@@ -13,8 +13,8 @@ import { DiReact} from 'react-icons/di';
 import { FaSass , FaNode} from 'react-icons/fa';
 import { IoLogoHtml5 , IoLogoJavascript} from 'react-icons/io';
 import { BiLogoMongodb} from 'react-icons/bi';
-/* import { TbBrandCss3 } from '@react-icons/tb';
-import {TbBrandPrisma , TbBrandNextjs} from '@react-icons/tb'; */
+/* import { TbBrandCss3 } from '@react-icons/tb'; */
+/* import {TbBrandPrisma , TbBrandNextjs} from '@react-icons/tb'; */
 
 
 const Tech = () => {
