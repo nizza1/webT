@@ -1,8 +1,9 @@
 "use client"
+
 import styles from './styles.module.css'
 
 import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
-import { ChakraProvider } from '@chakra-ui/react';
+
 
 import Title from '../title-gr/title-gr';
 
@@ -25,7 +26,7 @@ const Questions = () => {
             <Accordion allowToggle className={styles.accordion}>
         <AccordionItem className={styles.textContainer}>
         <h2 >
-          <AccordionButton _expanded={{ bg: 'transparent',/*  color: clickedTitle  */}}className={styles.questionContainer}  >
+          <AccordionButton _expanded={{ bg: 'transparent'}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
           Wie sieht's mit Wartung und Pflege aus?
 
@@ -41,7 +42,7 @@ const Questions = () => {
 
          <AccordionItem className={styles.textContainer}>
         <h2 >
-          <AccordionButton _expanded={{ bg: '', /* color: clickedTitle */ }}className={styles.questionContainer}  >
+          <AccordionButton _expanded={{ bg: '' }}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
           Wie lange dauert es, bis meine neue Website live gehen kann?
         </Box>
@@ -56,7 +57,7 @@ const Questions = () => {
 
          <AccordionItem className={styles.textContainer}>
         <h2 >
-          <AccordionButton _expanded={{ bg: '', /* color: clickedTitle */ }}className={styles.questionContainer}  >
+          <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
           Ich besitze schon eine Website. Kann diese angepasst werden?
         </Box>
@@ -71,7 +72,7 @@ const Questions = () => {
 
          <AccordionItem className={styles.textContainer}>
         <h2 >
-          <AccordionButton _expanded={{ bg: '', /* color: clickedTitle */ }}className={styles.questionContainer}  >
+          <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
           Was kostet eine neue Website?
         </Box>
@@ -86,7 +87,7 @@ const Questions = () => {
 
          <AccordionItem className={styles.textContainer}>
         <h2 >
-          <AccordionButton _expanded={{ bg: '', /* color: clickedTitle  */}}className={styles.questionContainer}  >
+          <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
           Wie läuft die Zusammenarbeit ab?
         </Box>
@@ -101,7 +102,7 @@ const Questions = () => {
 
          <AccordionItem className={styles.textContainer}>
         <h2 >
-          <AccordionButton _expanded={{ bg: '', /* color: clickedTitle  */}}className={styles.questionContainer}  >
+          <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
           Was, wenn ich das Ergebnis nicht mag?
 
