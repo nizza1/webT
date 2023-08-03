@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-import {TiSocialLinkedin} from "react-icons/Ti"
+import {TiSocialLinkedin} from "react-icons/ti"
 import {BsGithub } from "react-icons/bs"
-import {BiLogoInstagram } from "react-icons/Bi"
+import {BiLogoInstagram } from "react-icons/bi"
 
 
 const social = () => {

@@ -27,10 +27,10 @@
     display: none; /* Chrome, Safari */
   }
   
-  .textContainerScroll {
-    /* Additional styles for enabling horizontal scrolling */
+/*   .textContainerScroll {
 
-  }
+
+  } */
   
   .textItem {
     position: relative;
@@ -67,9 +67,9 @@
     border-radius: 1.3rem;
 
   }
-  .textItem:hover {
-/*     transform: scale(1.5); */
-  }
+/*   .textItem:hover {
+
+  } */
 
   .textItemBackground ,
   .textItemBackgroundY {
@@ -147,13 +147,13 @@
     background-color: #000;
   }
   
-  .scrollButtonLeft {
+/*   .scrollButtonLeft {
 
   }
   .scrollButtonRight {
 
   }
-
+ */
   .scrollButtonLeft.disabled,
   .scrollButtonRight.disabled {
     /* transform: scale(.94); */

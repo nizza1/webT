@@ -8,13 +8,13 @@ import styles from './styles.module.css'
 import { motion, useAnimation } from 'framer-motion';
 
 //Icons
-import { AiOutlineHtml5} from 'react-icons/Ai';
-import { DiReact} from 'react-icons/Di';
+import { AiOutlineHtml5} from 'react-icons/ai';
+import { DiReact} from 'react-icons/di';
 import { FaSass , FaNode} from 'react-icons/fa';
 import { IoLogoHtml5 , IoLogoJavascript} from 'react-icons/io';
-import { BiLogoMongodb} from 'react-icons/Bi';
-/* import { TbBrandCss3 } from '@react-icons/Tb';
-import {TbBrandPrisma , TbBrandNextjs} from '@react-icons/Tb'; */
+import { BiLogoMongodb} from 'react-icons/bi';
+/* import { TbBrandCss3 } from '@react-icons/tb';
+import {TbBrandPrisma , TbBrandNextjs} from '@react-icons/tb'; */
 
 
 const Tech = () => {
