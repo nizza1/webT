@@ -5,6 +5,7 @@ import {useState , useRef ,useEffect} from 'react'
 
 
 import {IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
+
 import classNames from 'classnames'
 
 const Slider = () => {
