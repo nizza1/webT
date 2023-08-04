@@ -5,60 +5,24 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css'
 
 //Framer Motion 
-import { motion, useAnimation } from 'framer-motion';
+/* import { motion, useAnimation } from 'framer-motion'; */
 
 //Icons
-import { AiOutlineHtml5} from 'react-icons/ai';
+/* import { AiOutlineHtml5} from 'react-icons/ai'; */
 import { DiReact} from 'react-icons/di';
 import { FaSass , FaNode} from 'react-icons/fa';
-import { IoLogoHtml5 , IoLogoJavascript} from 'react-icons/io';
-import { BiLogoMongodb} from 'react-icons/bi';
-/* import { TbBrandCss3 } from '@react-icons/tb'; */
-/* import {TbBrandPrisma , TbBrandNextjs} from '@react-icons/tb'; */
+import { IoLogoHtml5 , IoLogoJavascript , IoLogoCss3} from 'react-icons/io';
+import { BiLogoMongodb , BiLogoCss3} from 'react-icons/bi';
+import {SiNextdotjs , SiPrisma} from 'react-icons/si';
 
 
 const Tech = () => {
 
 
-  const [scrollX, setScrollX] = useState(0);
-  const controls = useAnimation();
-  const containerRef = useRef(null);
-
-  const handleScroll = () => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const containerTop = container.getBoundingClientRect().top;
-    const containerBottom = container.getBoundingClientRect().bottom;
-    const windowHeight = window.innerHeight;
-
-    if (containerTop < windowHeight && containerBottom > 0) {
-      // The container is in the viewport
-      const newScrollX = -(window.scrollY - containerTop);
-      setScrollX(newScrollX);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    controls.start({
-      x: scrollX,
-      transition: { type: 'tween' }, // You can customize the animation transition here
-    });
-  }, [scrollX, controls]);
-
-
-
   return (
-    <div className={styles.container} ref={containerRef} >
+    <div className={styles.container} >
       <div className={styles.dropShad}></div>
-        <motion.div className={styles.iconContainer} style={{ x: controls }}>
+        <div className={styles.iconContainer} >
             
             <div className={styles.iconBox}>
               <FaSass />
@@ -66,22 +30,20 @@ const Tech = () => {
             <div className={styles.iconBox}>
               <FaNode />
             </div>
-        {/*     <div className={styles.iconBox}>
-              <TbBrandCss3 />
-            </div>
+             <div className={styles.iconBox}>
+              <BiLogoCss3 />
+              </div>
+              
+            
             <div className={styles.iconBox}>
-              <TbBrandPrisma />
+              <SiPrisma />
             </div>
+           
             <div className={styles.iconBox}>
-              <TbBrandNextjs />
-            </div> */}
+              <SiNextdotjs />
+            </div> 
             <div className={styles.iconBox}>
               <DiReact />
-            </div>
-
-
-            <div className={styles.iconBox}>
-              <AiOutlineHtml5 />
             </div>
 
             <div className={styles.iconBox}>
@@ -95,7 +57,7 @@ const Tech = () => {
             </div>
             
             
-        </motion.div>
+        </div>
     </div>
   )
 }
