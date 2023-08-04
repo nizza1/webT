@@ -4,6 +4,9 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import styles from './styles.module.css'
 
+//components 
+import Title from '../title-gr/title-gr'
+
 //Framer Motion 
 /* import { motion, useAnimation } from 'framer-motion'; */
 
@@ -16,10 +19,17 @@ import { BiLogoMongodb , BiLogoCss3} from 'react-icons/bi';
 import {SiNextdotjs , SiPrisma} from 'react-icons/si';
 
 
+
 const Tech = () => {
 
 
   return (
+    <div className={styles.outContainer}>
+
+      <div className={styles.innerContainer}>
+      <Title text='Technologien' />
+      </div>
+
     <div className={styles.container} >
       <div className={styles.dropShad}></div>
         <div className={styles.iconContainer} >
@@ -58,6 +68,7 @@ const Tech = () => {
             
             
         </div>
+    </div>
     </div>
   )
 }
