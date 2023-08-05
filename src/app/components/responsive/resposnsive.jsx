@@ -9,8 +9,10 @@ const Resposnsive = () => {
     <div className={styles.container}>
 
         <div className={styles.textSliderContainer}>
-            
-        <Title text='Letzte Projekte'/>
+            <div className={styles.textContainer}>
+            <Title text='Letzte Projekte'/>
+            </div>
+        
 
         <Slider />
 

@@ -1,16 +1,26 @@
 .container {
-    padding: 100px .6rem;
+    padding: 100px 0;
     min-height: 600px;
     /* border-top: 1px solid var(--border-light); */
 }
 
+.textContainer {
+    padding: 0 .6rem;
+    min-width: fit-content;
+}
+
 .textSliderContainer {
-    max-width: var(--max-width);
+/*     max-width: var(--max-width); */
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     column-gap: 2rem;
-    padding: 0 .6rem;
+}
+
+@media (min-width: 768px) {
+    .textSliderContainer {
+        padding-left: calc((100vw - var(--max-width))/2);
+    }
 }
 
 
@@ -22,5 +32,6 @@
     .textSliderContainer {
         flex-direction: column;
         row-gap: 2rem;
+        
     }
 }
