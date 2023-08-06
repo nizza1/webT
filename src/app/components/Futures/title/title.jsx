@@ -12,7 +12,7 @@ import Header from '@app/components/title-gr/title-gr.jsx'
 
 const Title = ({ text , text2,title , id }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: '-0% 0px -18% 0px' });
+  const isInView = useInView(ref, { margin: '-0% 0px -0% 0px' });
 
   const setInViewFeature = useFeatureStore((state) => state.setInViewFeature);
 
