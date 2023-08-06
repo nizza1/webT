@@ -6,7 +6,7 @@ import {BsGithub } from "react-icons/bs"
 import {BiLogoInstagram } from "react-icons/bi"
 
 
-const social = () => {
+const Social = () => {
   return (
     <div className={styles.container}>
         
@@ -23,4 +23,4 @@ const social = () => {
   )
 }
 
-export default social
+export default Social

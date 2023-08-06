@@ -38,10 +38,10 @@ const Contact = () => {
         <div className={styles.innerContainer}>
             <div className={styles.social}>
                 <Title text='Ich freue mich auf unsere Zusammenarbeit!' />
-                <div className={styles.socialContainer}>
+                {/* <div className={styles.socialContainer}>
 
                     <Social />          
-                </div>
+                </div> */}
             </div>
         <form className={styles.contactForm} onSubmit={hanleSubmit} >
 
@@ -67,7 +67,7 @@ const Contact = () => {
              < div className={styles.inputContainer} >
                < label htmlFor='subject'
                className={styles.label}
-               >Betreff</label>
+               >Worum geht es bei Ihrer Anfrage?</label>
                < input type='text'
                 name='subject'
                 className={styles.inputField} 

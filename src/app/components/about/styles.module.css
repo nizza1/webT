@@ -50,7 +50,8 @@
 }
 
 .titleAbout {
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+
 }
 
 .textContainer {
@@ -80,11 +81,11 @@
     .imgTextContainer {
         flex-direction: column;
         align-items: center;
-        row-gap: 4rem;
+        row-gap: 100px;
        /*  padding: 50px .6rem; */
     }
-/*     .titleAbout {
-        
+  /*   .titleAbout {
+        text-align: center;
     } */
 
   /*   .textContainer {

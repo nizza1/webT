@@ -6,13 +6,13 @@ import Title from '@app/components/title-gr/title-gr'
 
 //styles 
 import styles from './styles.module.css'
+import { SiSocialblade } from 'react-icons/si'
+import Social from '../social/social'
 const About = () => {
   return (
     <div className={styles.container}>
        <div className={styles.innerContainer}>
-        <div className={styles.titleAbout}>
-        <Title text='Wer bin ich '/>
-        </div>
+       
        
 
        <div className={styles.imgTextContainer}>
@@ -27,9 +27,12 @@ const About = () => {
                alt="Picture of portfolio"
                />
         </div>
-  
+
 
         <div className={styles.textContainer}>
+        <div className={styles.titleAbout}>
+        <Title text='Wer bin ich '/>
+        </div>
     
         <Title text='Full-Stack Webentwickler' />
 
@@ -41,6 +44,10 @@ const About = () => {
              <h2 className={styles.aboutText}>
              Lassen Sie uns zusammen Ihre Ideen verwirklichen und eine Online-Präsenz für Ihr Unternehmen schaffen.
              </h2>
+        </div>
+
+        <div>
+           <Social />
         </div>
     
         </div>

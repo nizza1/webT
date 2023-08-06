@@ -1,9 +1,12 @@
 
+.outContainer {
+    padding: 100px 0;
+}
 
 .innerContainer {
     max-width: var(--max-width);
     margin: auto;
-    padding: 50px .6rem;
+    padding: 0px .6rem;
 }
 
 
@@ -49,9 +52,12 @@ position: relative;
 }
 
 @media (max-width: 700px) {
-    .container {
-        padding: 0;
+    .outContainer {
+        padding: 50px 0;
     }
+  /*   .container {
+        padding: 0;
+    } */
     .iconContainer {
         font-size: 4rem;
     }
