@@ -53,9 +53,9 @@
  }
 
  @media (max-width: 700px) {
-   .light {
+  /*  .light {
       color: transparent;
-   }
+   } */
    .textContainer {
       max-height: fit-content;
       min-height: auto;
