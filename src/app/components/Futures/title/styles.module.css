@@ -57,6 +57,7 @@
    .light {
       /* transform: translateX(-100px); */
       transform: scale(.4);
+      opacity: .3;
       
    }
    .textContainer {
