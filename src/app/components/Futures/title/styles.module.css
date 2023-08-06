@@ -40,22 +40,25 @@
 
  .highlight {
     color : #000;
+    transition-duration: .6s;
 
   
   /*        background-color: rgb(252, 179, 179); */
  }
 
  .light {
-    color : rgb(231, 231, 231);
+    /* color : rgb(0, 0, 0); */
    /*  min-height: 200px; */
   /*   transform: scale(.7); */
-    
+  transition-duration: .6s;
  }
 
  @media (max-width: 700px) {
-  /*  .light {
-      color: transparent;
-   } */
+   .light {
+      /* transform: translateX(-100px); */
+      transform: scale(.4);
+      
+   }
    .textContainer {
       max-height: fit-content;
       min-height: auto;
