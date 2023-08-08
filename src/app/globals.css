@@ -16,10 +16,11 @@
   --section-pacingD: 100px;
   --section-pacingM: 50px;
 
-  --gradient-card: linear-gradient(58deg, #00000008 25%, rgb(255, 255, 255) 45%, #00000000 80%);
+  --gradient-card: linear-gradient(58deg, #00000008 25%, rgb(255, 255, 255) 45%, #00000061 80%);
 
-/*   --border-gradient: linear-gradient(30deg, rgb(198, 220, 0) 18%, rgb(255, 183, 0) 52%, rgb(59, 37, 255) 94%); */
+ /*  --border-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.046) 18%, rgba(0, 0, 0, 0.227) 52%, rgba(0, 0, 0, 0.425) 94%); */
 --border-gradient: linear-gradient(30deg, rgb(245, 221, 4) 18%, rgb(56, 227, 164) 52%, rgb(255, 176, 79) 94%);
+/* --border-gradient: linear-gradient(0deg, rgba(245, 124, 4, 0.262) 18%, rgb(221, 255, 0) 52%, rgb(182, 210, 0) 94%); */
 
   --font-mono: HelveticaNeue, ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',

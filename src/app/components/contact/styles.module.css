@@ -132,6 +132,10 @@
         margin-inline: auto;
     }
 
+    .callButtonContainer {
+        margin-inline: auto;
+    }
+
     .innerContainer {
         flex-direction: column;
         row-gap: 100px;
