@@ -115,6 +115,9 @@
 }
 
 @media (max-width: 700px) {
+    .label {
+        letter-spacing: .06rem;
+    }
     .innerContainer {
         flex-direction: column;
         row-gap: 3rem;
