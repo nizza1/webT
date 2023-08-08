@@ -27,7 +27,7 @@ const Tech = () => {
     <div className={styles.outContainer}>
 
       <div className={styles.innerContainer}>
-      <Title text='Technologien' />
+      <Title text='Tech Stack' />
       </div>
 
     <div className={styles.container} >

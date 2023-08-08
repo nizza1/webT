@@ -25,7 +25,7 @@ const Futures = () => {
             id : '2'
          },
          {
-            title: 'Blitzschnelle Ladezeiten',
+            title: 'Schnelle Ladezeiten',
             text: 'Unsere Entwicklungsexpertise konzentriert sich darauf, Websites zu erstellen, die schnell laden, um die Wartezeit der Benutzer zu minimieren und die Absprungraten zu reduzieren.' ,
             text2: ' Wir optimieren die Leistung der Website, komprimieren Bilder und implementieren Caching-Techniken, um sicherzustellen, dass Ihre Besucher ein nahtloses und zufriedenstellendes Browsing-Erlebnis haben.',
             id : '3'
