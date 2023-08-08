@@ -2,12 +2,15 @@
 import React , { useState } from 'react'
 import styles from './styles.module.css'
 
-
+//lottie 
+import Lottie from "lottie-react";
+import contactAnimations from '@app/animations/animation_ll2cdsoo.json';
 //components
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
 import Social from '@app/components/social/social'
 import { sendContactForm } from '@helpers/sendForm';
 import Title from '../title-gr/title-gr'
+import FirstCall from '../buttons/contactButton/firstCall/firstCall'
 
 
 
@@ -38,10 +41,13 @@ const Contact = () => {
         <div className={styles.innerContainer}>
             <div className={styles.social}>
                 <Title text='Ich freue mich auf unsere Zusammenarbeit!' />
-                {/* <div className={styles.socialContainer}>
 
-                    <Social />          
-                </div> */}
+                <Lottie className={styles.animationsContact}
+                  animationData={contactAnimations} />
+                
+                <div className={styles.callButtonContainer}>
+                  <FirstCall text='Kostenloses Gespräch vereinbaren'/>
+                </div>
             </div>
         <form className={styles.contactForm} onSubmit={hanleSubmit} >
 
