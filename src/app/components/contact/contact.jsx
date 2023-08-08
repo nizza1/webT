@@ -77,7 +77,7 @@ const Contact = () => {
              < div className={styles.inputContainer} >
                < label htmlFor='message' 
                className={styles.label}
-               >Ihre Nachricht</label>
+               >Wie kann ich Ihnen helfen?</label>
                < textarea 
                 rows="4"
                 name='message' 
