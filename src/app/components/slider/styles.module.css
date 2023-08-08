@@ -21,6 +21,7 @@
     column-gap: 1rem;
     scrollbar-width: none; /* Firefox */
     scroll-padding-left: .6rem;
+    scroll-padding-right: .6rem;
    
   }
 

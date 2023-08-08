@@ -10,19 +10,22 @@ import classNames from 'classnames'
 
 const Slider = () => {
     const containerRef = useRef(null);
+    const cardRef = useRef(null);
+    
     const [scrollPosition, setScrollPosition] = useState(0);
     const [maxScrollPosition, setMaxScrollPosition] = useState(0);
 
     const handleScrollLeft = () => {
         containerRef.current.scrollTo({
-          left: scrollPosition - containerRef.current.offsetWidth,
+          left: scrollPosition - cardRef.current.offsetWidth,
           behavior: 'smooth',
         });
       };
     
       const handleScrollRight = () => {
         containerRef.current.scrollTo({
-          left: scrollPosition + containerRef.current.offsetWidth,
+          /* left: scrollPosition + containerRef.current.offsetWidth, */
+          left: scrollPosition + cardRef.current.offsetWidth,
           behavior: 'smooth',
         });
       };
@@ -53,7 +56,7 @@ const Slider = () => {
         
         {/* Your text containers go here */}
         {/* <div className={styles.textItem}>UI: Intuitives, ansprechendes und leicht navigierbares Design mit klarer Struktur, organisierten Inhalten</div> */}
-        <div className={styles.textItem}>
+        <div className={styles.textItem} ref={cardRef}>
             <div className={styles.textItemBackground}></div>
             <div className={styles.textItemBackgroundY}></div>
             <div className={styles.blur}></div>
