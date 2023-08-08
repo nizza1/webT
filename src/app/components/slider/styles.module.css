@@ -18,10 +18,11 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    column-gap: 1rem;
+    column-gap: 1.2rem;
     scrollbar-width: none; /* Firefox */
     scroll-padding-left: .6rem;
-    scroll-padding-right: .6rem;
+    /* padding-right: .6rem; */
+    padding-right: 2rem;
    
   }
 
