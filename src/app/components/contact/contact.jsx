@@ -46,7 +46,7 @@ const Contact = () => {
                   animationData={contactAnimations} />
                 
                 <div className={styles.callButtonContainer}>
-                  <FirstCall text='Kostenloses Gespräch vereinbaren'/>
+                  <FirstCall text='Beratung vereinbaren'/>
                 </div>
             </div>
         <form className={styles.contactForm} onSubmit={hanleSubmit} >
