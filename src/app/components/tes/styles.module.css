@@ -1,0 +1,6 @@
+.container {
+    font-size: 2rem;
+    min-height: 400vh;
+    padding-top: 10px;
+    padding-inline: 2rem;
+}

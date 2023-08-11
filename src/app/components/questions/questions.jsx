@@ -65,7 +65,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Am besten vereinbaren wir einen kurzen Call, damit wir deine aktuelle Website gemeinsam analysieren können. In den meisten Fällen ist aber ein Relaunch sinnvoll, da oft veraltete Technologien oder nicht das richtige CMS zum Einsatz kommt.
+         Am besten vereinbaren wir einen kurzen Call, damit wir Ihre aktuelle Website gemeinsam analysieren können. In den meisten Fällen ist aber ein Relaunch sinnvoll, da oft veraltete Technologien oder nicht das richtige CMS zum Einsatz kommt.
 
          </AccordionPanel>
          </AccordionItem>
@@ -80,7 +80,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Du hast jederzeit die volle Kostenkontrolle, denn du erhältst von mir in aller Regel einen Pauschalpreis, welcher natürlich verbindlich ist. Sollte es dennoch passieren, dass ein pauschales Angebot nicht möglich ist, rechne ich nach Aufwand ab. 
+         Du hast jederzeit die volle Kostenkontrolle, denn Sie erhalten von mir in aller Regel einen Pauschalpreis, welcher natürlich verbindlich ist. Sollte es dennoch passieren, dass ein pauschales Angebot nicht möglich ist, rechne ich nach Aufwand ab. 
 
          </AccordionPanel>
          </AccordionItem>
@@ -95,26 +95,12 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Ein wertschätzender Umgang ist für mich das A & O, denn Webentwicklung und SEO sind meine größte Leidenschaft. Daher arbeite ich auch nur mit Kunden zusammen, die mit mir auf einer Wellenlänge liegen. Am liebsten arbeite ich langfristig mit dir zusammen.
+         Ein wertschätzender Umgang ist für mich das A & O, denn Webentwicklung und SEO sind meine größte Leidenschaft. Daher arbeite ich auch nur mit Kunden zusammen, die mit mir auf einer Wellenlänge liegen. Am liebsten arbeite ich langfristig mit Ihnen zusammen.
 
          </AccordionPanel>
          </AccordionItem>
 
-         <AccordionItem className={styles.textContainer}>
-        <h2 >
-          <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
-          <Box  as="span" flex='1' textAlign='left'>
-          Was, wenn ich das Ergebnis nicht mag?
-
-        </Box>
-         <AccordionIcon />
-         </AccordionButton>
-       </h2>
-         <AccordionPanel className={styles.answer}>
-         Aufgrund der Art dieser kreativen Arbeit biete ich keine Rückerstattungen an, nur garantiert smarte Websites, die funktionieren und planbar neue Kunden gewinnen! Wir arbeiten in allen Phasen eng zusammen, um Überraschungen zu vermeiden.
-
-         </AccordionPanel>
-         </AccordionItem>
+         
       </Accordion>
             </div>
   
