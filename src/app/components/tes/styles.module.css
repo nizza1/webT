@@ -1,6 +1,36 @@
 .container {
     font-size: 2rem;
-    min-height: 400vh;
+    min-height: 120vh;
     padding-top: 10px;
     padding-inline: 2rem;
+}
+
+.bar {
+    min-width: 1px;
+    background: black;
+    height: 400px;
+    transform-origin: 10%;
+    min-height: 40px;
+   
+    margin-top: 140px;
+    padding-top: 50px;
+    max-height: 120px;
+    
+}
+
+.barContainer {
+ /*    background-color: aliceblue; */
+   /*  min-height: 40px; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barT {
+    transform-origin: 0%;
+    background: rgb(221, 255, 1);
+    min-width: 1px;
+    width: 100%;
+    height: 7px;
 }
