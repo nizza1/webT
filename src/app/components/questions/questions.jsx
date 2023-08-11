@@ -80,7 +80,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Du hast jederzeit die volle Kostenkontrolle, denn Sie erhalten von mir in aller Regel einen Pauschalpreis, welcher natürlich verbindlich ist. Sollte es dennoch passieren, dass ein pauschales Angebot nicht möglich ist, rechne ich nach Aufwand ab. 
+         Sie haben jederzeit die volle Kostenkontrolle, denn Sie erhalten von mir in aller Regel einen Pauschalpreis, welcher natürlich verbindlich ist. Sollte es dennoch passieren, dass ein pauschales Angebot nicht möglich ist, rechne ich nach Aufwand ab. 
 
          </AccordionPanel>
          </AccordionItem>
