@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 /* import Lottie from 'lottie-react'; */
 /* import myAnimation from '@app/animations/animation_ll5965nn.json'; */
 
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll , useSpring } from "framer-motion"
 
 const Tes = () => {
 
@@ -13,6 +13,11 @@ const Tes = () => {
 
     const { scrollYProgress } = useScroll({ container: ref });
     /* const { scrollYProgress } = useScroll(); */
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 400,
+        damping: 40,
+        restDelta: 0.001
+      });
 
 
     return (
@@ -33,7 +38,7 @@ const Tes = () => {
 
    <div className={styles.progressBar}>
       <div className={styles.barContainer}>
-       <motion.div style={{ scaleX : scrollYProgress }} 
+       <motion.div style={{ scaleX }} 
        className={styles.barT}/>
      </div>
    </div>
