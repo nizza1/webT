@@ -6,12 +6,15 @@
   --dark-background: #000000;
   --text-light: #E2E2E2 ;
   --text-dark: #000000;
-/*   --highlight-color: #C4e200; */
   --highlight-secondary: rgb(201, 232, 90);
   --highlight-color: #c9e300;
-
-
   --border-light: #cccccc;
+
+  --padding-mob: 13px;
+  --border-width-c: 2px;
+
+
+
   --phone-r:600px;
   --section-pacingD: 100px;
   --section-pacingM: 50px;
@@ -20,7 +23,7 @@
 
  /*  --border-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.046) 18%, rgba(0, 0, 0, 0.227) 52%, rgba(0, 0, 0, 0.425) 94%); */
 --border-gradient: linear-gradient(30deg, rgb(245, 221, 4) 18%, rgb(56, 227, 164) 52%, rgb(255, 176, 79) 94%);
-/* --border-gradient: linear-gradient(0deg, rgba(245, 124, 4, 0.262) 18%, rgb(221, 255, 0) 52%, rgb(182, 210, 0) 94%); */
+/* --border-gradient: linear-gradient(0deg, rgb(99, 251, 132) 18%, rgb(0, 230, 169) 52%, rgb(0, 210, 133) 94%); */
 
   --font-mono: HelveticaNeue, ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',

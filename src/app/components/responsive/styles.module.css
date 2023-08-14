@@ -21,6 +21,7 @@
     .textSliderContainer {
         padding-left: calc((100vw - var(--max-width))/2);
     }
+    
 }
 
 
@@ -33,5 +34,8 @@
         flex-direction: column;
         row-gap: 2rem;
         
+    }
+    .textContainer {
+        padding: 0 var(--padding-mob);
     }
 }

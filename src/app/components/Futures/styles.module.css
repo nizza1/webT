@@ -46,7 +46,7 @@
 @media (max-width: 700px) {
    .innerContainer {
       flex-direction: column-reverse;
-      padding: 50px .6rem;
+      padding: 50px var(--padding-mob);
 
    }
 

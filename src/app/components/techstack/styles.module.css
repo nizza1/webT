@@ -55,6 +55,9 @@ position: relative;
     .outContainer {
         padding: 50px 0;
     }
+    .innerContainer {
+        padding: 0px var(--padding-mob);
+    }
   /*   .container {
         padding: 0;
     } */

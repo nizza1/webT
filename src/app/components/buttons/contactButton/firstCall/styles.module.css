@@ -2,7 +2,7 @@
     color: var(--dark-background);
     border: none ;
    /*  outline: none; */
-    border-radius: 2.2rem;
+    border-radius: 2.5rem;
     background-color: var(--highlight-color);
     padding: 1rem 1rem;
     cursor: pointer;

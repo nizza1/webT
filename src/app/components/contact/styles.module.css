@@ -47,7 +47,7 @@
 .contactForm::after {
     position: absolute;
     content: '';
-    inset: 2px;
+    inset: var(--border-width-c);
     border-radius: .9rem;
     background: var(--primary-background);
 /*    background-color: rgba(226, 226, 226, 0.948); */
@@ -139,5 +139,6 @@
     .innerContainer {
         flex-direction: column;
         row-gap: 100px;
+        padding: 50px var(--padding-mob);
     }
 }

@@ -42,7 +42,7 @@
 }
 
 .barT {
-    /* transform-origin: 0%; */
+    transform-origin: 0%;
     /* background: var(--highlight-color); */
     background: black;
     /* border-radius: 25px; */

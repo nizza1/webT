@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
     .innerContainer {
-        padding: 50px .6rem;
+        padding: 50px var(--padding-mob);
 
     }
     .textUnderTitle {
