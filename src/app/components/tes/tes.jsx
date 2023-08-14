@@ -1,33 +1,52 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './styles.module.css';
-import Lottie from 'lottie-react';
-import myAnimation from '@app/animations/animation_ll5965nn.json';
+/* import Lottie from 'lottie-react'; */
+/* import myAnimation from '@app/animations/animation_ll5965nn.json'; */
 
-import { motion, useScroll , useSpring} from "framer-motion"
+import { motion, useScroll } from "framer-motion"
 
 const Tes = () => {
 
-    const { scrollYProgress } = useScroll();
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-      });
-  
+    const ref = useRef(null);
+
+    const { scrollYProgress } = useScroll({ container: ref });
+    /* const { scrollYProgress } = useScroll(); */
+
+
     return (
       <div className={styles.container}>
-        test
-        <motion.div 
-        className={styles.bar}>
+        
+        
 
-        <div className={styles.barContainer}>
-        <motion.div style={{ scaleX }} 
-        className={styles.barT}/>
-        </div>
+         <div className={styles.refContainer} >
+            <div ref={ref} className={styles.li}>
 
-         </motion.div > 
+            
+
+
+                <div className={styles.lic}>
+                <div className={styles.stickyChild}>
+
+<div className={styles.childBar}>
+
+   <div className={styles.progressBar}>
+      <div className={styles.barContainer}>
+       <motion.div style={{ scaleX : scrollYProgress }} 
+       className={styles.barT}/>
+     </div>
+   </div>
+</div>
+
+</div>
+                </div>
+                
+               
+                </div>
+            
+           
+         </div>
 
       </div>
     );
