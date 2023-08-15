@@ -17,8 +17,8 @@ import ContactButton from '@app/components/buttons/contactButton/contactButton'
 const HeaderBar = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 20,
+    stiffness: 400,
+    damping: 40,
     restDelta: 0.001
   });
   return (

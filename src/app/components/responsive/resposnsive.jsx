@@ -12,8 +12,7 @@ const Resposnsive = () => {
             <div className={styles.textContainer}>
             <Title text='Letzte Projekte'/>
             </div>
-        
-
+      
         <Slider />
 
         </div>
