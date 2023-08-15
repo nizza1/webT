@@ -7,7 +7,9 @@
   --text-light: #E2E2E2 ;
   --text-dark: #000000;
   --highlight-secondary: rgb(201, 232, 90);
-  --highlight-color: #c9e300;
+ /*  --highlight-color: #c9e300; */
+ --highlight-color: rgb(211, 232, 90);
+  
   --border-light: #cccccc;
 
   --padding-mob: 13px;
