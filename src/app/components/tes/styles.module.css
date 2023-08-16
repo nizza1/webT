@@ -49,32 +49,33 @@
 .siLine {
     width: 22% ;
     background-color: rgba(187, 187, 187, 0.2);
-    height: 15px;
+    height: 25px;
     display: flex;
     justify-content: space-evenly;
-    border-left: 2px solid whitesmoke;
-    border-right: 2px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
 }
 
 .stamps {
-    width: 2px;
-    height: 50%;
+    width: .5px;
+    height: 30%;
     background-color: rgb(255, 255, 255);
 }
 .stampsB {
     width: 2px;
-    height: 80%;
-    background-color: rgb(171, 249, 3);
+    height: 60%;
+    background-color: rgb(236, 247, 75);
 }
 
 
 
 .progressBar::after {
     position: absolute;
+    top:25px;
     content: '';
     width: 100%;
-    height: 20%;
-    background-color: rgb(234, 255, 47);
+    height: 60%;
+    background-color: rgba(236, 250, 109, 0.183);
     border-top: 1.2px dotted black;
     border-bottom: 1.2px dotted black;
     z-index: 1;
@@ -94,7 +95,7 @@
 
 .barT {
     transform-origin: 0%;
-    background: rgba(240, 248, 255, 0.507);
+    background: rgba(240, 248, 255, 0);
     width: 100%;
     height: 12px;
     position: relative;
@@ -110,7 +111,7 @@
     width: 5px ;
     height: 30px;
  
-    background-color: aliceblue;
+    background-color: rgb(255, 64, 0);
 }
 
 
@@ -126,14 +127,14 @@
 
 
 .li {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(0, 0, 0);
     height: 80vh;
     overflow-y: auto;
     position: relative;
    /*  overscroll-behavior: none; */
 }
 .lic {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(0, 0, 0);
     min-height: 260vh;
 
 }
