@@ -14,10 +14,13 @@ const Tes = () => {
     const { scrollYProgress } = useScroll({ container: ref });
     /* const { scrollYProgress } = useScroll(); */
     const scaleX = useSpring(scrollYProgress, {
-        stiffness: 400,
-        damping: 40,
-        restDelta: 0.001
+       stiffness: 300,
+        damping: 50,
+        restDelta: 0.0
       });
+      /* const scaleX = scrollYProgress */
+
+      
 
 
     return (
@@ -26,29 +29,125 @@ const Tes = () => {
         
 
          <div className={styles.refContainer} >
-            <div ref={ref} className={styles.li}>
+
+               <div ref={ref} className={styles.li}>
+
+                   <div className={styles.lic}>
+                   <div className={styles.stickyChild}>
+
+                    <div className={styles.childBar}>
+
+                        <div className={styles.progressBar}>
+                              <div className={styles.barContainer}>
+                               <motion.div style={{ scaleX }} 
+                               className={styles.barT}/>
+
+                               <div className={styles.abLine}>
+
+                                  <div className={styles.siLine}>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      
+                                 
+                                  </ div>
+                                  <div className={styles.siLine}>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      
+                                 
+                                  </ div>
+                                  <div className={styles.siLine}>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      
+                                 
+                                  </ div>
+                                  <div className={styles.siLine}>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      
+                                 
+                                  </ div>
+                                  <div className={styles.siLine}>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stampsB}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      <div className={styles.stamps}></div>
+                                      
+                                 
+                                  </ div>
+                                  
+                               </div>
+
+                             </div> 
+                        </div>
 
             
 
+                    </div>
 
-                <div className={styles.lic}>
-                <div className={styles.stickyChild}>
-
-<div className={styles.childBar}>
-
-   <div className={styles.progressBar}>
-      <div className={styles.barContainer}>
-       <motion.div style={{ scaleX }} 
-       className={styles.barT}/>
-     </div>
-   </div>
-</div>
-
-</div>
-                </div>
-                
-               
-                </div>
+                   </div>
+                   </div>
+              
+              </div>
             
            
          </div>

@@ -4,26 +4,28 @@
 }
 
 .refContainer {
-    background-color: rgb(86, 85, 85);
+    background-color: rgb(0, 0, 0);
     position: relative;
     padding: 100px 0;
 } 
 .stickyChild {
-    background-color: rgb(2, 2, 2);
-    height: 100px;
+    background-color: rgb(0, 0, 0);
+    height: 120px;
     position: sticky;
     top: 40%;
     display: flex;
     align-items: center;
     overflow-x: hidden;
-    border-radius: 25px;
-    padding: 0 30px;
+   /*  border-radius: 25px; */
+    padding: 0 10px;
+    overflow-y: hidden;
 }
 
 .childBar {
     width: 100%;
     height: 8px;
     background-color: rgb(207, 255, 96);
+
 }
 
 .progressBar {
@@ -31,10 +33,41 @@
     height: 10px;
     background-color: rgb(3, 3, 3);
     border-bottom: .5px dashed black;
-    border-top: .5px solid aliceblue;
-
+   /*  border-top: .5px solid aliceblue; */
     position: relative;
 }
+
+.abLine {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(240, 248, 255, 0.149);
+    display: flex;
+    justify-content: space-between;
+}
+
+.siLine {
+    width: 22% ;
+    background-color: rgba(187, 187, 187, 0.2);
+    height: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+
+.stamps {
+    width: 2px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.stampsB {
+    width: 2px;
+    height: 80%;
+    background-color: rgb(171, 249, 3);
+}
+
+
 
 .progressBar::after {
     position: absolute;
@@ -42,12 +75,12 @@
     width: 100%;
     height: 20%;
     background-color: rgb(234, 255, 47);
-    border-top: .5px dashed black;
-    border-bottom: .5px dashed black;
+    border-top: 1.2px dotted black;
+    border-bottom: 1.2px dotted black;
     z-index: 1;
 }
 
-.progressBar::before {
+/* .progressBar::before {
     position: absolute;
     left: 30%;
     top: 0;
@@ -56,7 +89,7 @@
     height: 40px;
     background-color: rgb(249, 66, 66);
     z-index: 2;
-}
+} */
 
 
 .barT {
@@ -74,11 +107,22 @@
     position: absolute;
     bottom: -20px;
     right: -2px;
-    width: 2px ;
-    height: 40px;
+    width: 5px ;
+    height: 30px;
  
     background-color: aliceblue;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .li {
@@ -86,10 +130,10 @@
     height: 80vh;
     overflow-y: auto;
     position: relative;
-    overscroll-behavior: none;
+   /*  overscroll-behavior: none; */
 }
 .lic {
-    background-color: rgb(0, 0, 0);
-    min-height: 200vh;
+    background-color: rgb(205, 205, 205);
+    min-height: 260vh;
 
 }
