@@ -166,36 +166,7 @@ const Tes = () => {
                                  
                                   </ div>
 
-                                  <div className={styles.siLine}>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stampsB}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stampsB}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      <div className={styles.stamps}></div>
-                                      
-                                 
-                                  </ div>
+                                  
                                  
                                  
                                   

@@ -4,13 +4,14 @@
 }
 
 .refContainer {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     position: relative;
     padding: 100px 0;
 } 
 .stickyChild {
-    background-color: rgb(0, 0, 0);
-    height: 120px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100px;
+    
     position: sticky;
     top: 40%;
     display: flex;
@@ -19,20 +20,20 @@
    /*  border-radius: 25px; */
     padding: 0 10px;
     overflow-y: hidden;
+ /*    transform: rotate(270deg); */
 }
 
 .childBar {
     width: 100%;
     height: 8px;
-    background-color: rgb(207, 255, 96);
-
+    background-color: rgba(0, 0, 0, 0.519);
 }
 
 .progressBar {
     width: 100%;
     height: 10px;
-    background-color: rgb(3, 3, 3);
-    border-bottom: .5px dashed black;
+    background-color: rgba(3, 3, 3, 0);
+    border-bottom: .5px dashed rgb(255, 17, 17);
    /*  border-top: .5px solid aliceblue; */
     position: relative;
 }
@@ -41,45 +42,45 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    background-color: rgba(240, 248, 255, 0.149);
+    background-color: rgba(60, 1, 137, 0);
     display: flex;
     justify-content: space-between;
 }
 
 .siLine {
-    width: 22% ;
-    background-color: rgba(187, 187, 187, 0.2);
-    height: 25px;
+    width: 25% ;
+    background-color: rgba(187, 187, 187, 0);
+    height: 20px;
     display: flex;
     justify-content: space-evenly;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .stamps {
     width: .5px;
     height: 30%;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
 }
 .stampsB {
     width: 2px;
     height: 60%;
-    background-color: rgb(236, 247, 75);
+    background-color: rgb(247, 75, 75);
 }
 
 
-
+/* 
 .progressBar::after {
     position: absolute;
     top:25px;
     content: '';
     width: 100%;
     height: 60%;
-    background-color: rgba(236, 250, 109, 0.183);
+    background-color: rgba(62, 62, 62, 0.334);
     border-top: 1.2px dotted black;
     border-bottom: 1.2px dotted black;
     z-index: 1;
-}
+} */
 
 /* .progressBar::before {
     position: absolute;
@@ -109,7 +110,7 @@
     bottom: -20px;
     right: -2px;
     width: 5px ;
-    height: 30px;
+    height: 50px;
  
     background-color: rgb(255, 64, 0);
 }
@@ -127,14 +128,14 @@
 
 
 .li {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(190, 44, 44, 0);
     height: 80vh;
     overflow-y: auto;
     position: relative;
-   /*  overscroll-behavior: none; */
+    overscroll-behavior: none;
 }
 .lic {
-    background-color: rgb(0, 0, 0);
-    min-height: 260vh;
+    background-color: rgba(224, 224, 224, 0);
+    min-height: 360vh;
 
 }
