@@ -25,6 +25,7 @@
 
 .childBar {
     width: 100%;
+    max-width: 550px;
     height: 8px;
     background-color: rgba(0, 0, 0, 0.767);
 }
@@ -58,7 +59,7 @@
 }
 
 .stamps {
-    width: .5px;
+    width: 1px;
     height: 30%;
     background-color: black;
 }
