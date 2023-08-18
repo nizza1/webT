@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 /* import Lottie from 'lottie-react'; */
 /* import myAnimation from '@app/animations/animation_ll5965nn.json'; */
 
-import { motion, useScroll , useSpring } from "framer-motion"
+import { motion, useScroll , useSpring ,useMotionValueEvent} from "framer-motion"
 
 const Tes = () => {
 
@@ -19,9 +19,10 @@ const Tes = () => {
         restDelta: 0.0
       });
       /* const scaleX = scrollYProgress */
-
-      
-
+      useMotionValueEvent(scrollYProgress, "change", (latest) => {
+        console.log("Page scroll: ", (latest * 100).toFixed(2) )
+      })
+  
 
     return (
       <div className={styles.container}>
