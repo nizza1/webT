@@ -5,23 +5,16 @@ import styles from './styles.module.css';
 /* import Lottie from 'lottie-react'; */
 /* import myAnimation from '@app/animations/animation_ll5965nn.json'; */
 
-import { motion, useScroll , useSpring ,useMotionValueEvent, useTransform} from "framer-motion"
+import { motion, useScroll , useSpring ,useMotionValueEvent} from "framer-motion"
 
 const Tes = () => {
-  const [xline , setXline] = useState(0);
 
     const ref = useRef(null);
     const animatedLineRef = useRef(null);
 
     const { scrollYProgress } = useScroll({ container: ref });
 
-
-  /*   const scaleX = useSpring(scrollYProgress, {
-       stiffness: 300,
-        damping: 50,
-        restDelta: 0.0
-      }); */
- 
+    const refTes = useRef(null);
 
 
       useMotionValueEvent(scrollYProgress, "change", (latest) => {
@@ -31,23 +24,26 @@ const Tes = () => {
         animatedLineRef.current.style.left = `${(latest * 100).toFixed(2)}%`;
     
       })
-     
     
-
+      const handlePostion = () => {
+        const rect = refTes.instance.getBoundingClientRect().top;
+    
+        console.log('View Offset:', rect);
+      }
       
 
     return (
-      <div className={styles.container}>
+      <div  className={styles.container}>
 
         <div className={styles.placeHolder}></div>
         
         
 
-         <div className={styles.refContainer} >
+         <div  className={styles.refContainer} >
 
                <div ref={ref} className={styles.li}>
 
-                   <div className={styles.lic}>
+                   <div  className={styles.lic}>
 
                    <div className={styles.stickyChild}>
 
@@ -56,10 +52,6 @@ const Tes = () => {
                     <div className={styles.childBar}>
 
                         <div className={styles.progressBar}>
-
-
-                             
-
                              
                                <div className={styles.animatedLineWrapper}>
                                        <div
@@ -205,6 +197,7 @@ const Tes = () => {
             
 
                     </div>
+                
 
                    </div>
 
@@ -212,7 +205,12 @@ const Tes = () => {
               
               </div>
             
-              <div className={styles.placeHolder}></div>
+              <div className={styles.placeHolder}>
+
+                <div className={styles.offsetTes} ref={refTes} onScroll={handlePostion}>
+
+                </div>
+              </div>
          </div>
 
       

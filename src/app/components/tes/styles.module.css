@@ -1,23 +1,27 @@
 .container {
     font-size: 2rem;
     padding-top: 10px;
+
 }
 
 .refContainer {
     background-color: rgba(0, 0, 0, 0);
     position: relative;
-   /*  padding: 100px 0; */
+
 } 
 .stickyChild {
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgba(0, 0, 0, 0.923);
     position: sticky;
-    top: 50px;
+    top: 0%;
+    height: 80svh;
+
     overflow-x: hidden;
+    pointer-events: none;
 
     display: flex;
     align-items: center;
 
-    border-radius: 25px;
+    border-radius: 8px;
     padding: 0 0px;
     
     flex-direction: column;
@@ -61,7 +65,7 @@
 .stamps {
     width: 1px;
     height: 30%;
-    background-color: black;
+    background-color: aliceblue;
 }
 .stampsB {
     width: 2px;
@@ -77,22 +81,17 @@
 
 .li {
     background-color: rgba(224, 11, 11, 0);
-
-    height: 100vh;
-
-    position: relative;
-    overflow-y: scroll;
-  
-
- /*    overscroll-behavior: none; */
+    height: 80vh;
+    top: 0;
+   /*  overflow-y: auto; */
+   overflow-y: auto;
 }
 
 .lic {
-    background-color: rgba(88, 248, 24, 0.276);
+    background-color: rgba(88, 248, 24, 0);
    /*  padding: 300px 0; */
-    position: sticky;
-    top: 20vh;
-    height: 400vh;
+    height: 170vh;
+
 
 }
 
@@ -106,7 +105,8 @@
 
 .animatedLine {
     width: 1px;
-    height: 70px;
+    height: 80px;
+    top: -10px;
     background-color: rgb(225, 255, 0);
     position: absolute;
     transition-duration: .8s;
@@ -114,16 +114,24 @@
 }
 
 .animatedLine::after {
-    padding-left: 10px;
-    margin-left: 10px;
     width: 50px;
     height: 50px;
-    content: 'zeit';
+    content: 'Time';
     color: aliceblue;
 }
 
 
 .placeHolder {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
+}
+
+
+
+
+/* tes 2 */
+
+.offsetTes {
+    background-color: aliceblue;
+    min-height: 600vh;
 }
