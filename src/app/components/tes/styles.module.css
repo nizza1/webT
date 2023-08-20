@@ -153,9 +153,9 @@
 
 .animatedLine {
     width: 5px;
-    height: 20px;
+    height: 40px;
     background-color: red;
     position: absolute;
-    /* transition-duration: .3s; */
-   /*  left: 20%; */
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.09,.93,.73,1.2);
 }

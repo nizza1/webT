@@ -15,7 +15,6 @@ const Tes = () => {
 
     const { scrollYProgress } = useScroll({ container: ref });
 
-  
 
     const scaleX = useSpring(scrollYProgress, {
        stiffness: 300,
@@ -23,12 +22,14 @@ const Tes = () => {
         restDelta: 0.0
       });
       /* const scaleX = scrollYProgress */
+
+
       useMotionValueEvent(scrollYProgress, "change", (latest) => {
+
         console.log("Page scroll: ", (latest * 100).toFixed(2) )
-        setXline((latest * 100).toFixed(3))
-        /* animatedLineRef.current.style.transform = `translateX(${xline}px)`; */
-        animatedLineRef.current.style.left = `${xline}%`;
-        console.log(xline);
+
+        animatedLineRef.current.style.left = `${(latest * 100).toFixed(2)}%`;
+    
       })
      
     
