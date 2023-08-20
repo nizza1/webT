@@ -49,30 +49,10 @@
     font-size: 1.5rem;
     transition-duration: .3s;
     overflow: hidden;
+    background-color: var(--sec-color);
    
   }
 
-  .textItem::before {
-    z-index: 3;
-    position: absolute;
-    content: '';
-    inset: var(--border-width-c) ;
-    background-color: var(--primary-background);
- /*   background-color: var(--highlight-color); */
-    border-radius: 1.2rem;
-   
-
-  }
-
-  .textItem::after {
-    position: absolute;
-    content: '';
-    z-index: 2;
-    inset: 0px ;
-    background: var(--border-gradient);
-    border-radius: 1.3rem;
-
-  }
 /*   .textItem:hover {
 
   } */

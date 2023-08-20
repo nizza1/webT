@@ -8,6 +8,7 @@
 .singlerIcon {
     color: var(--dark-background);
     background-color: var(--highlight-color);
+    /* background-color: var(--sec-color); */
     border-radius: 50%;
     width: 3.4rem;
     height: 3.4rem;

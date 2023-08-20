@@ -5,14 +5,18 @@ import styles from './styles.module.css';
 /* import Lottie from 'lottie-react'; */
 /* import myAnimation from '@app/animations/animation_ll5965nn.json'; */
 
-import { motion, useScroll , useSpring ,useMotionValueEvent} from "framer-motion"
+import { motion, useScroll , useSpring ,useMotionValueEvent, useTransform} from "framer-motion"
 
 const Tes = () => {
+  const [xline , setXline] = useState(0);
 
     const ref = useRef(null);
+    const animatedLineRef = useRef(null);
 
     const { scrollYProgress } = useScroll({ container: ref });
-    /* const { scrollYProgress } = useScroll(); */
+
+  
+
     const scaleX = useSpring(scrollYProgress, {
        stiffness: 300,
         damping: 50,
@@ -21,8 +25,15 @@ const Tes = () => {
       /* const scaleX = scrollYProgress */
       useMotionValueEvent(scrollYProgress, "change", (latest) => {
         console.log("Page scroll: ", (latest * 100).toFixed(2) )
+        setXline((latest * 100).toFixed())
+        /* animatedLineRef.current.style.transform = `translateX(${xline}px)`; */
+        animatedLineRef.current.style.left = `${xline}%`;
+        console.log(xline);
       })
-  
+     
+    
+
+      
 
     return (
       <div className={styles.container}>
@@ -34,14 +45,28 @@ const Tes = () => {
                <div ref={ref} className={styles.li}>
 
                    <div className={styles.lic}>
+
                    <div className={styles.stickyChild}>
+
+                   <div className={styles.animatedLineWrapper}>
+                                       <div
+                                         className={styles.animatedLine}
+                                         ref={animatedLineRef}
+                                         />
+                                   </div> 
 
                     <div className={styles.childBar}>
 
                         <div className={styles.progressBar}>
+
+
                               <div className={styles.barContainer}>
                                <motion.div style={{ scaleX }} 
                                className={styles.barT}/>
+
+                        
+
+                      
 
                                <div className={styles.abLine}>
 
@@ -181,6 +206,7 @@ const Tes = () => {
                     </div>
 
                    </div>
+
                    </div>
               
               </div>

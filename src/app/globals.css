@@ -11,6 +11,9 @@
  --highlight-color: rgb(211, 232, 90);
   
   --border-light: #cccccc;
+  --sec-color: rgb(228, 246, 165);
+/*  --sec-color: rgb(209, 212, 250); */
+/* --sec-color: #EAF2FA; */
 
   --padding-mob: 13px;
   --border-width-c: 2px;
