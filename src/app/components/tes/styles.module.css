@@ -11,8 +11,8 @@
 .stickyChild {
     background-color: rgba(0, 0, 0, 0.747);
     position: sticky;
-    top: 15px;
-    bottom: 20px;
+    top: 50px;
+    overflow-x: hidden;
 
     display: flex;
     align-items: center;
