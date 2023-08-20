@@ -56,7 +56,7 @@ const Tes = () => {
                         <div className={styles.progressBar}>
 
 
-                              <div className={styles.barContainer}>
+                             
 
                              
                                <div className={styles.animatedLineWrapper}>
@@ -213,7 +213,7 @@ const Tes = () => {
            
          </div>
 
-      </div>
+      
     );
   };
   
