@@ -25,7 +25,7 @@ const Tes = () => {
       /* const scaleX = scrollYProgress */
       useMotionValueEvent(scrollYProgress, "change", (latest) => {
         console.log("Page scroll: ", (latest * 100).toFixed(2) )
-        setXline((latest * 100).toFixed())
+        setXline((latest * 100).toFixed(3))
         /* animatedLineRef.current.style.transform = `translateX(${xline}px)`; */
         animatedLineRef.current.style.left = `${xline}%`;
         console.log(xline);
