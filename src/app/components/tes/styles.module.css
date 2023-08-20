@@ -11,8 +11,9 @@
 .stickyChild {
     background-color: rgba(0, 0, 0, 0.747);
     position: sticky;
-    top: 30%;
-    /* bottom:40%; */
+    top: 15px;
+    bottom: 20px;
+
     display: flex;
     align-items: center;
 
@@ -75,16 +76,23 @@
 
 
 .li {
-    background-color: rgba(190, 44, 44, 0.032);
+    background-color: rgba(224, 11, 11, 0);
 
     height: 100vh;
+
+    position: relative;
     overflow-y: scroll;
+  
+
  /*    overscroll-behavior: none; */
 }
+
 .lic {
-    background-color: rgba(88, 248, 24, 0);
-    min-height: 600vh;
-    position: relative;
+    background-color: rgba(88, 248, 24, 0.276);
+   /*  padding: 300px 0; */
+    position: sticky;
+    top: 20vh;
+    height: 400vh;
 
 }
 
@@ -115,8 +123,7 @@
 }
 
 
-
 .placeHolder {
-    background-color: rgb(28, 28, 28);
-    min-height: 150vh;
+    background-color: black;
+    min-height: 100vh;
 }
