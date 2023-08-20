@@ -10,26 +10,25 @@
 } 
 .stickyChild {
     background-color: rgba(0, 0, 0, 0.483);
-    height: 100px;
+    /* height: 100px; */
     
     position: sticky;
     top: 40%;
     display: flex;
     align-items: center;
     overflow-x: hidden;
-   /*  border-radius: 25px; */
-    padding: 0 10px;
+    border-radius: 25px;
+    padding: 0 0px;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
- /*    transform: rotate(270deg); */
+   /*  transform: rotate(270deg); */
 }
 
 .childBar {
     width: 100%;
-    max-width: 550px;
-    height: 8px;
-    background-color: rgba(0, 0, 0, 0.767);
+  
+    background-color: rgba(0, 0, 0, 0.933);
 }
 
 .progressBar {
@@ -56,8 +55,8 @@
     height: 20px;
     display: flex;
     justify-content: space-evenly;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid rgb(196, 247, 75);
+    border-right: 1px solid rgb(196, 247, 75);
 }
 
 .stamps {
@@ -68,38 +67,15 @@
 .stampsB {
     width: 2px;
     height: 60%;
-    background-color: rgb(247, 75, 75);
+    background-color: rgb(196, 247, 75);
 }
 
 
-/* 
-.progressBar::after {
-    position: absolute;
-    top:25px;
-    content: '';
-    width: 100%;
-    height: 60%;
-    background-color: rgba(62, 62, 62, 0.334);
-    border-top: 1.2px dotted black;
-    border-bottom: 1.2px dotted black;
-    z-index: 1;
-} */
-
-/* .progressBar::before {
-    position: absolute;
-    left: 30%;
-    top: 0;
-    content: '';
-    width: 1px;
-    height: 40px;
-    background-color: rgb(249, 66, 66);
-    z-index: 2;
-} */
 
 
 .barT {
     transform-origin: 0%;
-    background: rgba(240, 248, 255, 0);
+    background: var(--highlight-color);
     width: 100%;
     height: 12px;
     position: relative;
@@ -107,16 +83,7 @@
     z-index: 4;
 }
 
-.barT::after {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    right: -2px;
-    width: 5px ;
-    height: 50px;
- 
-    background-color: rgb(255, 64, 0);
-}
+
 
 
 
@@ -152,10 +119,17 @@
 }
 
 .animatedLine {
-    width: 5px;
-    height: 40px;
-    background-color: red;
+    width: 1px;
+    height: 70px;
+    background-color: rgb(225, 255, 0);
     position: absolute;
-    transition-duration: 1s;
+    transition-duration: .8s;
     transition-timing-function: cubic-bezier(.09,.93,.73,1.2);
+}
+
+.animatedLine::after {
+    padding-left: 1rem;
+    content: 'zeit';
+    width: fit-content;
+    color: aliceblue;
 }

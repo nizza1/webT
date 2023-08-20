@@ -16,12 +16,12 @@ const Tes = () => {
     const { scrollYProgress } = useScroll({ container: ref });
 
 
-    const scaleX = useSpring(scrollYProgress, {
+  /*   const scaleX = useSpring(scrollYProgress, {
        stiffness: 300,
         damping: 50,
         restDelta: 0.0
-      });
-      /* const scaleX = scrollYProgress */
+      }); */
+ 
 
 
       useMotionValueEvent(scrollYProgress, "change", (latest) => {
@@ -49,12 +49,7 @@ const Tes = () => {
 
                    <div className={styles.stickyChild}>
 
-                   <div className={styles.animatedLineWrapper}>
-                                       <div
-                                         className={styles.animatedLine}
-                                         ref={animatedLineRef}
-                                         />
-                                   </div> 
+                   
 
                     <div className={styles.childBar}>
 
@@ -62,11 +57,14 @@ const Tes = () => {
 
 
                               <div className={styles.barContainer}>
-                               <motion.div style={{ scaleX }} 
-                               className={styles.barT}/>
 
-                        
-
+                             
+                               <div className={styles.animatedLineWrapper}>
+                                       <div
+                                         className={styles.animatedLine}
+                                         ref={animatedLineRef}
+                                         />
+                                   </div> 
                       
 
                                <div className={styles.abLine}>
