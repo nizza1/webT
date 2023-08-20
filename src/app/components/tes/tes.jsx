@@ -38,6 +38,8 @@ const Tes = () => {
 
     return (
       <div className={styles.container}>
+
+        <div className={styles.placeHolder}></div>
         
         
 
@@ -210,7 +212,7 @@ const Tes = () => {
               
               </div>
             
-           
+              <div className={styles.placeHolder}></div>
          </div>
 
       
