@@ -13,7 +13,7 @@
     background-color: rgba(0, 0, 0, 0.923);
     position: sticky;
     top: 0%;
-    height: 80svh;
+    height: 80vh;
 
     overflow-x: hidden;
     pointer-events: none;
@@ -23,7 +23,7 @@
 
     border-radius: 8px;
     padding: 0 0px;
-    
+   /*  transform: rotate(90deg); */
     flex-direction: column;
 
 }
