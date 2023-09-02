@@ -18,7 +18,7 @@ import Futures from './components/Futures/Futures';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Tech from './components/techstack/tech';
-
+import Phases from './components/Dev-phases/phases';
 
 export default function Home() {
   return (
@@ -26,6 +26,7 @@ export default function Home() {
       <main className={classNames(styles.main, '')}>
         <Hero />
         <Futures />
+        <Phases />
         <Resposnsive />
         <About />
         <Tech />

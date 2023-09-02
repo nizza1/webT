@@ -9,7 +9,7 @@
   --highlight-secondary: rgb(201, 232, 90);
  /*  --highlight-color: #c9e300; */
  --highlight-color: rgb(211, 232, 90);
-  
+  --border-radius: 12px ;
   --border-light: #cccccc;
   --sec-color: rgb(228, 246, 165);
 /*  --sec-color: rgb(209, 212, 250); */
