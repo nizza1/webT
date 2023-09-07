@@ -33,8 +33,6 @@ const About = () => {
         <div className={styles.titleAbout}>
         <Title text='Wer bin ich '/>
         </div>
-    
-        <Title text='Full-Stack Webentwickler' />
 
         <div className={styles.aboutTextContainer}>
             <h2 className={styles.aboutText}>Hallo! Ich bin Nizar, ein Webentwickler aus Nürnberg. <br />
