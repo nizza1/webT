@@ -1,14 +1,12 @@
 
-import React,{useRef} from 'react'
+import React from 'react'
 import styles from './styles.module.css'
 
 
 
 //components 
 import Title from '@app/components/title-gr/title-gr'
-const phases = () => {
-
-
+const Phases = () => {
 
   return (
     <div className={styles.outContainer}>
@@ -96,4 +94,4 @@ const phases = () => {
   )
 }
 
-export default phases
+export default Phases
