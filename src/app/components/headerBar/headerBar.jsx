@@ -15,7 +15,7 @@ import { motion, useScroll ,useSpring } from "framer-motion"
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
 
 //store 
-import useModalStore from '@app/stores/modalStore';
+import useModalStore from '@app/stores/offerStore';
 
 
 const HeaderBar = ({ onContactButtonClick }) => {
@@ -28,8 +28,6 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
    // Use the Zustand store to access the state and function
    const { isModalOpen, toggleModal } = useModalStore();
-
-   console.log(isModalOpen);
 
  /*  const [isModalOpen, setIsModalOpen] = useState(false);
   function toggleModal() {
