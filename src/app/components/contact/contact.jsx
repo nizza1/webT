@@ -14,6 +14,7 @@ import FirstCall from '../buttons/contactButton/firstCall/firstCall'
 
 
 
+
 const initValues = {name: '',email: '' , subject: '', message: ''};
 const initState = {values: initValues};
 
@@ -80,6 +81,7 @@ const Contact = () => {
                 /* value={values.name} */
                onChange={handleChange}/>  
              </div>
+
              < div className={styles.inputContainer} >
                < label htmlFor='message' 
                className={styles.label}

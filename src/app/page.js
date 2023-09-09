@@ -20,18 +20,27 @@ import Contact from './components/contact/contact';
 import Tech from './components/techstack/tech';
 import Phases from './components/Dev-phases/phases';
 
+
+//providers 
+
+//Modal
+import Offer from './components/offerModal/offer';
+  
 export default function Home() {
   return (
 
       <main className={classNames(styles.main, '')}>
-        <Hero />
-        <Futures />
-        <Phases />
-        <Resposnsive />
-        <About />
-        <Tech />
-        <Contact />
-        <Questions/>
+
+           <Offer />
+           <Hero />
+           <Futures />
+           <Phases />
+           <Resposnsive />
+           <About />
+           <Tech />
+           <Contact />
+           <Questions/>
+     
       </main>
   
     
