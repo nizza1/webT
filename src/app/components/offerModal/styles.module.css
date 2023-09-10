@@ -19,7 +19,7 @@
     max-width: 95%;
     max-height: 90%;
 /*     background-color: rgba(240, 248, 255, 0.675); */
-    border: 1px solid var(--border-light);
+/*     border: 1px solid var(--border-light); */
     border-radius: var(--border-radius);
     position: relative;
 
@@ -58,7 +58,7 @@
   .modalBody {
     z-index: 2;
     border-radius: var(--border-radius);
-
+    overflow: hidden;
  
   }
 
