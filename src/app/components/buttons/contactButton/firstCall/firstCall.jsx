@@ -38,7 +38,13 @@ const FirstCall = ({text}) => {
 
        <Offer>
        <InlineWidget
-       className={styles.widget}
+       styles={{
+        height:500,
+      }}
+      pageSettings={{
+        hideEventTypeDetails: true,
+        hideLandingPageDetails: true,
+      }}
         url="https://calendly.com/nizardjassim/30min" />
        </Offer>
 
