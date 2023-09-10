@@ -6,9 +6,13 @@ import styles from './styles.module.css'
 //zustand 
 import useModalStore from '@app/stores/offerStore'
 
-const Offer = () => {
+const Offer = ({ children }) => {
     const { isModalOpen, toggleModal } = useModalStore();
 
+const handleCloseWrapper = (e)=> {
+    if (e.target.id === 'modalWrapper' && isModalOpen )
+    toggleModal()
+}
     useEffect(() => {
         const htmlElement = document.querySelector('html');
         if (isModalOpen) {
@@ -26,21 +30,22 @@ const Offer = () => {
     if (!isModalOpen) return null;
     
   return (
-    <div className={styles.outContainer}>
+    <div 
+    onClick={handleCloseWrapper}
+    className={styles.outContainer}
+    id='modalWrapper'
+    >
         <div className={styles.innerContainer}>
-
-            <div className={styles.modalHeader}>
-            <h1>here is the modal</h1>
-           <div className={styles.buttonContainer}>
-           <button
-           className={styles.closeButton}
-            onClick={toggleModal}>X</button>
+        <div className={styles.buttonContainer}>
+             <button
+             className={styles.closeButton}
+             onClick={toggleModal}>X</button>
 
            </div>
 
+            <div className={styles.modalBody}>
+                {children}
             </div>
-            
-
 
         </div>
 

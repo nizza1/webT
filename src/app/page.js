@@ -31,7 +31,7 @@ export default function Home() {
 
       <main className={classNames(styles.main, '')}>
 
-           <Offer />
+          {/*  <Offer /> */}
            <Hero />
            <Futures />
            <Phases />
