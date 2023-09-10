@@ -59,6 +59,13 @@
     z-index: 2;
     border-radius: var(--border-radius);
     overflow: hidden;
+ 
   }
 
 
+@media (max-width: 700px) {
+    .innerContainer {
+        overscroll-behavior: none;
+    }
+    
+}
