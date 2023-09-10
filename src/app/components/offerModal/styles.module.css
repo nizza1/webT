@@ -58,7 +58,7 @@
   .modalBody {
     z-index: 2;
     border-radius: var(--border-radius);
-    overflow: hidden;
+
  
   }
 
