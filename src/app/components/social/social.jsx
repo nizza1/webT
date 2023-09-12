@@ -10,15 +10,21 @@ const Social = () => {
   return (
     <div className={styles.container}>
         
-     <span className={styles.singlerIcon}>
+     <a href='https://www.linkedin.com/in/nizar-djassim-48193a1a1/'
+     target="_blank"
+      className={styles.singlerIcon}>
      <TiSocialLinkedin />
-     </span>
-     <span className={styles.singlerIcon}>
+     </a>
+     <a href='https://github.com/nizza1'
+     target="_blank"
+     className={styles.singlerIcon}>
      <BsGithub />
-     </span>
-     <span className={styles.singlerIcon}>
+     </a>
+     <a href='https://www.instagram.com/nizar_z0/'
+     target="_blank"
+     className={styles.singlerIcon}>
      <BiLogoInstagram />
-     </span>
+     </a>
     </div>
   )
 }

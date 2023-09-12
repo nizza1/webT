@@ -39,8 +39,8 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.innerContainer} id='contact-section'>
-            <div className={styles.social}>
+        <div className={styles.innerContainer} id='contact-section' >
+            <div className={styles.social} >
                 <Title text='Kontakt' />
 
                 <Lottie className={styles.animationsContact}
@@ -50,7 +50,7 @@ const Contact = () => {
                   <FirstCall text='Kostenlose Beratung vereinbaren'/>
                 </div>
             </div>
-        <form className={styles.contactForm} onSubmit={hanleSubmit} >
+        <form className={styles.contactForm}  onSubmit={hanleSubmit} >
 
             < div className={styles.inputContainer} >
                < label htmlFor='name'
