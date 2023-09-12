@@ -3,15 +3,14 @@ import React , { useState } from 'react'
 import styles from './styles.module.css'
 
 //lottie 
-import Lottie from "lottie-react";
-import contactAnimations from '@app/animations/animation_ll2cdsoo.json';
+
 //components
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
 import Social from '@app/components/social/social'
 import { sendContactForm } from '@helpers/sendForm';
-import Title from '../title-gr/title-gr'
-import FirstCall from '../buttons/contactButton/firstCall/firstCall'
 
+import FirstCall from '../buttons/contactButton/firstCall/firstCall'
+import ContactData from './contact-data/contactData'
 
 
 
@@ -41,10 +40,8 @@ const Contact = () => {
     <div className={styles.container}>
         <div className={styles.innerContainer} id='contact-section' >
             <div className={styles.social} >
-                <Title text='Kontakt' />
 
-                <Lottie className={styles.animationsContact}
-                  animationData={contactAnimations} />
+                <ContactData />
                 
                 <div className={styles.callButtonContainer}>
                   <FirstCall text='Kostenlose Beratung vereinbaren'/>
