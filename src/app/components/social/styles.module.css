@@ -6,7 +6,7 @@
 }
 
 .singlerIcon {
-    color: var(--dark-background);
+    color: var(--primary-background);
     background: var(--highlight-Text);
     border-radius: 50%;
     width: 3.4rem;
@@ -19,9 +19,4 @@
     cursor: pointer;
     transition-duration: .1s;
     border: 1px solid transparent;
-}
-
-.singlerIcon:hover {
-    color: var(--primary-background);
-    background-color: var(--dark-background);
 }
