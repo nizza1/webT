@@ -1,6 +1,4 @@
-.container {
-/*    border-top: 1px solid var(--border-light); */
-}
+
 
 .innerContainer {
     max-width: var(--max-width);
@@ -50,15 +48,9 @@
 
    }
 
-   .illustrationContainer {
-     /*  max-height: 100%; */
-/*       background-color: green; */
-   }
-
    .illustrationsContainer {
       display: none;
-  /*     height: 30vh;
-      width: 100%; */
+
    }
    .textsContainer {
       max-width: 100%;
