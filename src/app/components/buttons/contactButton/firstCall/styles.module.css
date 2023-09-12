@@ -19,8 +19,6 @@
 }
 
 .contactButton:hover {
-    background-color: transparent;
-    color: var(--dark-background);
     padding-inline: 1.3rem;
  /*   outline: 1px solid var(--dark-background); */
    
