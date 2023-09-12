@@ -13,16 +13,24 @@ const ContactButton = ({text , funn}) => {
 
   const {render , setRender} = useState(true)
 
- /*  const handleButtonClick = () => {
-    if (funn) {
-      funn(); // Call the provided function to open the modal
+  const handleScroll = (href) => {
+    // Prevent the default behavior of the anchor tag
+    if (href) {
+      const targetId = href.replace(/.*\#/, "");
+
+      // Get the element by id and use scrollIntoView with smooth behavior
+      const elem = document.getElementById(targetId);
+      elem?.scrollIntoView({
+        behavior: "smooth",
+      });
     }
-  }; */
+  };
 
   return (
     <>
        <button className={styles.contactButton}
-      /*  onClick={handleButtonClick} */
+       onClick={()=> handleScroll('#contact-section')}
+      
           >{text} 
           <span className={styles.spot}></span>
           <span className={styles.span}>

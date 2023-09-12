@@ -39,9 +39,9 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.innerContainer}>
+        <div className={styles.innerContainer} id='contact-section'>
             <div className={styles.social}>
-                <Title text='Ich freue mich auf unsere Zusammenarbeit!' />
+                <Title text='Kontakt' />
 
                 <Lottie className={styles.animationsContact}
                   animationData={contactAnimations} />
