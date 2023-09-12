@@ -49,7 +49,7 @@
     font-size: 1.5rem;
     transition-duration: .3s;
     overflow: hidden;
-    background-color: var(--sec-color);
+    background-color: var(--card-light);
    
   }
 
@@ -70,7 +70,7 @@
     left: -20%;
     width: 180px ;
     height: 180px;
-    background-color: var(--highlight-color);
+    background-color: var(--card-light);
   }
 
   .textItemBackgroundY {
@@ -78,7 +78,7 @@
     right: 0;
     width: 100px;
     height: 100px;
-    background-color: var(--highlight-color);
+    background-color: var(--card-light);
   }
 
   .blur {

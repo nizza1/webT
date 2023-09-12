@@ -30,15 +30,15 @@
 .closeButton {
     border-radius: 50%;
     border: none;
-    color: aliceblue;
+    color: black;
     font-size: 1.3rem;
     height: 2.4rem;
     width: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-background);
-    transition-duration: .3s;
+    background-color: #ffffff74;
+    transition-duration: .2s;
     outline: 1px solid rgba(255, 99, 71, 0);
     position: absolute;
     top:-3rem;

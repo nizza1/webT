@@ -7,8 +7,7 @@
 
 .singlerIcon {
     color: var(--dark-background);
-    background-color: var(--highlight-color);
-    /* background-color: var(--sec-color); */
+    background: var(--highlight-Text);
     border-radius: 50%;
     width: 3.4rem;
     height: 3.4rem;
@@ -25,5 +24,4 @@
 .singlerIcon:hover {
     color: var(--primary-background);
     background-color: var(--dark-background);
-    border: 1px solid var(--border-light);
 }

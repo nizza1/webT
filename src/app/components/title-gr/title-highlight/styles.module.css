@@ -1,0 +1,8 @@
+.container {
+    background-image: var(--highlight-Text) !important;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120%;
+}

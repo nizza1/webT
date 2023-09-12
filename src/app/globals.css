@@ -10,12 +10,15 @@
   --text-light: #E2E2E2 ;
   --text-dark: #000000;
   --highlight-secondary: rgb(201, 232, 90);
- /*  --highlight-color: #c9e300; */
- --highlight-color: rgb(211, 232, 90);
+  --highlight-color: var(--new-highlight);
   --border-radius: 12px ;
   --border-light: #cccccc;
-  --sec-color: rgb(228, 246, 165);
-/*  --sec-color: rgb(209, 212, 250); */
+
+   --highlight-Text: linear-gradient(60deg, var(--new-highlight) , var(--new-sec) );
+  --new-highlight: #5a39ff;
+  --new-sec : rgb(143, 108, 255);
+  --card-light : rgb(209, 212, 250);
+
 /* --sec-color: #EAF2FA; */
 
   --padding-mob: 1rem;

@@ -16,10 +16,7 @@
 }
 
 .contactButton:hover {
-    background: var(--highlight-color);
-   /*  background-color: var(--highlight-color); */
-    color: var(--dark-background);
-   /*  border: 1px solid white; */
+    background: var(--highlight-Text);
    
 }
 

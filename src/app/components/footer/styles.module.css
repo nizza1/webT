@@ -1,5 +1,6 @@
 .container {
-    background-color: var(--dark-background);
+/*     background-color: var(--dark-background); */
+    border-top: 1px solid var(--border-light);
     color: var(--text-light);
     display: flex;
     justify-content: center;

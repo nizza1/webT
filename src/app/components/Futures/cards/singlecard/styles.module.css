@@ -43,16 +43,5 @@
         /* inset: none; */
         top: 200px;
     }
-    .animationContainer {
-  /*       max-height: 400px;
-        width: 100%;
-      background: linear-gradient(87deg, #f5f5f7 25%, #f5f5f7 45%, #f5f5f7 80%);
-       background-color: #f5f5f7;
-       padding-top: 1rem;
-       border-bottom: none;
-        border-top: none; */
-    }
-    /* .container{
-        display: none;
-    } */
+
 }

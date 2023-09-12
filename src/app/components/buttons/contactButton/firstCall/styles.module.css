@@ -1,9 +1,9 @@
 .contactButton {
-    color: var(--dark-background);
+  /*   color: var(--dark-background); */
     border: none ;
-   /*  outline: none; */
+    color: aliceblue;
     border-radius: 2.5rem;
-    background-color: var(--highlight-color);
+    background: var(--highlight-Text);
     padding: 1rem 1rem;
     cursor: pointer;
     display: flex ;
@@ -21,7 +21,6 @@
 .contactButton:hover {
     background-color: transparent;
     color: var(--dark-background);
-    outline: 1px solid var(--dark-background);
     padding-inline: 1.3rem;
  /*   outline: 1px solid var(--dark-background); */
    
@@ -30,7 +29,7 @@
   .span {
 
     transform: scale(.7);
-    opacity: .4;
+    opacity: .6;
 }
 
 
