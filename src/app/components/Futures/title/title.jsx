@@ -9,8 +9,9 @@ import styles from './styles.module.css'
 
 //components 
 import Header from '@app/components/title-gr/title-gr.jsx'
+import Highlight from '@app/components/title-gr/title-highlight/highlight';
 
-const Title = ({ text , text2,title , id }) => {
+const Title = ({ text , text2,title , id , highlight}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: '-0% 0px -0% 0px' });
 
@@ -27,7 +28,7 @@ const Title = ({ text , text2,title , id }) => {
     )}>
         <h1 className={classNames(
           styles.title,
-        )}>{title}</h1>
+        )}>{title} </h1>
         {/* <Header className={styles.title} text={title}/> */}
 
       <p
