@@ -79,7 +79,7 @@
     padding-left: .2rem;
     pointer-events: none;
     transition-duration: .3s;
-    letter-spacing: .08rem;
+    letter-spacing: .04rem;
     margin-bottom: .5rem ;
 } 
 
@@ -91,11 +91,9 @@
     margin-bottom: 1.4rem;
     border: none;
     font-size: 1.1rem;
-    border: 1px solid var(--border-light);
+    background-color: var(--card-light);
     opacity: .8;
     border-radius: .6rem;
-    background-color: transparent ;
-  /*   transition-duration: .3s; */
 }
 
 .inputField:focus {
