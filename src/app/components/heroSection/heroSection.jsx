@@ -7,6 +7,9 @@ import Highlight from '../title-gr/title-highlight/highlight'
 
 import {PiArrowDownThin} from "react-icons/pi"
 
+import Animation from './animationsContainer/animation'
+
+
 const HeroSection = () => {
   return (
     <div className={styles.container}>
@@ -16,6 +19,7 @@ const HeroSection = () => {
         </div>
 
         <div className={styles.textContainer}>
+        <Animation />
         <h1 className={styles.titleGr}>
         Ich entwickle anspruchsvolle <Highlight text='Websites'/>
         </h1>

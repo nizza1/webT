@@ -29,6 +29,7 @@
     row-gap: 2.7rem;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
 }
 

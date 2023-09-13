@@ -1,0 +1,11 @@
+.animationContainer {
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+.theAnimation {
+    opacity: .2;
+    width: 100%;
+}
