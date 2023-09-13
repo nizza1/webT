@@ -5,7 +5,8 @@ import { Inter } from 'next/font/google'
 import HeaderBar from '@app/components/headerBar/headerBar'
 import Footer from '@app/components/footer/footer'
 
-
+//analysis
+import { Analytics } from '@vercel/analytics/react';
 /* import Providers from '@app/provider' */
 
 
@@ -21,10 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        
+
           <HeaderBar />
            {children}
            <Footer />
+           <Analytics />
       </body>
     </html>
   )
