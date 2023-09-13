@@ -3,7 +3,7 @@
    /*  position: sticky; */
    width: 100%;
     top: 0px;
-    background-color: #ffffff72;
+    background-color: rgba(226, 228, 254, 0.429);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px) ;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .7rem .6rem;
+    padding: .8rem .6rem;
 }
 
 .logo {
