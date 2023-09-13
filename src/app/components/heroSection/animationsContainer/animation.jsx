@@ -7,12 +7,12 @@ import background from '@app/animations/herooanimation.json';
 
 const Animation = () => {
 
-    const animationSpeed = 0.2;
   return (
     <div className={styles.animationContainer}>
         <Lottie className={styles.theAnimation}
        animationData={background} 
-       speed={animationSpeed}/>
+       loop={false}
+       />
     </div>
   )
 }
