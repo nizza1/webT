@@ -10,7 +10,7 @@ const Phases = () => {
 
   return (
     <div className={styles.outContainer}>
-        <Title text='Der Ablauf in 4 Schriten'/>
+        <Title text='Der Ablauf in 4 Schritten'/>
 
         <div className={styles.phasesContainer}>
 
