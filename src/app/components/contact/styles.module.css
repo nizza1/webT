@@ -100,10 +100,13 @@
     outline: none;
 }
 
-/* .inputField:focus ~ .label,
- .inputField:valid ~ .label {
-    opacity: 0;
-  } */
+/* Platzhaltertext für E-Mail-Feld */
+.inputField::placeholder {
+    font-size: .8rem;
+    color: #1b0cef94;
+    font-style: italic;
+}
+
 
 
 .buttonContainer {

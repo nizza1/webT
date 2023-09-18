@@ -54,7 +54,8 @@ const Contact = () => {
                 className={styles.label}
                 >Name</label>
                < input type='text'
-                name='name'
+                name='Ihr Name'
+                placeholder='Ihr Name'
                 className={styles.inputField} 
                 /* value={values.name} */
                onChange={handleChange}/>  
@@ -65,6 +66,7 @@ const Contact = () => {
                >E-Mail</label>
                < input type='email'
                 name='email' 
+                placeholder='Ihre E-Mail-Adresse'
                 className={styles.inputField} 
                onChange={handleChange}/>
              </div>
@@ -75,6 +77,7 @@ const Contact = () => {
                < input type='text'
                 name='subject'
                 className={styles.inputField} 
+                placeholder='Betreff Ihrer Anfrage'
                 /* value={values.name} */
                onChange={handleChange}/>  
              </div>
@@ -86,6 +89,7 @@ const Contact = () => {
                < textarea 
                 rows="4"
                 name='message' 
+                placeholder='Ihre Nachricht'
                 className={styles.inputField}
                onChange={handleChange} />
              </div>
