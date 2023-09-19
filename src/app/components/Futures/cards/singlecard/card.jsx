@@ -8,8 +8,8 @@ import Lottie from "lottie-react";
 
 import uxui from '@app/animations/bbbb.json';
 import res from '@app/animations/res.json';
-import speed from '@app/animations/speed.json';
-import search from '@app/animations/search.json';
+import speed from '@app/animations/speeed.json';
+import search from '@app/animations/seoo.json';
 
 
 import {useFeatureStore} from '../../stores';

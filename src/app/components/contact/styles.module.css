@@ -102,7 +102,7 @@
 
 /* Platzhaltertext für E-Mail-Feld */
 .inputField::placeholder {
-    font-size: .8rem;
+    font-size: .9rem;
     color: #1b0cef94;
     font-style: italic;
 }
