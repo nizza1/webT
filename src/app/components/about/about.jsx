@@ -21,7 +21,7 @@ const About = () => {
                className={styles.img}
                src="/images/pMe.jpg"
                width={400}
-               height={480}
+               height={400}
               /*  width={600}
                height={700} */
                alt="Picture of portfolio"
