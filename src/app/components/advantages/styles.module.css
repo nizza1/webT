@@ -5,9 +5,7 @@
 .innerContainer {
     padding-inline: var(--padding-mob);
 }
-.listContainer {
-    
-}
+
 
 .listContainer div {
     margin-top: 2rem;
