@@ -19,12 +19,13 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Tech from './components/techstack/tech';
 import Phases from './components/Dev-phases/phases';
-
+import Advantages from './components/advantages/advantages';
 
 //providers 
 
 //Modal
 import Offer from './components/offerModal/offer';
+
   
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
            <Futures />
            <Phases />
            <Resposnsive />
+           <Advantages />
            <About />
            <Tech />
            <Contact />

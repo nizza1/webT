@@ -55,7 +55,7 @@ const Contact = () => {
                 >Name</label>
                < input type='text'
                 name='Ihr Name'
-                placeholder='Ihr Name'
+                placeholder='z.b John'
                 className={styles.inputField} 
                 /* value={values.name} */
                onChange={handleChange}/>  
@@ -66,7 +66,7 @@ const Contact = () => {
                >E-Mail</label>
                < input type='email'
                 name='email' 
-                placeholder='Ihre E-Mail-Adresse'
+                placeholder='z.b John@gmail.com'
                 className={styles.inputField} 
                onChange={handleChange}/>
              </div>

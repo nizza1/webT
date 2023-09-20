@@ -1,0 +1,29 @@
+.outContainer {
+    min-height: 100vh;
+}
+
+.innerContainer {
+    padding-inline: var(--padding-mob);
+}
+.listContainer {
+    
+}
+
+.listContainer div {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    column-gap: 1rem;
+}
+
+.listContainer li {
+
+    list-style: none;
+}
+.listContainer li h3 {
+    margin-bottom: 1rem;
+}
+
+.icon {
+    font-size: 1.6rem;
+}
