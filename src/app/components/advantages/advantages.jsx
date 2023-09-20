@@ -8,12 +8,13 @@ import Title from '../title-gr/title-gr'
   return (
     <div className={styles.outContainer}>
         <div className={styles.innerContainer}>
+            
+            <div className={styles.listContainer}>
             <div className={styles.titleContainer}>
                 <Title text='Ihre Vorteile' />
             </div>
-            <div className={styles.listContainer}>
                 <ul>
-                 <div>
+                 <div className={styles.listAndIcon}>
                     <BsCheckCircle
                     className={styles.icon}/>
 
@@ -23,7 +24,7 @@ import Title from '../title-gr/title-gr'
                       </li>
                  </div>
 
-                 <div>
+                 <div className={styles.listAndIcon}>
                     <BsCheckCircle
                     className={styles.icon}/>
 
@@ -33,7 +34,7 @@ import Title from '../title-gr/title-gr'
                     </li>
                  </div>
 
-                 <div>
+                 <div className={styles.listAndIcon}>
                     <BsCheckCircle
                     className={styles.icon}/>
 
@@ -43,7 +44,7 @@ import Title from '../title-gr/title-gr'
                     </li>
                  </div>
 
-                 <div>
+                 <div className={styles.listAndIcon}>
                     <BsCheckCircle
                     className={styles.icon}/>
 
