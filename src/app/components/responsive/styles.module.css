@@ -7,6 +7,7 @@
 .textContainer {
     padding: 0 .6rem;
     min-width: fit-content;
+    max-width: 500px;
 }
 
 .textSliderContainer {

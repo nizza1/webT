@@ -45,7 +45,6 @@
     border-radius: 1.2rem;
     flex-shrink: 0;
     color: black;
-    padding: 1rem;
     font-size: 1.5rem;
     transition-duration: .3s;
     overflow: hidden;
@@ -53,51 +52,18 @@
    
   }
 
-/*   .textItem:hover {
-
-  } */
-
-  .textItemBackground ,
-  .textItemBackgroundY {
-    border-radius: 50%;
-    position: absolute;
-    z-index: 0;
-    display: none;
-  }
-
-  .textItemBackground {
-    top: -10%;
-    left: -20%;
-    width: 180px ;
-    height: 180px;
-    background-color: var(--card-light);
-  }
-
-  .textItemBackgroundY {
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background-color: var(--card-light);
-  }
-
-  .blur {
-    position: absolute;
-    backdrop-filter: blur(/* 6rem */);
+  .imageContaine {
+    overflow-y: auto;
+    height: 400px;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 1.2rem;
-
   }
 
-  .textItemTitle {
-    font-size: 1.3rem;
-    border-bottom: 1px solid #7c7c7c;
-    padding-bottom: 1rem;
+ .refImage {
+  width: 100%;
+  height: auto;
+ }
 
-  }
+ 
 
   .textItemContent ,
   .textItemTitle {

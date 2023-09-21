@@ -1,12 +1,14 @@
 "use client"
 import React from 'react'
 import styles from './styles.module.css'
+import Image from 'next/image'
 import {useState , useRef ,useEffect} from 'react'
 
 
 import {IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
 
-import classNames from 'classnames'
+testImage = '/avisa-min.png'
+
 
 const Slider = () => {
     const containerRef = useRef(null);
@@ -54,16 +56,19 @@ const Slider = () => {
         onScroll={handleScroll}
       >
         
-        {/* Your text containers go here */}
-        {/* <div className={styles.textItem}>UI: Intuitives, ansprechendes und leicht navigierbares Design mit klarer Struktur, organisierten Inhalten</div> */}
         <div className={styles.textItem} ref={cardRef}>
-            <div className={styles.textItemBackground}></div>
-            <div className={styles.textItemBackgroundY}></div>
-            <div className={styles.blur}></div>
+           
 
-        <p className={styles.textItemTitle}>--</p><br /> <p className={styles.textItemContent}>
-        Referenzen
-            </p>
+         <div className={styles.imageContaine}>
+          <Image  
+          className={styles.refImage}
+          src={testImage}
+          width={300}
+          height={300}
+          alt='just reference'
+          
+          />
+            </div>
         </div>
 
         <div className={styles.textItem}>
