@@ -10,7 +10,8 @@ import { mailOptions, transporter } from "/config/nodemailer";
 
     if (req.method === 'POST'){
       const data = req.body;
-      if (!data.name ) {
+      console.log(data);
+      if (!data.theName ) {
         return res.status(400).json({message:'name is required'})
       }
 
@@ -20,9 +21,11 @@ import { mailOptions, transporter } from "/config/nodemailer";
           subject: data.subject,
           text: 'this is a test string',
           html: `<h3>E-Mail : ${data.email}</h3> 
-          <h4>Name : ${data.name}</h4>
+          <h4>Name : ${data.theName}</h4>
           <h3> message :<br>  <br> ${data.message}</h3>`
         })
+
+        return res.status(200).json({ message: 'The message has been sent successfully' });
 
       } catch (error) {
         console.log(error);
@@ -30,7 +33,7 @@ import { mailOptions, transporter } from "/config/nodemailer";
       }
     }
   
-    return res.status(400).json({message:'bad request'});
+     return res.status(405).json({ message: 'Method not allowed' });
   };
    export default handler
 

@@ -14,7 +14,7 @@ import ContactData from './contact-data/contactData'
 
 
 
-const initValues = {name: '',email: '' , subject: '', message: ''};
+const initValues = {theName: '',email: '' , subject: '', message: ''};
 const initState = {values: initValues};
 
 const Contact = () => {
@@ -32,8 +32,19 @@ const Contact = () => {
 
     const hanleSubmit = async(e)=> {
         e.preventDefault();
-        await sendContactForm(values)
-        console.log(state);
+        try {
+          const response = await sendContactForm(values)
+          if (response.ok) {
+            const data = await response.json();
+            alert(data.message);
+          } else {
+            const errorData = await response.json();
+            alert(errorData.message);
+          }
+
+        } catch (e) {
+          alert(e);
+        }
     }
 
   return (
@@ -50,11 +61,11 @@ const Contact = () => {
         <form className={styles.contactForm}  onSubmit={hanleSubmit} >
 
             < div className={styles.inputContainer} >
-               < label htmlFor='name'
+               < label htmlFor='theName'
                 className={styles.label}
                 >Name</label>
                < input type='text'
-                name='name'
+                name='theName'
                 placeholder='z.b John'
                 className={styles.inputField} 
                 /* value={values.name} */
