@@ -54,7 +54,7 @@ const Contact = () => {
                 className={styles.label}
                 >Name</label>
                < input type='text'
-                name='Ihr Name'
+                name='name'
                 placeholder='z.b John'
                 className={styles.inputField} 
                 /* value={values.name} */
