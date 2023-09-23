@@ -5,8 +5,6 @@ import styles from './styles.module.css'
 import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
 
 
-import Title from '../title-gr/title-gr';
-
 import React from 'react'
 
 const Questions = () => {
@@ -17,7 +15,7 @@ const Questions = () => {
          <div className={styles.innerContainer}>
 
             <div className={styles.titleContainer}>
-                <Title text='FAQs'/>
+                <h1 className={styles.title}>FAQs</h1>
              
                 <p className={styles.textUnderTitle}>Sie haben noch Frage? Ihre Frage wird hier nicht beantwortet? Zögern Sie nicht und nehmen Sie mit uns Kontakt </p>
             </div>

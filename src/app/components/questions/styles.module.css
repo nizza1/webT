@@ -1,7 +1,8 @@
 .container {
-    /* background-color: rgb(0, 0, 0); */
+    background-color: var(--card-light);
+    background: var(--highlight-Text);
     /* color : var(--border-light) ; */
-    color: black;
+    color: aliceblue;
 
 }
 .innerContainer {
@@ -9,6 +10,10 @@
     margin-inline: auto;
     padding: 100px .6rem ;
 
+}
+
+.title {
+    color: aliceblue !important;
 }
 
 .accordion {
@@ -19,7 +24,7 @@
 .textContainer {
     margin-bottom: 1rem;
     /* color : var(--border-light); */
-    color: black;
+    color: aliceblue;
     outline: none ;
     border: none ;
     border-top: 1px solid var(--border-light);
@@ -41,7 +46,7 @@
     font-family: var(  --font-mono);
     cursor: pointer;
     padding: .8rem 0;
-    color: black;
+    color: #fff;
    /*  color: var(--border-light); */
     border-radius: .2rem;
     transition-duration: .4s;
