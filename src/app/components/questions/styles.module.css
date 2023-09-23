@@ -57,23 +57,12 @@
     transition-duration: 2s !important;
 }
 
-.answer {
-
-}
-
-
-.titleContainer {
-
-}
 
 .textUnderTitle {
     padding: .6rem 0 2rem;
     font-size: 1.6rem;
 }
 
-.FaqsContainer {
-
-}
 
 @media (max-width: 768px) {
     .innerContainer {

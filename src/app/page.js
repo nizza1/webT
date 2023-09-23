@@ -1,13 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
+
 //styles
 import styles from './page.module.css'
 
 //to access multi classes for tags
 import classNames from 'classnames';
-
-//chakra ui
-/* import { ChakraProvider } from '@chakra-ui/react' */
 
 
 //components 
@@ -24,15 +20,13 @@ import Advantages from './components/advantages/advantages';
 //providers 
 
 //Modal
-import Offer from './components/offerModal/offer';
+
 
   
 export default function Home() {
   return (
 
       <main className={classNames(styles.main, '')}>
-
-          {/*  <Offer /> */}
            <Hero />
            <Futures />
            <Phases />
