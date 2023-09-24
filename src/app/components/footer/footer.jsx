@@ -9,7 +9,12 @@ const Footer = () => {
   return (
     <div className={classNames(styles.container )}> 
     <div className={classNames('')}>
+
     <Social />
+    </div>
+    <div className={styles.rights}>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutzerklärung</a>
     </div>
     
     </div>

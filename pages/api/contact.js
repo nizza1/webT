@@ -25,7 +25,7 @@ import { mailOptions, transporter } from "/config/nodemailer";
           <h3> message :<br>  <br> ${data.message}</h3>`
         })
 
-        return res.status(200).json({ message: 'The message has been sent successfully' });
+        return res.status(200).json({ message: 'Ihre Nachricht wurde gesendet' });
 
       } catch (error) {
         console.log(error);
