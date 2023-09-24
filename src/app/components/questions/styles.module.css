@@ -65,10 +65,7 @@
 
 
 @media (max-width: 768px) {
-    .innerContainer {
-        padding: 50px var(--padding-mob);
 
-    }
     .textUnderTitle {
         font-size: 1.2rem;
     }

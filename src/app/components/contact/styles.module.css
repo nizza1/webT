@@ -138,6 +138,6 @@
     .innerContainer {
         flex-direction: column;
         row-gap: 100px;
-        padding: 50px var(--padding-mob);
+        
     }
 }

@@ -31,7 +31,12 @@
     background: var(--highlight-Text);
     padding: 1rem 1rem 2rem 2rem;
     border-radius: var(--border-radius);
+    transition-duration: .3s;
 
+}
+
+.listAndIcon:hover {
+    transform: scale(1.03);
 }
 .listContainer ul {
     color: var(--primary-background);
