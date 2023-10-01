@@ -54,7 +54,7 @@
  @media (max-width: 700px) {
    .light {
 
-      transform: translateY(6rem);
+      /* transform: translateY(6rem); */
       transition-duration: .4s;
       transition-timing-function: ease-out;
       
