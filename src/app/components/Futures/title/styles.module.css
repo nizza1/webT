@@ -56,7 +56,6 @@
 
       transform: translateY(6rem);
       transition-duration: .4s;
-
       transition-timing-function: ease-out;
       
    }
@@ -82,7 +81,6 @@
    }
    .textContainer:last-child {
       top: 100px;
-      min-height: 60vh;
    }
    
 
