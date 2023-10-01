@@ -16,25 +16,15 @@ const About = () => {
        
 
        <div className={styles.imgTextContainer}>
-        <div className={styles.imgContainer}>
-               <Image
-               className={styles.img}
-               src="/images/pMe.jpg"
-               width={400}
-               height={400}
-               alt="Picture of portfolio"
-               />
-        </div>
-
-
+      
         <div className={styles.textContainer}>
         <div className={styles.titleAbout}>
-        <Title text='Wer bin ich '/>
+        <Title text='Die Gründer von Nuance Studio'/>
         </div>
 
         <div className={styles.aboutTextContainer}>
-            <h2 className={styles.aboutText}>Hallo! Ich bin Nizar, ein Webentwickler aus Nürnberg. <br />
-             Mein Leidenschaft ist es, beeindruckende Websites für Unternehmen und Dienstleister zu erstellen.
+            <h2 className={styles.aboutText}>Als Unternehmer sind Sie ein Experte in Ihrer Branche. Sie haben langjährige Erfahrung und ein tiefes Verständnis für Ihre Kunden und Ihre Bedürfnisse. <br />
+             Doch auch im Marketing können Sie erfolgreich sein. <br /><br />Mit einer professionellen Website können Sie Ihre Sichtbarkeit erhöhen, neue Kunden gewinnen und Ihr Unternehmen voranbringen.<br />
              </h2>
 
              <h2 className={styles.aboutText}>

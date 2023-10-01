@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef ,useState} from 'react';
 import { inView, useInView } from 'framer-motion';
 import classNames from 'classnames';
 import { useFeatureStore } from '../stores';
@@ -13,16 +13,25 @@ import Highlight from '@app/components/title-gr/title-highlight/highlight';
 
 const Title = ({ text , text2,title , id , highlight}) => {
   const ref = useRef(null);
+  const containerRef = useRef(null);
+
   const isInView = useInView(ref, { margin: '-0% 0px -0% 0px' });
 
   const setInViewFeature = useFeatureStore((state) => state.setInViewFeature);
 
+  const [isSticky, setIsSticky] = useState(false);
+
   useEffect(() => {
+
     if (isInView) setInViewFeature(id);
+
+
   }, [isInView, id, setInViewFeature]);
 
   return (
-    <div className={classNames(
+    <div 
+    ref={containerRef}
+    className={classNames(
       styles.textContainer,
       isInView ? styles.highlight : styles.light
     )}>

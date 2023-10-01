@@ -19,8 +19,8 @@ import Title from '../title-gr/title-gr'
                     className={styles.icon}/>
 
                     <li>
-                      <h3>Individuelle Aufmerksamkeit:</h3>
-                      <p> Ich widme Ihrem Projekt mehr Zeit und Aufmerksamkeit, da ich an weniger Projekten gleichzeitig arbeite.</p>
+                      <h3>Persönlicher Ansprechpartner</h3>
+                      <p> Wir stellen Ihnen einen persönlichen Ansprechpartner zur Verfügung, der Ihr Projekt von Anfang bis Ende begleitet.</p>
                       </li>
                  </div>
 
@@ -29,8 +29,8 @@ import Title from '../title-gr/title-gr'
                     className={styles.icon}/>
 
                     <li>
-                    <h3>Schnelle Kommunikation:</h3>
-                    <p>Die Kommunikation mit mir als einzelnen Freelancer kann in der Regel schneller und direkter sein, da es weniger Ebenen in der Kommunikation gibt.</p>
+                    <h3>Einfache und schnelle Kommunikation</h3>
+                    <p>Unsere Online-Lösungen ermöglichen Ihnen eine zeit- und ortsunabhängige Zusammenarbeit. </p>
                     </li>
                  </div>
 
@@ -39,8 +39,8 @@ import Title from '../title-gr/title-gr'
                     className={styles.icon}/>
 
                     <li>
-                    <h3>Kosteneffizienz:</h3>
-                    <p> Als unabhängiger Freelancer biete ich eine kosteneffiziente Lösung im Vergleich zu Agenturen, da ich keine umfangreichen Overheads habe.</p>
+                    <h3>Versteckte Kosten</h3>
+                    <p> Wir haben keine versteckten Kosten. Alle unsere Preise sind transparent und werden im Voraus festgelegt.</p>
                     </li>
                  </div>
 
@@ -50,8 +50,8 @@ import Title from '../title-gr/title-gr'
 
                     
                     <li>
-                    <h3>Flexibilität:</h3>
-                    <p>Schnelle Reaktion auf Änderungen und flexible Anpassung an neue Zeitpläne.</p>
+                    <h3>Kein Wartungsvertrag</h3>
+                    <p>Wir bieten keinen Wartungsvertrag an, wenn Sie jedoch Unterstützung benötigen, sprechen Sie uns gerne an.</p>
                     </li>
                  </div>
                     

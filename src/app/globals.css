@@ -14,7 +14,7 @@
   --border-light: #cccccc;
 
    --highlight-Text: linear-gradient(60deg, var(--new-highlight) , var(--new-sec) );
-  --new-highlight: #5a39ff;
+  --new-highlight: #4520fc;
   --new-sec : rgb(143, 108, 255);
   --card-light : rgb(226, 228, 254);
 

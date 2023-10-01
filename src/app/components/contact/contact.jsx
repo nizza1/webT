@@ -12,6 +12,12 @@ import { sendContactForm } from '@helpers/sendForm';
 import FirstCall from '../buttons/contactButton/firstCall/firstCall'
 import ContactData from './contact-data/contactData'
 
+//icons
+import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
+import {MdOutlineAlternateEmail} from 'react-icons/md'
+import {FiPhone} from 'react-icons/fi'
+
+
 
 
 const initValues = {theName: '',email: '' , subject: '', message: ''};
@@ -63,46 +69,55 @@ const Contact = () => {
             < div className={styles.inputContainer} >
                < label htmlFor='theName'
                 className={styles.label}
-                >Name</label>
+                >
+                  Name
+                </label>
                < input type='text'
                 name='theName'
                 placeholder='z.b John'
                 className={styles.inputField} 
                 /* value={values.name} */
                onChange={handleChange}/>  
+               <AiOutlineUser className={styles.iconInput}/>
              </div>
              < div className={styles.inputContainer} >
                < label htmlFor='email'
                className={styles.label}
                >E-Mail</label>
+                
                < input type='email'
                 name='email' 
                 placeholder='z.b John@gmail.com'
                 className={styles.inputField} 
                onChange={handleChange}/>
+               <MdOutlineAlternateEmail className={styles.iconInput} />
              </div>
              < div className={styles.inputContainer} >
                < label htmlFor='subject'
                className={styles.label}
-               >Worum geht es bei Ihrer Anfrage?</label>
-               < input type='text'
+               >Telefonnummer</label>
+               
+               < input type='number'
                 name='subject'
                 className={styles.inputField} 
-                placeholder='Betreff Ihrer Anfrage'
+                placeholder='Ihre Telefonnummer'
                 /* value={values.name} */
                onChange={handleChange}/>  
+               <FiPhone className={styles.iconInput} />
              </div>
 
              < div className={styles.inputContainer} >
                < label htmlFor='message' 
                className={styles.label}
-               >Wie kann ich Ihnen helfen?</label>
+               >Wie können wir Ihnen helfen?</label>
+               
                < textarea 
                 rows="4"
                 name='message' 
                 placeholder='Ihre Nachricht'
                 className={styles.inputField}
                onChange={handleChange} />
+               <AiOutlineMessage className={styles.iconInput} />
              </div>
              <div className={styles.buttonContainer}>
              <ContactButton text='Senden' type='submit' />

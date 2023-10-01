@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 import ContactButton from '@app/components/buttons/contactButton/firstCall/firstCall'
 import Highlight from '../title-gr/title-highlight/highlight'
+import Map from '@app/components/mapAnimation/map'
 
 import {PiArrowDownThin} from "react-icons/pi"
 
@@ -12,17 +13,18 @@ import {PiArrowDownThin} from "react-icons/pi"
 const HeroSection = () => {
   return (
     <div className={styles.container}>
-        <div className={styles.blurLayer}></div>
-        <div className={styles.background}>
-       
+        
+        <div className={styles.backgroundAnim}>
+          <Map />
         </div>
 
         <div className={styles.textContainer}>
 
         <h1 className={styles.titleGr}>
-        Ich entwickle anspruchsvolle <Highlight text='Websites'/>
+        Wir entwickeln anspruchsvolle <Highlight text='Websites'/>
         </h1>
-        <p className={styles.text}>Ich helfe Unternehmen und Dienstleistern dabei, einzigartige, moderne und suchmaschinenoptimierte Website zu erstellen.</p>
+        <p className={styles.text}>
+          Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p>
         <ContactButton text='BERATUNG VEREINBAREN'/>
 
         <div className={styles.scroll}>
