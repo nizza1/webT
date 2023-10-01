@@ -55,6 +55,7 @@
    .textsContainer {
       max-width: 100%;
       row-gap: 70px;
+      padding-bottom: 70px;
       /* padding-top: 200px; */
    }
 }

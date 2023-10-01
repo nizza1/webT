@@ -69,12 +69,13 @@
      background: linear-gradient(#561ffc , #7a4eff);
       position: sticky;
       top: 90px;
-      border: 1px solid aliceblue;
+      border: 1px solid rgba(240, 248, 255, 0.618);
 
 
-      -webkit-box-shadow: 0px -50px 48px -23px  rgba(41, 8, 253, 0.281);
-      -moz-box-shadow: 0px -50px 48px -23px  rgba(41, 8, 253, 0.281);
-      box-shadow: 0px -50px 70px -23px rgba(41, 8, 253, 0.281);
+      -webkit-box-shadow: 0px -50px 48px -23px  rgba(0, 0, 0, 0.281);
+      -moz-box-shadow: 0px -50px 48px -23px  rgba(0, 0, 0, 0.281);
+      box-shadow: 0px -50px 70px -23px rgba(0, 0, 0, 0.281);
+      
      
    }
    .textContainer:first-child {
