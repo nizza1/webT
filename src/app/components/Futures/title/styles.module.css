@@ -55,8 +55,8 @@
    .light {
 
       transform: translateY(6rem);
-      transition-duration: .2s;
-      opacity: .8;
+      transition-duration: .4s;
+
       transition-timing-function: ease-out;
       
    }
