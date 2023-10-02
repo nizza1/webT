@@ -4,7 +4,7 @@
    width: 100%;
     top: 0px;
     background-color: rgba(226, 228, 254, 0.429);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px) ;
     border-bottom: 1px solid var(--border-light);
@@ -17,11 +17,11 @@
     justify-content: space-between;
     align-items: center;
     padding: .8rem .6rem;
+    max-height: 70px;
 }
 
 .logo {
-    font-size: 30px;
-    color: var(--dark-background); 
+    height: 100%;
 }
 
 .progressBar {

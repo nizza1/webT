@@ -15,6 +15,10 @@ const Footer = () => {
       <a href="#">Impressum</a>
       <a href="#">Datenschutzerklärung</a>
     </div>
+
+    <div className={styles.nuance}>
+      <h2>NUANCESTUDIO</h2>
+    </div>
     
     </div>
   )

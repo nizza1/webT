@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 /* import { IoIosCode } from "react-icons/io"; */
 import { TbCode } from "react-icons/tb";
-
+import Image from 'next/image';
 /* progress bar  */
 import { motion, useScroll ,useSpring } from "framer-motion"
 
@@ -16,6 +16,8 @@ import ContactButton from '@app/components/buttons/contactButton/contactButton'
 
 //store 
 import useModalStore from '@app/stores/offerStore';
+
+const logo = '/logoNuance.svg'
 
 
 const HeaderBar = ({ onContactButtonClick }) => {
@@ -53,7 +55,12 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
             <ContactButton text='kontakt'
             funn={toggleModal}/>
-            <TbCode className={styles.logo}/>
+            <Image 
+            src={logo}
+            width={50}
+            height={50}
+            alt='nuance studio'
+            className={styles.logo}/>
         </div>
 
         

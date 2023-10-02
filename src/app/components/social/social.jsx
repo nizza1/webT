@@ -20,11 +20,11 @@ const Social = () => {
      className={styles.singlerIcon}>
      <BsGithub />
      </a>
-     <a href='https://www.instagram.com/nizar_z0/'
+    {/*  <a href='https://www.instagram.com/nizar_z0/'
      target="_blank"
      className={styles.singlerIcon}>
      <BiLogoInstagram />
-     </a>
+     </a> */}
     </div>
   )
 }

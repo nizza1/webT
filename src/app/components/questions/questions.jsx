@@ -33,7 +33,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Am liebsten arbeite ich langfristig mit meinen Kunden zusammen. Nach dem Go-Live Ihrer Website können wir uns gerne über eine mögliche Wartung, Pflege und Weiterentwicklung des neuen Webauftritts unterhalten.
+         Wir legen großen Wert auf langfristige Partnerschaften mit unseren Kunden. Nach der Einführung Ihrer Website besprechen wir gerne mit Ihnen, wie wir die Website in Zukunft warten, pflegen und weiterentwickeln können.
 
          </AccordionPanel>
          </AccordionItem>
@@ -48,7 +48,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Abhängig vom Projekt dauert die Entwicklung einer Website vom Erstgespräch bis zur Fertigstellung zwischen 2-4 Wochen. Hervorragende Qualität zu liefern bedeutet, dass ich maximal 2 neue Webprojekte pro Monat annehmen kann.
+         Abhängig vom Projekt dauert die Entwicklung einer Website vom Erstgespräch bis zur Fertigstellung zwischen 4-8 Wochen.
 
          </AccordionPanel>
          </AccordionItem>
@@ -63,7 +63,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Am besten vereinbaren wir einen kurzen Call, damit wir Ihre aktuelle Website gemeinsam analysieren können. In den meisten Fällen ist aber ein Relaunch sinnvoll, da oft veraltete Technologien oder nicht das richtige CMS zum Einsatz kommt.
+         Ja, aber um das herauszufinden, vereinbaren wir am besten wir einen kurzen Termin, um Ihre aktuelle Website gemeinsam zu besprechen. So können wir entdecken, wie wir sie noch verbessern können.
 
          </AccordionPanel>
          </AccordionItem>
@@ -72,13 +72,13 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Was kostet eine neue Website?
+          Welche Unterstützung bieten Sie bei der Übertragung meiner Website?
         </Box>
          <AccordionIcon />
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Sie haben jederzeit die volle Kostenkontrolle, denn Sie erhalten von mir in aller Regel einen Pauschalpreis, welcher natürlich verbindlich ist. Sollte es dennoch passieren, dass ein pauschales Angebot nicht möglich ist, rechne ich nach Aufwand ab. 
+         Sie haben die Wahl, wo Ihre Website gehostet wird und welche Domain Sie verwenden möchten. Wir helfen Ihnen, die beste Lösung für Ihre Bedürfnisse zu finden und unterstützen Sie bei der Übertragung. 
 
          </AccordionPanel>
          </AccordionItem>
@@ -87,13 +87,13 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Wie läuft die Zusammenarbeit ab?
+          Können Sie mir auch mit den Fotos für mein Unternehmen helfen?
         </Box>
          <AccordionIcon />
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Ein wertschätzender Umgang ist für mich das A & O, denn Webentwicklung und SEO sind meine größte Leidenschaft. Daher arbeite ich auch nur mit Kunden zusammen, die mit mir auf einer Wellenlänge liegen. Am liebsten arbeite ich langfristig mit Ihnen zusammen.
+         Gerne! Wir haben ein Netzwerk von professionellen Fotografen, die Ihnen Bilder von Ihrem Unternehmen oder Ihrem Team erstellen können. Sprechen Sie uns einfach an, wir helfen Ihnen gerne weiter.
 
          </AccordionPanel>
          </AccordionItem>

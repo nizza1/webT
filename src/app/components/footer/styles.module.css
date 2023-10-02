@@ -22,3 +22,24 @@
     text-decoration: none ;
     color : black;
 }
+
+.nuance {
+    width: 100%;
+    text-align: center;
+    border-top: var(--border-light) 1px solid ;
+    padding: 2rem 0;
+}
+
+.nuance h2 {
+    color: black;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: bold;
+    /* background-image: linear-gradient(to right, #6702ff, #A82C4C, #4C1B58);  */
+    background-image: var(--highlight-Text); 
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    color: transparent; /* Make the text fill transparent */
+    -webkit-text-stroke: 2px transparent; /* Stroke with a transparent color */
+    text-stroke: 2px transparent;
+}
