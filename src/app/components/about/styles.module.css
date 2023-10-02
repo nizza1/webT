@@ -123,6 +123,15 @@
        flex-direction: column;
        row-gap: 3rem;
     } 
+    .imgContainer {
+        max-width: 100%;
+    }
 
+}
+
+@media (max-width: 600px ) {
+    .imgContainer {
+        max-width: 90%;
+    }
 }
 

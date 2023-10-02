@@ -57,8 +57,8 @@ const HeaderBar = ({ onContactButtonClick }) => {
             funn={toggleModal}/>
             <Image 
             src={logo}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt='nuance studio'
             className={styles.logo}/>
         </div>
