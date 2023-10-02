@@ -133,5 +133,9 @@
     .imgContainer {
         max-width: 90%;
     }
+
+    .textContainerS {
+        padding: 0 2rem;
+    }
 }
 
