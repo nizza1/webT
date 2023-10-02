@@ -136,6 +136,24 @@
     padding-top: 0rem;
 }
 
+.mapContainer {
+    overflow: hidden;
+/*     border: 2px solid var(--new-highlight); */
+   border-radius: var(--border-radius);
+   position: relative;
+}
+
+.mapContainer::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--highlight-Text);
+    opacity: .1;
+}
+
 @media (min-width:880px ) {
     .inputField {
         min-width: 380px;

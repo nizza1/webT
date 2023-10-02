@@ -2,11 +2,11 @@
 import React , { useState } from 'react'
 import styles from './styles.module.css'
 
+import Image from 'next/image'
 //lottie 
 
 //components
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
-import Social from '@app/components/social/social'
 import { sendContactForm } from '@helpers/sendForm';
 
 import FirstCall from '../buttons/contactButton/firstCall/firstCall'
@@ -17,8 +17,7 @@ import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import {FiPhone} from 'react-icons/fi'
 
-
-
+const map = '/die-adresse-min.jpg'
 
 const initValues = {theName: '',email: '' , subject: '', message: ''};
 const initState = {values: initValues};
@@ -58,6 +57,18 @@ const Contact = () => {
         <div className={styles.innerContainer} id='contact-section' >
             <div className={styles.social} >
 
+               <div className={styles.mapContainer}>
+                <Image 
+                src={map}
+                width={400}
+                height={300}
+                alt='location on map'
+                style={{
+                  objectFit: 'cover',
+                  width: '100%',
+                }}
+                />
+               </div>
                 <ContactData />
                 
                 <div className={styles.callButtonContainer}>
