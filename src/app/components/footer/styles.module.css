@@ -41,7 +41,6 @@
     background-clip: text;
     color: transparent; /* Make the text fill transparent */
     -webkit-text-stroke: 2px transparent; /* Stroke with a transparent color */
-    text-stroke: 2px transparent;
 }
 
 @media (max-width: 600px ) {
