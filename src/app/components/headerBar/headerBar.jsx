@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 import Link from 'next/link'
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+
 /* progress bar  */
 import { motion, useScroll ,useSpring } from "framer-motion"
 
@@ -21,7 +21,7 @@ const logo = '/logoNuance.svg'
 
 
 const HeaderBar = ({ onContactButtonClick }) => {
-  /* const router = useRouter() */
+
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 400,
@@ -31,12 +31,6 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
    // Use the Zustand store to access the state and function
    const { isModalOpen, toggleModal } = useModalStore();
-
- /*  const [isModalOpen, setIsModalOpen] = useState(false);
-  function toggleModal() {
-    setIsModalOpen(!isModalOpen);
-    console.log(isModalOpen);
-  } */
 
 
   return (

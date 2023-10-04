@@ -4,14 +4,14 @@
 import React from 'react'
 import styles from './styles.module.css'
 import {BsSend} from "react-icons/bs"
-
+import { usePathname } from 'next/navigation'
 //components 
 import Offer from '@app/components/offerModal/offer'
 import Contact from '@app/components/contact/contact'
 
 const ContactButton = ({text , funn}) => {
 
-
+  const pathname = usePathname()
 
   const handleScroll = (href) => {
     // Prevent the default behavior of the anchor tag
@@ -28,14 +28,15 @@ const ContactButton = ({text , funn}) => {
 
   return (
     <>
-       <button className={styles.contactButton}
+       { pathname === '/' && (
+        <button className={styles.contactButton}
        onClick={()=> handleScroll('#contact-section')}
       
           >{text} 
           <span className={styles.spot}></span>
           <span className={styles.span}>
               <BsSend className={styles.icon}/></span>
-        </button>
+        </button> )}
     </>
 
   )
