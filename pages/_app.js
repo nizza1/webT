@@ -1,4 +1,4 @@
-import './globals.css'
+import '../src/app/globals.css'
 import { Inter } from 'next/font/google'
 
 //components 
@@ -9,7 +9,7 @@ import Footer from '@app/components/footer/footer'
 import { Analytics } from '@vercel/analytics/react';
 /* import Providers from '@app/provider' */
 
-
+import Layout from '@app/components/layout/layout';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,16 +18,11 @@ export const metadata = {
   description: 'NUANCESTUDIO',
 }
 
-export default function RootLayout({ children }) {
+export default function Pages({ Component, pageProps }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-
-          <HeaderBar />
-           {children}
-           <Footer />
-           <Analytics />
-      </body>
-    </html>
+       <Layout>
+         <Component {...pageProps} />
+       </Layout>
+         
   )
 }

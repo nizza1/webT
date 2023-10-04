@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 import classNames from 'classnames'
+import Link from 'next/link'
 
 //components 
 import Social from '@app/components/social/social'
@@ -12,8 +13,7 @@ const Footer = () => {
     <Social />
     </div>
     <div className={styles.rights}>
-      <a href="#">Impressum</a>
-      <a href="#">Datenschutzerklärung</a>
+      <Link href="/impressum">Impressum & Datenschutzerklärung</Link>
     </div>
 
     <div className={styles.nuance}>

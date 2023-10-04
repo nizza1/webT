@@ -10,7 +10,7 @@ const Social = () => {
   return (
     <div className={styles.container}>
         
-     <a href='https://www.linkedin.com/in/nizar-djassim-48193a1a1/'
+     <a href='https://www.linkedin.com/in/chrisbohdan/'
      target="_blank"
       className={styles.singlerIcon}>
      <TiSocialLinkedin />

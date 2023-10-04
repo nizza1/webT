@@ -8,12 +8,10 @@ import classNames from 'classnames';
 
 //components 
 import Hero from '@app/components/heroSection/heroSection'
-import Resposnsive from './components/responsive/resposnsive';
 import Questions from './components/questions/questions';
 import Futures from './components/Futures/Futures';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
-import Tech from './components/techstack/tech';
 import Phases from './components/Dev-phases/phases';
 import Advantages from './components/advantages/advantages';
 
