@@ -54,8 +54,11 @@
  @media (max-width: 700px) {
 
    .textContainer {
-      max-height: fit-content;
-      min-height: auto;
+     
+   /*    max-height: fit-content; */
+     /*  flex: 1; */
+     /* min-height: auto; */
+      min-height: fit-content;
       z-index: 5;
       padding: 2rem .9rem;
       border-radius: 1rem;
@@ -116,5 +119,11 @@
       padding-bottom: .6rem;
       background-image:linear-gradient(60deg, #d3e8ff, #d7d7fc 100%);
       /* color: var(--primary-background); */
+   }
+ }
+
+ @media (max-width:600px) {
+   .textContainer {
+      height: 500px;
    }
  }
