@@ -8,7 +8,8 @@
 
 .innerContainer {
     background-color: rgb(159, 210, 255);
-    height: 600px;
+    padding: 600px 0;
+
 }
 
 .slider {
