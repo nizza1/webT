@@ -4,9 +4,9 @@ import React from 'react'
 import classNames from 'classnames'
 import styles from './styles.module.css'
 
-/* import { IoIosCode } from "react-icons/io"; */
-import { TbCode } from "react-icons/tb";
+import Link from 'next/link'
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 /* progress bar  */
 import { motion, useScroll ,useSpring } from "framer-motion"
 
@@ -21,6 +21,7 @@ const logo = '/logoNuance.svg'
 
 
 const HeaderBar = ({ onContactButtonClick }) => {
+  /* const router = useRouter() */
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 400,
@@ -55,12 +56,19 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
             <ContactButton text='kontakt'
             funn={toggleModal}/>
+           {/*   {router.pathname == '/' && ( // Check if the current page is the main page
+              <ContactButton text="kontakt"/>
+            )} */}
+
+            <Link href='/'>
             <Image 
             src={logo}
             width={40}
             height={40}
             alt='nuance studio'
             className={styles.logo}/>
+            </Link>
+            
         </div>
 
         

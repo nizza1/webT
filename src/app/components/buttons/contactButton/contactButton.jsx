@@ -1,7 +1,7 @@
-'use client'
 
 
-import React , {useState} from 'react'
+
+import React from 'react'
 import styles from './styles.module.css'
 import {BsSend} from "react-icons/bs"
 
@@ -11,7 +11,7 @@ import Contact from '@app/components/contact/contact'
 
 const ContactButton = ({text , funn}) => {
 
-  const {render , setRender} = useState(true)
+
 
   const handleScroll = (href) => {
     // Prevent the default behavior of the anchor tag
