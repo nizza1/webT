@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import {useScroll , useTransform} from 'framer-motion'
 const sliderr = () => {
 
-    const container = useRef(null);
+   /*  const container = useRef(null); */
 /*     const {scrollYProgress} = useScroll({ 
         target: container ,
         offset: ['start', 'end'], ['end', 'start']
@@ -11,7 +11,7 @@ const sliderr = () => {
 
     
   return (
-    <div className={styles.container} ref={container}>
+    <div className={styles.container}>
         <div className={styles.slider}>
             <div className={styles.elem}>
                 <h1>1</h1>

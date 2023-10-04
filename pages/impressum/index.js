@@ -9,7 +9,7 @@ const Impressum = () => {
       <div className={styles.innerContainer}>
         
         <div className={styles.impressumContainer}>
-          <h1>1.IMPRESSUM</h1>
+          <h1 className={styles.h1}>1.IMPRESSUM</h1>
           <div className={styles.texts}>
             <div>
             <h3>Angaben gemäß § 5 TMG:</h3>
@@ -29,12 +29,12 @@ const Impressum = () => {
           </div>
 
           <div className={styles.block}>
-            <h2>Umsatzsteuer:</h2>
+            <h2 className={styles.h2}>Umsatzsteuer:</h2>
             <p>9240/206/32018</p>
           </div>
 
           <div className={styles.block}>
-            <h2>Hinweis auf EU-Streitschlichtung</h2>
+            <h2 className={styles.h2}>Hinweis auf EU-Streitschlichtung</h2>
             <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr</p>
 
             <p>Unsere E-Mail-Adresse finden sie oben im Impressum.</p>
@@ -42,7 +42,7 @@ const Impressum = () => {
 
           <div className={styles.block}>
             <h3>HAFTUNGSAUSSCHLUSS (DISCLAIMER)</h3>
-            <h2>Haftung für Inhalte</h2>
+            <h2 className={styles.h2}>Haftung für Inhalte</h2>
             <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
 
 
@@ -61,9 +61,9 @@ const Impressum = () => {
         </div>
 
         <div className={styles.datenConteiner}>
-        <h1>2.DATENSCHUTZ</h1>
+        <h1 className={styles.h1}>2.DATENSCHUTZ</h1>
         <div className={styles.block}>
-          <h2>1. Datenschutz auf einen Blick</h2>
+          <h2 className={styles.h2}>1. Datenschutz auf einen Blick</h2>
           <p>a. Allgemeine Hinweise</p>
           <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
           <p>b. Datenerfassung auf dieser Website</p>
@@ -88,7 +88,7 @@ const Impressum = () => {
         </div>
 
         <div>
-          <h2>2. Allgemeine Hinweise und Pflichtinformationen</h2>
+          <h2 className={styles.h2}>2. Allgemeine Hinweise und Pflichtinformationen</h2>
 
           <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
           
@@ -131,7 +131,7 @@ const Impressum = () => {
         </div>
 
         <div className={styles.block}>
-          <h2>3. Inhalte Dritter auf der Webseite
+          <h2 className={styles.h2}>3. Inhalte Dritter auf der Webseite
            </h2>
            <p>Unser Internetauftritt integriert Inhalte anderer Anbieter. Dies können reine Content-Elemente (z.B. Nachrichten, Neuigkeiten), aber auch Widgets (Funktionen, wie z.B. Buchungssysteme) oder z.B. Schriften und technische Bibliotheken sein. Dazu gehören auch Google Fonts. Aus technischen Gründen erfolgt dies, indem diese Inhalte vom Browser von anderen Servern geladen werden. In diesem Zusammenhang werden die aktuell von Ihrem Browser verwendete IP und der verwendete Browser des anfragenden Systems übermittelt. Bitte beachten Sie diesbezüglich die jeweiligen Datenschutzerklärungen der Drittanbieter.</p>
            
