@@ -135,3 +135,33 @@
     background-color: aliceblue;
     min-height: 600vh;
 }
+
+
+/* test new conteiner  */
+
+.newContainer {
+    background-color: rgb(199, 255, 236);
+    min-height: 800px;
+    margin-inline: auto;
+    padding-top: 200px;
+    overflow: hidden; /* Hide overflow on smaller screens */
+  }
+  
+  .firsSlider {
+    /* Don't set width to 100% */
+    background-color: rgb(88, 138, 130);
+    display: flex;
+    overflow-x: auto; /* Use auto to add horizontal scroll when needed */
+    column-gap: 2rem;
+    padding: 20px 0;
+  }
+  
+  .project {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background: black;
+    color: aliceblue;
+  }

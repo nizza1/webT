@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from './styles.module.css'
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 const Impressum = () => {
   return (
-    <main className={styles.container}>
+    <main className={`${styles.container} ${inter.className}`}>
       <div className={styles.innerContainer}>
         
         <div className={styles.impressumContainer}>

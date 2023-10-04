@@ -35,7 +35,39 @@ const Tes = () => {
     return (
       <div  className={styles.container}>
 
-        <div className={styles.placeHolder}></div>
+        <div className={styles.placeHolder}>
+
+          <div className={styles.newContainer}>
+
+            <div className={styles.firsSlider}>
+              <div className={styles.project}>
+                <h1>1</h1>
+              </div>
+
+              <div className={styles.project}>
+                <h1>2</h1>
+              </div>
+
+              <div className={styles.project}>
+                <h1>3</h1>
+              </div>
+
+              <div className={styles.project}>
+                <h1>4</h1>
+              </div>
+
+              <div className={styles.project}>
+                <h1>5</h1>
+              </div>
+
+              <div className={styles.project}>
+                <h1>6</h1>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
         
         
 
@@ -205,12 +237,8 @@ const Tes = () => {
               
               </div>
             
-              <div className={styles.placeHolder}>
+            
 
-                <div className={styles.offsetTes} ref={refTes} onScroll={handlePostion}>
-
-                </div>
-              </div>
          </div>
 
       

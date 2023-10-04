@@ -11,7 +11,6 @@ import { Analytics } from '@vercel/analytics/react';
 
 import Layout from '@app/components/layout/layout';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nuance',
@@ -20,7 +19,7 @@ export const metadata = {
 
 export default function Pages({ Component, pageProps }) {
   return (
-       <Layout>
+       <Layout >
          <Component {...pageProps} />
        </Layout>
          

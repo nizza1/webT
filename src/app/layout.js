@@ -7,7 +7,6 @@ import Footer from '@app/components/footer/footer'
 
 //analysis
 import { Analytics } from '@vercel/analytics/react';
-/* import Providers from '@app/provider' */
 
 
 
@@ -20,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en">  
       <body className={inter.className}>
 
           <HeaderBar />
