@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
     <html lang="en">  
     <Head>
         {/* Add the Google Search Console meta tag here */}
-        <meta name="google-site-verification" content="google023d784adb01f1f1.html" />
         <meta name="google-site-verification" content="uGS6LItWixqE4QRKG35AhF8KcmpdSzJf3OZrEhzZYPw" />
       </Head>
       <body className={inter.className}>
