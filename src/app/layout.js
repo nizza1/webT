@@ -17,13 +17,16 @@ export const metadata = {
   description: 'NUANCESTUDIO',
 }
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">  
-    <Head>
-        {/* Add the Google Search Console meta tag here */}
-        <meta name="google-site-verification" content="uGS6LItWixqE4QRKG35AhF8KcmpdSzJf3OZrEhzZYPw" />
-      </Head>
+        <Head>
+        <meta
+         name="google-site-verification" 
+         content="uGS6LItWixqE4QRKG35AhF8KcmpdSzJf3OZrEhzZYPw" 
+         />
+        </Head>
       <body className={inter.className}>
 
           <HeaderBar />
