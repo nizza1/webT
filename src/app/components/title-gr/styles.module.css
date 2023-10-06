@@ -1,5 +1,6 @@
 .container {
-    max-width: 44ch;
+   /*  max-width: 44ch; */
+   max-width: 100%;
 }
 
 .title {

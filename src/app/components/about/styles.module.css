@@ -93,10 +93,15 @@
 
 
 .aboutTextContainer {
-    max-width: 65ch;
+    max-width: 80ch;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    padding: 50px 0;
+}
+
+.aboutTextContainer .titleB {
+    color: var(--new-highlight);
 }
 
 .aboutText {

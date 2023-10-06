@@ -6,8 +6,7 @@ import Title from '@app/components/title-gr/title-gr'
 
 //styles 
 import styles from './styles.module.css'
-import { SiSocialblade } from 'react-icons/si'
-import Social from '../social/social'
+
 
 const chrisImage = '/chrisBohdan.jpeg'
 const nizarImage = '/images/pMe.jpg'
@@ -30,7 +29,7 @@ const About = () => {
              Doch auch im Marketing können Sie erfolgreich sein. <br /><br />Mit einer professionellen Website können Sie Ihre Sichtbarkeit erhöhen, neue Kunden gewinnen und Ihr Unternehmen voranbringen.<br />
              </h2>
 
-             <h2>Wir haben das Know-how. Sie haben die Ziele.</h2>
+             <h2 className={styles.titleB}>Wir haben das Know-how. <br />Sie haben die Ziele.</h2>
 
         </div>
 
