@@ -11,7 +11,7 @@
    /*  background-color: rgb(99, 56, 252); */
     padding: 1rem 4rem;
     display: flex;
-    column-gap: 2rem;
+    column-gap: 0;
     max-width: 100%;
 }
 
@@ -24,7 +24,7 @@
 
 .iMG {
     object-fit: contain;
-    width: 300px;
+    width: 400px;
 
 }
 
