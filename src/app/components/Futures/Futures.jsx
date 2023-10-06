@@ -22,7 +22,7 @@ const Futures = () => {
             id : '2'
          },
          {
-            title: 'Attraktive Websites für Top-Talente',
+            title: 'Attraktive Website für Top-Talente',
             text: 'Wir machen Ihr Unternehmen zu einem Magneten für Top-Talente. Mit einer ansprechenden Website und einem unkomplizierten Bewerbungsprozess überzeugen wir Bewerber von Ihren Stärken als Arbeitgeber.' ,
             text2: ' So gewinnen Sie die besten Mitarbeiter für Ihr Unternehmen.',
             id : '3'

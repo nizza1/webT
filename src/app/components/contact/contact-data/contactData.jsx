@@ -9,7 +9,7 @@ const ContactData = () => {
     <div className={styles.container}>
       <div>
             <BsFillPinMapFill className={styles.icons} />
-            <p >Schnieglinger Str. 264, 90427 Nürnberg</p>
+            <p >Schnieglinger Str. 264, Nürnberg</p>
         </div>
 
         <div>
