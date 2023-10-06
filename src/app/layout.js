@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nuance',
-  description: 'NUANCESTUDIO',
+  description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg',
 }
 
 
