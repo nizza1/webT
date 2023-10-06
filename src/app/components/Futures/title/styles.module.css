@@ -45,9 +45,7 @@
  }
 
  .light {
-    /* color : rgb(0, 0, 0); */
-   /*  min-height: 200px; */
-  /*   transform: scale(.7); */
+  
   transition-duration: .4s;
  }
 
@@ -55,9 +53,6 @@
 
    .textContainer {
      
-   /*    max-height: fit-content; */
-     /*  flex: 1; */
-     /* min-height: auto; */
       min-height: fit-content;
       z-index: 5;
       padding: 2rem .9rem;
@@ -95,7 +90,7 @@
 
 
    .textContainer.sticky {
-      transform: scale(0.7); /* Adjust the scale factor as needed */
+      transform: scale(0.7); 
     }
 
 
@@ -110,15 +105,15 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      /* color: var(--primary-background); */
+
    
    }
    .title {
       font-size: 2rem;
-    /*   border-bottom: 1px solid var(--border-light); */
+
       padding-bottom: .6rem;
       background-image:linear-gradient(60deg, #d3e8ff, #d7d7fc 100%);
-      /* color: var(--primary-background); */
+ 
    }
  }
 

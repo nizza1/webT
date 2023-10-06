@@ -15,11 +15,11 @@ const Social = () => {
       className={styles.singlerIcon}>
      <TiSocialLinkedin />
      </a>
-     <a href='https://github.com/nizza1'
+     {/* <a href='https://github.com/nizza1'
      target="_blank"
      className={styles.singlerIcon}>
      <BsGithub />
-     </a>
+     </a> */}
     {/*  <a href='https://www.instagram.com/nizar_z0/'
      target="_blank"
      className={styles.singlerIcon}>

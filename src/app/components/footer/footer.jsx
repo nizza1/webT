@@ -9,12 +9,15 @@ import Social from '@app/components/social/social'
 const Footer = () => {
   return (
     <div className={classNames(styles.container )}> 
-    <div className={classNames('')}>
+    <div className={styles.socialImpressum}>
+    <div >
     <Social />
     </div>
     <div className={styles.rights}>
       <Link href="/impressum">Impressum & Datenschutzerklärung</Link>
     </div>
+    </div>
+    
 
     <div className={styles.nuance}>
       <h2>NUANCESTUDIO</h2>

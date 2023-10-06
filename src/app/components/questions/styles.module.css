@@ -6,7 +6,8 @@
 
 }
 .innerContainer {
-    max-width: var(--max-width);
+   /*  max-width: var(--max-width); */
+   max-width: 900px;
     margin-inline: auto;
     padding: 100px .6rem ;
 
