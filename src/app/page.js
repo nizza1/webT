@@ -14,6 +14,7 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Phases from './components/Dev-phases/phases';
 import Advantages from './components/advantages/advantages';
+import Sliderr from './components/newSlider/sliderr';
 
 //providers 
 
@@ -29,6 +30,7 @@ export default function Home() {
            <Futures />
            <Phases />
            {/* <Resposnsive /> */}
+           <Sliderr />
            <Advantages />
            <About />
           {/*  <Tech /> */}

@@ -1,7 +1,6 @@
 .container {
-    background-color: rgb(62, 16, 250);
 
-    padding: 250px .4rem ;
+    padding: 250px 0 ;
     overflow-x: scroll;
     display: flex;
     flex-direction: column;
@@ -10,7 +9,7 @@
 
 .slider {
    /*  background-color: rgb(99, 56, 252); */
-    padding: 1rem 0;
+    padding: 1rem 4rem;
     display: flex;
     column-gap: 2rem;
     max-width: 100%;
