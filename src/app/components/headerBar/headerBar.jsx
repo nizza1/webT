@@ -34,18 +34,19 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
 
   return (
+    <> <div className={styles.progressBar}>
+    <motion.div 
+    className={styles.bar}>
+
+    <div className={styles.barContainer}>
+    <motion.div style={{ scaleX }} 
+    className={styles.barT}/>
+    </div>
+
+     </motion.div > 
+    </div>
     <section className={classNames(styles.container)}>
-      <div className={styles.progressBar}>
-        <motion.div 
-        className={styles.bar}>
-
-        <div className={styles.barContainer}>
-        <motion.div style={{ scaleX }} 
-        className={styles.barT}/>
-        </div>
-
-         </motion.div > 
-        </div>
+     
         <div className={classNames(styles.logButContainer, 'inContainer')}>
 
             <ContactButton text='kontakt'
@@ -67,6 +68,7 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
         
         </section>
+        </>
   )
 }
 
