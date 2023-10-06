@@ -9,7 +9,7 @@ const Futures = () => {
     const texts = [ 
         {
   
-            title:' Vertrauen durch Design',
+            title:' Design, das Vertrauen schafft',
             text: 'Wir konzentrieren uns darauf, visuell ansprechende und intuitive Benutzeroberflächen zu erstellen, die Ihr Publikum von dem Moment an fesseln, in dem es auf Ihre Website gelangt.' ,
             text2: ' Durch die Kombination aktueller Design-Trends mit den Bedürfnissen Ihrer Benutzer entwickeln wir einzigartige und konkurrenzfähige UI & UX-Designs, die Sie von Ihren Mitbewerbern abheben lassen.',
             id : '1'
@@ -22,7 +22,7 @@ const Futures = () => {
             id : '2'
          },
          {
-            title: 'Top-Talente anziehen',
+            title: 'Attraktive Websites für Top-Talente',
             text: 'Wir machen Ihr Unternehmen zu einem Magneten für Top-Talente. Mit einer ansprechenden Website und einem unkomplizierten Bewerbungsprozess überzeugen wir Bewerber von Ihren Stärken als Arbeitgeber.' ,
             text2: ' So gewinnen Sie die besten Mitarbeiter für Ihr Unternehmen.',
             id : '3'
