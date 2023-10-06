@@ -8,10 +8,9 @@ import { useFeatureStore } from '../stores';
 import styles from './styles.module.css'
 
 //components 
-import Header from '@app/components/title-gr/title-gr.jsx'
-import Highlight from '@app/components/title-gr/title-highlight/highlight';
 
-const Title = ({ text , text2,title , id , highlight}) => {
+
+const Title = ({ text , text2,title , id }) => {
   const ref = useRef(null);
   const containerRef = useRef(null);
 
@@ -19,7 +18,6 @@ const Title = ({ text , text2,title , id , highlight}) => {
 
   const setInViewFeature = useFeatureStore((state) => state.setInViewFeature);
 
-  const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
 

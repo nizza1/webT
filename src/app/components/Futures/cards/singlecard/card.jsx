@@ -39,35 +39,30 @@ const Card = ({number , imgPath}) => {
       styles.animationContainer,
       inViewFeature === '2' ? styles.show : styles.hide
        )}
-       animationData={res} />
+       animationData={res}
+       renderer='svg' />
 
       <Lottie className={classNames(
       styles.animationContainer,
       inViewFeature === '1' ? styles.show : styles.hide
        )}
-       animationData={uxui} />
+       animationData={uxui}
+       renderer='svg' />
 
 
         <Lottie className={classNames(
       styles.animationContainer,
       inViewFeature === '3' ? styles.show : styles.hide
        )}
-       animationData={speed} />
+       animationData={speed}
+       renderer='svg' />
 
         <Lottie className={classNames(
       styles.animationContainer,
       inViewFeature === '4' ? styles.show : styles.hide
        )}
-       animationData={search} />
-
-<Lottie className={classNames(
-      styles.animationContainer,
-      inViewFeature === '5' ? styles.show : styles.hide
-       )}
        animationData={search}
-       autoPlay={false}
-       loop={false} />
-
+       renderer='svg' />
        
   
     {/*   <Lottie className={styles.animationContainer} animationData={res} />
