@@ -6,7 +6,7 @@
 .title {
     font-size: 2.3rem;
     /* background-image:linear-gradient(120deg, #000000, #9a9a9a 130%); */
-    background-image:linear-gradient(60deg, #000000, #afafaf 100%);
+    background-image:linear-gradient(60deg, #000000, #616060 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

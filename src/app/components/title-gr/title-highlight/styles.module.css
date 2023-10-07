@@ -1,8 +1,33 @@
 .container {
-    background-image: var(--highlight-Text) !important;
+  /*   background-image: var(--highlight-Text) !important; */
     
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 120%;
+}
+
+.container {
+    background-image: linear-gradient(35deg, #bda3ff, #4900ff, #fb269f);
+    background-size: 600% 600%;
+
+    -webkit-animation: granim 2s ease infinite;
+    -moz-animation: granim 2s ease infinite;
+    animation: granim 2s ease infinite;
+}
+
+@-webkit-keyframes granim {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes granim {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes granim {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
 }
