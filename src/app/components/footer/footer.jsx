@@ -6,6 +6,8 @@ import Link from 'next/link'
 //components 
 import Social from '@app/components/social/social'
 
+import Highlight from '../title-gr/title-highlight/highlight'
+
 const Footer = () => {
   return (
     <div className={classNames(styles.container )}> 
@@ -20,7 +22,7 @@ const Footer = () => {
     
 
     <div className={styles.nuance}>
-      <h2>NUANCESTUDIO</h2>
+      <h2><Highlight text='NUANCESTUDIO'/></h2>
     </div>
     
     </div>
