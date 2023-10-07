@@ -9,17 +9,29 @@ import { Analytics } from '@vercel/analytics/react';
 
 import Layout from '@app/components/layout/layout';
 
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nuance',
-  description: 'NUANCESTUDIO',
+  description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
 }
+
+
 
 export default function Pages({ Component, pageProps }) {
   return (
-       <Layout >
+ 
+      <>
+    
+      <Layout className={inter.className}>
          <Component {...pageProps} />
        </Layout>
+
+       </>
+      
+
+    
+       
          
   )
 }
