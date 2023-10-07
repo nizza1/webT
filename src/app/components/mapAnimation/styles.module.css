@@ -2,4 +2,5 @@
     opacity: .2;
     max-height: 90%;
     width: 600px;
+    transform: translateY(-2rem);
 }
