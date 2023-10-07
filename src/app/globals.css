@@ -18,7 +18,7 @@
   --new-sec : rgb(143, 108, 255);
   --card-light : rgb(226, 228, 254);
 
-/* --sec-color: #EAF2FA; */
+  --new-graadient : linear-gradient(35deg,   rgb(143, 108, 255),  #4900ff,#FE2F6A);
 
   --padding-mob: 1rem;
   --border-width-c: 2px;
@@ -33,7 +33,7 @@
 
  /*  --border-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.046) 18%, rgba(0, 0, 0, 0.227) 52%, rgba(0, 0, 0, 0.425) 94%); */
 --border-gradient: linear-gradient(30deg, rgb(245, 221, 4) 18%, rgb(56, 227, 164) 52%, rgb(255, 176, 79) 94%);
-/* --border-gradient: linear-gradient(0deg, rgb(99, 251, 132) 18%, rgb(0, 230, 169) 52%, rgb(0, 210, 133) 94%); */
+
 
   --font-mono: Inter,'Inter' , HelveticaNeue, 'Helvetica Neue', ui-monospace, Display, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',

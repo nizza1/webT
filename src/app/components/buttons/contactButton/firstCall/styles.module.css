@@ -17,6 +17,23 @@
    /*  outline-offset: 1px;  */
     z-index: 5;
 }
+.contactButton{
+    background: linear-gradient(238deg,#d21c97,#5805f9,#6b05f9);
+    background-size: 180% 180%;
+    animation: gradient-animation 9s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .contactButton:hover {
     padding-inline: 1.3rem;

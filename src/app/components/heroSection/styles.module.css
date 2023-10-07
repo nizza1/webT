@@ -93,9 +93,9 @@
 
 @media (max-width: 600px) {
     .container {
-     /*    background: linear-gradient(140deg, rgba(196, 226, 0, 0.569) 0%, rgba(226, 226, 226, 0) 55%); */
+    
         padding: 100px 0 100px;
-        /* min-height: 700px; */
+
         min-height: 500px; 
     }
 

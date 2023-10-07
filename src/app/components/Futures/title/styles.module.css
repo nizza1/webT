@@ -59,6 +59,8 @@
       border-radius: 1rem;
       background: var(--highlight-Text); 
      background: linear-gradient(#561ffc , #7a4eff);
+     
+     
       position: sticky;
       top: 90px;
       border: 1px solid rgba(240, 248, 255, 0.618);

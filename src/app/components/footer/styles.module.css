@@ -45,8 +45,8 @@
     font-size: 3.5rem;
     line-height: 4rem;
     font-weight: bold;
-    /* background-image: linear-gradient(to right, #6702ff, #A82C4C, #4C1B58);  */
-    background-image: var(--highlight-Text); 
+
+    background-image: var( --new-graadient ); 
     -webkit-background-clip: text; /* Clip the background to the text */
     background-clip: text;
     color: transparent; /* Make the text fill transparent */
