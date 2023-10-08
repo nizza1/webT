@@ -39,7 +39,7 @@ const About = () => {
 
           <div className={styles.textContainerS}>
             
-            <h2>Nizar Djasssim</h2>
+            <h2>Nizar Djassim</h2>
             <p>Als IT-Spezialist bin ich Ihr Ansprechpartner für die technische Betreuung Ihrer Website.<br></br><br></br> Ich sorge dafür, dass Ihre Website immer auf dem neuesten Stand und technisch einwandfrei ist. <br></br>So können Sie sich darauf verlassen, dass Ihre Website für Ihre Kunden immer optimal funktioniert.</p>
           </div>
 

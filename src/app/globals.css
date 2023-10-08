@@ -14,6 +14,8 @@
   --border-light: #cccccc;
 
    --highlight-Text: linear-gradient(60deg, var(--new-highlight) , var(--new-sec) );
+  /* --highlight-Text: linear-gradient(35deg,  #4103dd,#6e00bc , #ea0775); */
+
   --new-highlight: #4520fc;
   --new-sec : rgb(143, 108, 255);
   --card-light : rgb(226, 228, 254);
@@ -42,10 +44,7 @@
   
   pre, code {
     font-family: Roboto Mono, monospace;
-    /*   --font-mono: HelveticaNeue, ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace; */
-
+  
 }
 
 * {
