@@ -1,23 +1,26 @@
 .container {
     font-size: 2rem;
-    min-height: 400vh;
+    min-height: 100vh;
     padding-top: 100px;
-    padding-inline: 0;
+    padding-inline: 1rem;
 
 }
 
 .innerContainer {
-    background-color: rgb(159, 210, 255);
-    padding: 600px 0;
+    color : var(--new-highlight);
+    padding: 100px 0;
+
 
 }
 
-.slider {
-    display: flex;
+
+.high {
+    color : var(--new-highlight);
+    color : red ;
+    filter: saturate(1);
 }
 
-.elem {
-    background-color: aliceblue;
-    width: 300px;
+.big {
+    font-size: 100px;
 
 }
