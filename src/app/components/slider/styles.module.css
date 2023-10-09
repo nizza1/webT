@@ -12,9 +12,7 @@
 .titleContainer h1 {
   color: aliceblue;
 }
-.sliderContainer {
 
-}
   
   .textContainer {
     display: flex;
@@ -24,9 +22,6 @@
     scrollbar-width: none; 
     padding: 0 1rem 70px;
     scroll-padding-left: var(--padding-mob);
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    touch-action: pan-x;
 
   }
 
@@ -151,8 +146,12 @@ pointer-events: none;
     .container {
       padding: 50px 0;
     }
+  }
 
-    .buttonsContainer {
-    /*   margin-top: 50px; */
+  @media (min-width: 720px) {
+    .textContainer {
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      touch-action: pan-x;
     }
   }
