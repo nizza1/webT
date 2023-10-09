@@ -68,7 +68,7 @@ const Slider = () => {
     <div className={styles.container}>
 
       <div className={styles.titleContainer}>
-      <h1>Einige unsere Projecte </h1>
+      <h1>Einige unserer Projecte </h1>
    
       </div>
 

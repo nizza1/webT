@@ -38,7 +38,7 @@
   .textItem {
     position: relative;
     min-height: 400px;
-    max-width: 410px;
+    width: 390px;
     min-width: 320px; 
     max-height: 500px;
     scroll-snap-align: start;
@@ -46,11 +46,11 @@
     flex-shrink: 0;
     transition-duration: .3s;
     background-color: rgb(95, 20, 246);
-    padding: 1.5rem .7rem 0;
+    padding: 1.8rem 1.4rem 0;
     overflow: hidden;
     box-shadow: 0 40px 50px -40px #000000;
-/*     pointer-events: none; */
- /*    overflow-y: scroll; */
+    border: 1px solid rgba(240, 248, 255, 0.311);
+  
    
   }
   .overShadow {
@@ -72,14 +72,15 @@ pointer-events: none;
     width: 100%;
     overflow-y: auto;
     max-height: 100%;
-    border-radius: .6rem;
+    border-radius: .6rem .6rem 0 0;
+    overscroll-behavior: auto;
   }
 
  .refImage {
   object-fit: contain;
   width: 100%;
   height: 100%;
-  border-radius: .6rem;
+  border-radius: .6rem .6rem 0 0;
 
  }
 
@@ -113,9 +114,11 @@ pointer-events: none;
     align-items: center;
     transition-duration: .2s;
     cursor: pointer;
+    border: 1px solid rgba(240, 248, 255, 0.311);
   }
   .scrollButton:hover {
     background-color: #000;
+    border: 1px solid transparent;
   }
 
   .scrollButtonLeft.disabled,
@@ -142,6 +145,7 @@ pointer-events: none;
     
     .textItem {
       max-height: 450px;
+      max-width: 80%;
     }
     .container {
       padding: 50px 0;
