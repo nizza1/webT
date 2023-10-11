@@ -10,18 +10,15 @@ import {IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
 import Title from '../title-gr/title-gr'
 
 const references = [
-  { key: 'refer2S', value: '/reference/girafS-min.png' },
-  { key: 'refer2', value: '/reference/girafB-min.png' },
-  { key: 'refer1S', value: '/reference/rostockS-min.png' },
-  { key: 'refer5S', value: '/reference/comservS-min.png' },
-  { key: 'refer6', value: '/reference/conservB-min.png' },
-  { key: 'refer7', value: '/reference/horosB-min.png' },
-  { key: 'refer7S', value: '/reference/horosS-min.png' },
-  { key: 'refer8', value: '/reference/imcB-min.png' },
-  { key: 'refer8S', value: '/reference/imcS-min.png' },
-  { key: 'refer10', value: '/reference/quantumB-min.png' },
-  { key: 'refer10S', value: '/reference/quantumS-min.png' },
-  { key: 'refer1', value: '/reference/rostockB-min.png' },
+  { key: 'giraf referens ', value: '/reference/giraf.png' },
+  { key: 'avisa referens', value: '/reference/avisa.png' },
+  { key: 'reference', value: '/reference/comserv.jpg' },
+  { key: 'reference', value: '/reference/horos.jpg' },
+  { key: 'reference', value: '/reference/industrial.jpg' },
+  { key: 'reference', value: '/reference/quantum.jpg' },
+  { key: 'reference', value: '/reference/rostock.png' },
+  { key: 'reference', value: '/reference/yacht-travel.jpg' },
+  
 ];
 
 

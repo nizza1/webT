@@ -6,10 +6,11 @@ import Title from './title/title'
 import Cards from './cards/crads'
 const Futures = () => {
 
+
     const texts = [ 
         {
   
-            title:' Design, das Vertrauen schafft',
+            title:'Design, das Vertrauen schafft',
             text: 'Wir konzentrieren uns darauf, visuell ansprechende und intuitive Benutzeroberflächen zu erstellen, die Ihr Publikum von dem Moment an fesseln, in dem es auf Ihre Website gelangt.' ,
             text2: ' Durch die Kombination aktueller Design-Trends mit den Bedürfnissen Ihrer Benutzer entwickeln wir einzigartige und konkurrenzfähige UI & UX-Designs, die Sie von Ihren Mitbewerbern abheben lassen.',
             id : '1'

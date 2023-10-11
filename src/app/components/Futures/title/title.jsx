@@ -33,17 +33,14 @@ const Title = ({ text , text2,title , id }) => {
       styles.textContainer,
       isInView ? styles.highlight : styles.light
     )}>
-        <h1 className={classNames(
-          styles.title,
-        )}>{title} </h1>
-        {/* <Header className={styles.title} text={title}/> */}
+        <h1 className={styles.title}
+        >{title}
+         </h1>
+      
 
       <p
         ref={ref}
-        className={classNames(
-          styles.p,
-          /* isInView ? styles.highlight : styles.light */
-        )}
+        className={styles.p}
       >
         {text}
         {/* {id} */}
@@ -51,10 +48,7 @@ const Title = ({ text , text2,title , id }) => {
 
       <p
         ref={ref}
-        className={classNames(
-          styles.p,
-         /*  isInView ? styles.highlight : styles.light */
-        )}
+        className={styles.p}
       >
         {text2}
       </p>
