@@ -14,7 +14,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Nuance',
+  title: 'Nuancestudio',
   description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
 }
 
@@ -25,6 +25,14 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">  
+    <Head>
+    <link
+          rel="canonical"
+          href="https://www.nuastudio.de/"
+          key="canonical"
+        />
+
+    </Head>
       
       <body className={inter.className}>
 
