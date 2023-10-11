@@ -44,7 +44,6 @@
 .barT {
     transform-origin: 0%;
     background: black;
-    background: var(--highlight-Text);
     background: var(--new-highlight);
    
  

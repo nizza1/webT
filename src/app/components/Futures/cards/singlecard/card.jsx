@@ -24,15 +24,7 @@ const Card = ({number , imgPath}) => {
       styles.container,
       inViewFeature === number ? styles.show : styles.hide
     )}>
-        {/* <h1>{number}</h1> */}
-       {/*  <Image className={styles.img} src={imgPath} alt='' width={200} height={300} /> */}
-     {/*  <Lottie className={styles.animationContainer} animationData={number === '1' ? uxui : speed} /> */}
-
-     {/*  <Lottie className={classNames(
-      styles.animationContainer,
-     
-       )}
-       animationData={speed} /> */}
+        
 
 
         <Lottie className={classNames(
@@ -64,9 +56,6 @@ const Card = ({number , imgPath}) => {
        animationData={search}
        renderer='svg' />
        
-  
-    {/*   <Lottie className={styles.animationContainer} animationData={res} />
-      <Lottie className={styles.animationContainer} animationData={speed} /> */}
     </div>
   )
 }
