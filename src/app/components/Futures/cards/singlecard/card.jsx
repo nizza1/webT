@@ -2,7 +2,6 @@
 import React , {useState} from 'react'
 import styles from './styles.module.css'
 import classNames from 'classnames'
-import Image from 'next/image'
 
 import Lottie from "lottie-react";
 

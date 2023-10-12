@@ -10,6 +10,7 @@ import { track } from '@vercel/analytics/react'
 
 const ContactButton = ({text }) => {
 
+  
   const pathname = usePathname()
 
   const handleScroll = (href) => {
