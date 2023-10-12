@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className={styles.textContainer}>
 
         <h1 className={styles.titleGr}>
-        Wir entwickeln anspruchsvolle <Highlight text='Websites'/>
+        Wir entwickeln Verkaufsstarke <Highlight text='Websites'/>
         </h1>
         <p className={styles.text}>
           Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p>

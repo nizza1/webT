@@ -18,6 +18,7 @@ import ContactButton from '@app/components/buttons/contactButton/contactButton'
 import useModalStore from '@app/stores/offerStore';
 
 const logo = '/logoNuance.svg'
+const logoText = '/logowithtext.svg'
 
 
 const HeaderBar = ({ onContactButtonClick }) => {
@@ -49,13 +50,12 @@ const HeaderBar = ({ onContactButtonClick }) => {
      
         <div className={classNames(styles.logButContainer, 'inContainer')}>
 
-            <ContactButton text='kontakt'
+            <ContactButton text='Kontakt'
             funn={toggleModal}/>
-           {/*   {router.pathname == '/' && ( // Check if the current page is the main page
-              <ContactButton text="kontakt"/>
-            )} */}
+          
 
-            <Link href='/'>
+          <Link href='/'>
+          
             <Image 
             src={logo}
             width={40}
@@ -63,6 +63,8 @@ const HeaderBar = ({ onContactButtonClick }) => {
             alt='nuance studio'
             className={styles.logo}/>
             </Link>
+   
+          
             
         </div>
 
