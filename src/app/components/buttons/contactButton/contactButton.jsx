@@ -6,8 +6,6 @@ import styles from './styles.module.css'
 import {BsSend} from "react-icons/bs"
 import { usePathname } from 'next/navigation'
 //components 
-import Offer from '@app/components/offerModal/offer'
-import Contact from '@app/components/contact/contact'
 
 const ContactButton = ({text }) => {
 
