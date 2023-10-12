@@ -6,6 +6,7 @@ import styles from './styles.module.css'
 
 import Link from 'next/link'
 import Image from 'next/image';
+import { track } from '@vercel/analytics/react'
 
 /* progress bar  */
 import { motion, useScroll ,useSpring } from "framer-motion"
@@ -15,10 +16,9 @@ import { motion, useScroll ,useSpring } from "framer-motion"
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
 
 //store 
-import useModalStore from '@app/stores/offerStore';
+/* import useModalStore from '@app/stores/offerStore'; */
 
 const logo = '/logoNuance.svg'
-const logoText = '/logowithtext.svg'
 
 
 const HeaderBar = ({ onContactButtonClick }) => {
@@ -31,7 +31,7 @@ const HeaderBar = ({ onContactButtonClick }) => {
   });
 
    // Use the Zustand store to access the state and function
-   const { isModalOpen, toggleModal } = useModalStore();
+  /*  const { isModalOpen, toggleModal } = useModalStore(); */
 
 
   return (
@@ -51,7 +51,11 @@ const HeaderBar = ({ onContactButtonClick }) => {
         <div className={classNames(styles.logButContainer, 'inContainer')}>
 
             <ContactButton text='Kontakt'
-            funn={toggleModal}/>
+            
+            onClick={() => {
+              track('contact button top clicked');
+              // ... other logic
+            }}/>
           
 
           <Link href='/'>

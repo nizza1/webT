@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation'
 import Offer from '@app/components/offerModal/offer'
 import Contact from '@app/components/contact/contact'
 
-const ContactButton = ({text , funn}) => {
+const ContactButton = ({text }) => {
 
   const pathname = usePathname()
 
