@@ -10,17 +10,17 @@ import { track } from '@vercel/analytics/react'
 
 const ContactButton = ({text }) => {
 
-  
+
   const pathname = usePathname()
+
+  const trackScrollToContactSection = () => {
+    track('scroll to contact section clicked');
+  };
 
   const handleScroll = (href) => {
     // Prevent the default behavior of the anchor tag
     if (href) {
       const targetId = href.replace(/.*\#/, "");
-      
-       () => {
-              track('contact button top clicked');
-            }
 
       // Get the element by id and use scrollIntoView with smooth behavior
       const elem = document.getElementById(targetId);
@@ -34,7 +34,10 @@ const ContactButton = ({text }) => {
     <>
        { pathname === '/' && (
         <button className={styles.contactButton}
-       onClick={()=> handleScroll('#contact-section')}
+       onClick={() => {
+        trackScrollToContactSection();
+        handleScroll('#contact-section');
+      }}
       
           >{text} 
           <span className={styles.spot}></span>
