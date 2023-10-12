@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 import Link from 'next/link'
 import Image from 'next/image';
-import { track } from '@vercel/analytics/react'
+
 
 /* progress bar  */
 import { motion, useScroll ,useSpring } from "framer-motion"
@@ -21,7 +21,7 @@ import ContactButton from '@app/components/buttons/contactButton/contactButton'
 const logo = '/logoNuance.svg'
 
 
-const HeaderBar = ({ onContactButtonClick }) => {
+const HeaderBar = () => {
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -52,10 +52,7 @@ const HeaderBar = ({ onContactButtonClick }) => {
 
             <ContactButton text='Kontakt'
             
-            onClick={() => {
-              track('contact button top clicked');
-              // ... other logic
-            }}/>
+            />
           
 
           <Link href='/'>

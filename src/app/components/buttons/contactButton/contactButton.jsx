@@ -5,6 +5,7 @@ import React from 'react'
 import styles from './styles.module.css'
 import {BsSend} from "react-icons/bs"
 import { usePathname } from 'next/navigation'
+import { track } from '@vercel/analytics/react'
 //components 
 
 const ContactButton = ({text }) => {
@@ -15,6 +16,10 @@ const ContactButton = ({text }) => {
     // Prevent the default behavior of the anchor tag
     if (href) {
       const targetId = href.replace(/.*\#/, "");
+      
+       () => {
+              track('contact button top clicked');
+            }
 
       // Get the element by id and use scrollIntoView with smooth behavior
       const elem = document.getElementById(targetId);
