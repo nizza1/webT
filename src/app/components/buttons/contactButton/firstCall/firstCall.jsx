@@ -44,6 +44,10 @@ const FirstCall = ({text , position}) => {
        styles={{
         height:500,
       }}
+      prefill={{
+        hide_gdpr_banner: true, // Add this option to hide the GDPR banner
+      }}
+
       pageSettings={{
         hideEventTypeDetails: true,
         hideLandingPageDetails: true,
