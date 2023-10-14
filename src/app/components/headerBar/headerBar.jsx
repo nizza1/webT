@@ -51,7 +51,7 @@ const HeaderBar = () => {
         <div className={classNames(styles.logButContainer, 'inContainer')}>
 
             <ContactButton text='Kontakt'
-            
+            position="header"
             />
           
 

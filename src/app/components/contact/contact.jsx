@@ -72,7 +72,7 @@ const Contact = () => {
                 <ContactData />
                 
                 <div className={styles.callButtonContainer}>
-                  <FirstCall text='Kostenlose Beratung vereinbaren'/>
+                  <FirstCall text='Kostenlose Beratung vereinbaren' position='contact'/>
                 </div>
             </div>
         <form className={styles.contactForm}  onSubmit={hanleSubmit} >
@@ -131,7 +131,7 @@ const Contact = () => {
                <AiOutlineMessage className={styles.iconInput} />
              </div>
              <div className={styles.buttonContainer}>
-             <ContactButton text='Senden' type='submit' />
+             <ContactButton text='Senden' type='submit' position='contactForm'/>
              </div>
             
         </form>

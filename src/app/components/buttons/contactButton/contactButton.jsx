@@ -8,13 +8,13 @@ import { usePathname } from 'next/navigation'
 import { track } from '@vercel/analytics/react'
 //components 
 
-const ContactButton = ({text }) => {
+const ContactButton = ({text , position}) => {
 
 
   const pathname = usePathname()
 
   const trackScrollToContactSection = () => {
-    track('scroll to contact section clicked');
+    track('scroll to contact section clicked' + position);
   };
 
   const handleScroll = (href) => {
