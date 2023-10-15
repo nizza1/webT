@@ -21,12 +21,15 @@ const FirstCall = ({text , position}) => {
   const { isModalOpen, toggleModal } = useModalStore();
 
   const trackScrollToContactSection = () => {
-    track('sheduled ' + position);
+    const date = new Date();
+    track('sheduled ' + position + ' '+ date);
   };
   const handleButtonClick = () => {
+    
     trackScrollToContactSection();
     toggleModal();
   };
+
 
 
   return (
