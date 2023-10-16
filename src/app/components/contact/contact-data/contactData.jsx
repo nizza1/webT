@@ -14,12 +14,13 @@ const ContactData = () => {
 
         <div>
             <FiPhoneCall className={styles.icons} />
-            <a href="tel:+49015770390746">+49 157 703 907 46</a>
+            <a href="tel:+4991137433917">+49 911 37433917</a>
         </div>
 
         <div>
             <MdAlternateEmail className={styles.icons}/>
-            <a href = "mailto: c.bohdan@nuancestudio.de">c.bohdan@nuancestudio.de</a>
+            <a href = "mailto: info@nuancestudio.de">info@nuancestudio.de
+            </a>
         </div>
 
     </div>
