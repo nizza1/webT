@@ -55,7 +55,7 @@ const FirstCall = ({text , position}) => {
         hideEventTypeDetails: true,
         hideLandingPageDetails: true,
       }}
-        url="https://calendly.com/nizardjassim/30min" />
+        url="https://calendly.com/nuancestudio/15min" />
        </Offer>
 
        
