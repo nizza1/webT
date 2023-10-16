@@ -63,7 +63,7 @@ const Questions = () => {
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Ja, aber um das herauszufinden, vereinbaren wir am besten wir einen kurzen Termin, um Ihre aktuelle Website gemeinsam zu besprechen. So können wir entdecken, wie wir sie noch verbessern können.
+         Ja, aber um das herauszufinden, vereinbaren wir am besten einen kurzen Termin, um Ihre aktuelle Website gemeinsam zu besprechen. So können wir entdecken, wie wir sie noch verbessern können.
 
          </AccordionPanel>
          </AccordionItem>
