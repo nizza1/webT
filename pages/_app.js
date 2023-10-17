@@ -23,6 +23,8 @@ export default function Pages({ Component, pageProps }) {
     title: 'Nuance',
     description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg',
   };
+
+  
   return (
  
       <>

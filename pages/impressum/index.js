@@ -1,15 +1,26 @@
 import React from 'react'
 import styles from './styles.module.css'
+import Head from 'next/head'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
+
 export const metadata = {
   title: 'Nuance',
-  description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
+  description: 'impressum'
 }
 
 const Impressum = () => {
   return (
+    <>
+    <Head>
+    
+    <meta
+          name="description" content={metadata.description}
+        />
+        <meta name="robots" content="noindex, nofollow" />
+    </Head>
+    
     <main className={`${styles.container} ${inter.className}`}>
       <div className={styles.innerContainer}>
         
@@ -150,6 +161,7 @@ const Impressum = () => {
         </div>
       </div>
     </main>
+    </>
   )
 }
 
