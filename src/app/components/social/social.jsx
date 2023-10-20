@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './styles.module.css'
 
 import {TiSocialLinkedin} from "react-icons/ti"
+import {BsWhatsapp} from 'react-icons/bs'
 import {BsGithub } from "react-icons/bs"
 import {BiLogoInstagram } from "react-icons/bi"
 
@@ -20,11 +21,11 @@ const Social = () => {
      className={styles.singlerIcon}>
      <BsGithub />
      </a> */}
-    {/*  <a href='https://www.instagram.com/nizar_z0/'
+     <a href='https://wa.me/+49015770390746/'
      target="_blank"
      className={styles.singlerIcon}>
-     <BiLogoInstagram />
-     </a> */}
+     <BsWhatsapp />
+     </a>
     </div>
   )
 }

@@ -1,0 +1,14 @@
+.container {
+   /*  background-color: lightcoral; */
+    background: var(--highlight-Text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    border-radius: 50%;
+}
+
+.icon {
+    color: aliceblue;
+    font-size: 1.8rem;
+}

@@ -53,6 +53,7 @@ const HeaderBar = () => {
             <ContactButton text='Kontakt'
             position="header"
             />
+      
           
 
           <Link href='/'>
