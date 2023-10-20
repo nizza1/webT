@@ -1,16 +1,15 @@
 import React from 'react'
-import styles from './styles.module.css'
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-
+import styles from './styles.module.css'
 
 export const metadata = {
-  title: 'Nuance',
-  description: 'impressum'
-}
+    title: 'Nuance..',
+    description: 'impressum'
+  }
 
-const Impressum = () => {
+const Imprint = () => {
+
+    
   return (
     <>
     <Head>
@@ -21,7 +20,7 @@ const Impressum = () => {
         <meta name="robots" content="noindex, nofollow" />
     </Head>
     
-    <main className={`${styles.container} ${inter.className}`}>
+    <main className={styles.container}>
       <div className={styles.innerContainer}>
         
         <div className={styles.impressumContainer}>
@@ -306,15 +305,6 @@ Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Ko
 
          <a href='https://www.dataprivacyframework.gov/s/participant-search/participant-detail?contact=true&id=a2zt000000001L5AAI&status=Active'>https://www.dataprivacyframework.gov/s/participant-search/participant-detail?contact=true&id=a2zt000000001L5AAI&status=Active</a>
 
-
-
-
-
-
-
-
-           
-
         </div>
 
 
@@ -325,4 +315,4 @@ Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Ko
   )
 }
 
-export default Impressum
+export default Imprint
