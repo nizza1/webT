@@ -58,17 +58,18 @@
       padding: 2rem .9rem;
       border-radius: 1rem;
       background: var(--highlight-Text); 
-     background: linear-gradient(#561ffc , #7a4eff);
+     /* background: linear-gradient(#c4b5f95d , #bad6ff8a); */
      
      
       position: sticky;
       top: 90px;
       border: 1px solid rgba(240, 248, 255, 0.618);
+      backdrop-filter: blur(6rem);
+      -webkit-backdrop-filter: blur(6rem);
 
-
-      -webkit-box-shadow: 0px -50px 48px -23px  rgba(0, 0, 0, 0.138);
+     /*  -webkit-box-shadow: 0px -50px 48px -23px  rgba(0, 0, 0, 0.138);
       -moz-box-shadow: 0px -50px 48px -23px  rgba(0, 0, 0, 0.138);
-      box-shadow: 0px -50px 70px -23px rgba(0, 0, 0, 0.138);
+      box-shadow: 0px -50px 70px -23px rgba(0, 0, 0, 0.138); */
       
      
    }
@@ -103,6 +104,7 @@
       font-size: 1.1rem;
 
       background-image:linear-gradient(60deg, #d3daff, #eed7fc 100%);
+   /*  background: black; */
 
       background-clip: text;
       -webkit-background-clip: text;
@@ -115,6 +117,7 @@
 
       padding-bottom: .6rem;
       background-image:linear-gradient(60deg, #d3e8ff, #d7d7fc 100%);
+   /*  background-image: linear-gradient(60deg, #000, #000 100%); */
  
    }
  }
