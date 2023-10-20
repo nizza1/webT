@@ -8,6 +8,8 @@ import Footer from '@app/components/footer/footer'
 
 //analysis
 import { Analytics } from '@vercel/analytics/react';
+import GoogleAnalytics from '@bradgarropy/next-google-analytics';
+
 
 
 
@@ -22,6 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   const Gtm = process.env.GTM
+  const analytics = process.env.GOOGLE_ANALYTICS
   
   return (
     <html lang="en">  
@@ -40,6 +43,7 @@ export default function RootLayout({ children }) {
            {children}
            <Footer />
            <Analytics />
+           <GoogleAnalytics measurementId={analytics} />
       </body>
     </html>
   )
