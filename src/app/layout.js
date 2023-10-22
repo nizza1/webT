@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
-import { NextScript } from 'next/script';
+import Script from 'next/script'
 //components 
 import HeaderBar from '@app/components/headerBar/headerBar'
 import Footer from '@app/components/footer/footer'
@@ -23,8 +23,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  const Gtm = process.env.GTM
+ /*  const Gtm = process.env.GTM */
   const analytics = process.env.GOOGLE_ANALYTICS
+  const hot = process.env.HOT_JAR
+
   
   return (
     <html lang="en">  
@@ -42,8 +44,21 @@ export default function RootLayout({ children }) {
           <HeaderBar />
            {children}
            <Footer />
-           <Analytics />
+           <Analytics debug={true}/>
            <GoogleAnalytics measurementId={analytics} />
+
+           <Script strategy='afterInteractive'>
+           {`
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:${hot},hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  `}
+           </Script>
       </body>
     </html>
   )

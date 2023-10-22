@@ -7,5 +7,5 @@ export function middleware(request) {
  
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/case1', '/cases'],
+  matcher: ['/case1', '/cases', '/case2'],
 }
