@@ -36,7 +36,6 @@ export default function RootLayout({ children }) {
           href="https://www.nuastudio.de/"
           key="canonical"
         />
-
     </Head>
       
       <body className={inter.className}>

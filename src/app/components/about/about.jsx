@@ -40,15 +40,14 @@ const About = () => {
           <div className={styles.textContainerS}>
             
             <h2>Nizar Djassim</h2>
-            <p>Als IT-Spezialist bin ich Ihr Ansprechpartner für die technische Betreuung Ihrer Website.<br></br><br></br> Ich sorge dafür, dass Ihre Website immer auf dem neuesten Stand und technisch einwandfrei ist. <br></br>So können Sie sich darauf verlassen, dass Ihre Website für Ihre Kunden immer optimal funktioniert.</p>
+            <p>Als Webentwickler bin ich Ihr Ansprechpartner für die technische Betreuung Ihrer Website.<br></br><br></br> Ich sorge dafür, dass Ihre Website immer auf dem neuesten Stand und technisch einwandfrei ist. <br></br>So können Sie sich darauf verlassen, dass Ihre Website für Ihre Kunden immer optimal funktioniert.</p>
           </div>
 
           <div className={styles.imgContainer}>
             <Image
             className={styles.img}
             src={nizarImage}
-            width={400}
-            height={400}
+            fill={true}
             alt='Nizar Djassim'
             style={{
               objectFit: 'cover',
@@ -63,8 +62,9 @@ const About = () => {
             <Image
             className={styles.img}
             src={chrisImage}
-            width={400}
-            height={400}
+          /*   width={400}
+            height={500} */
+            fill={true}
             alt='chris Bohdan'
             style={{
               objectFit: 'cover',
