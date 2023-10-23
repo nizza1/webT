@@ -16,7 +16,7 @@ import GoogleAnalytics from '@bradgarropy/next-google-analytics';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Nuancestudio',
+  title: 'Wir entwickeln professionelle Websites | Kostenlose Beratung | Design & Entwicklung',
   description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
 }
 
