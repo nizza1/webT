@@ -1,12 +1,10 @@
 .container {
     background-color: var(--card-light);
     background: var(--highlight-Text);
-    /* color : var(--border-light) ; */
     color: aliceblue;
 
 }
 .innerContainer {
-   /*  max-width: var(--max-width); */
    max-width: 900px;
     margin-inline: auto;
     padding: 100px .6rem ;
@@ -20,18 +18,18 @@
 
 .textContainer {
     margin-bottom: 1rem;
-    /* color : var(--border-light); */
     color: aliceblue;
     outline: none ;
     border: none ;
     border-top: 1px solid var(--border-light);
-    /* border-bottom: 1px solid var(--border-light); */
     font-size: 1.1rem;
     font-family: var(  --font-mono);
     font-weight: 100;
-   /*  border: 1px solid var(--border-light);
-    border-radius: .5rem; */
 
+}
+
+.answer {
+    font-family: var(--inter-thin);
 }
 
 .questionContainer {

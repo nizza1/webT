@@ -2,7 +2,6 @@
 
 :root {
   --max-width: 1200px;
-  /* --primary-background:#F5F5F7; */
   --primary-background:rgb(244, 245, 255);
 
   --dark-background: #000000;
@@ -33,25 +32,21 @@
 
   --gradient-card: linear-gradient(58deg, #00000008 25%, rgb(255, 255, 255) 45%, #00000061 80%);
 
- /*  --border-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.046) 18%, rgba(0, 0, 0, 0.227) 52%, rgba(0, 0, 0, 0.425) 94%); */
 --border-gradient: linear-gradient(30deg, rgb(245, 221, 4) 18%, rgb(56, 227, 164) 52%, rgb(255, 176, 79) 94%);
 
 
-  --font-mono: Inter,'Inter' , HelveticaNeue, 'Helvetica Neue', ui-monospace, Display, 'Cascadia Mono', 'Segoe UI Mono',
+/*   --font-mono: Inter,'Inter' , HelveticaNeue, 'Helvetica Neue', ui-monospace, Display, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono',  monospace;
+    'Fira Mono', 'Droid Sans Mono',  monospace; */
+
   }
-  
-  pre, code {
-    font-family: Roboto Mono, monospace;
-  
-}
+
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: var(--font-mono);
+  font-family: var(--inter-reg);
 }
 
 html {
@@ -70,4 +65,8 @@ body {
 
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
+}
+
+h1 {
+  font-family: var(--inter-bold);
 }

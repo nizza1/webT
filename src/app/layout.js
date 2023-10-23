@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
 import Script from 'next/script'
+import localFont from 'next/font/local'
 //components 
 import HeaderBar from '@app/components/headerBar/headerBar'
 import Footer from '@app/components/footer/footer'
@@ -14,6 +15,21 @@ import GoogleAnalytics from '@bradgarropy/next-google-analytics';
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+const interBold = localFont({ 
+  src: './fonts/Inter/static/Inter-Bold.ttf', 
+  variable: '--inter-bold' 
+})
+
+const interReg = localFont({ 
+  src: './fonts/Inter/static/Inter-Regular.ttf', 
+  variable: '--inter-reg' 
+})
+
+const interThin = localFont({ 
+  src: './fonts/Inter/static/Inter-Thin.ttf', 
+  variable: '--inter-thin' 
+})
 
 export const metadata = {
   title: 'Wir entwickeln professionelle Websites | Kostenlose Beratung | Design & Entwicklung',
@@ -38,7 +54,7 @@ export default function RootLayout({ children }) {
         />
     </Head>
       
-      <body className={inter.className}>
+      <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable}`}>
 
           <HeaderBar />
            {children}

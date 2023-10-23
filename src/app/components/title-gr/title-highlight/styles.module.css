@@ -5,6 +5,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 120%;
+    font-family: var(--inter-bold);
 }
 .container{
     background-image: linear-gradient(238deg,#d21c97,#5805f9,#6b05f9);
@@ -24,27 +25,3 @@
     }
   }
 
-/* .container {
-    background-image: linear-gradient(35deg, #FE2F6A, #4900ff, #fb269f);
-    background-size: 500% 500%;
-
-    -webkit-animation: granim 3s ease infinite;
-    -moz-animation: granim 3s ease infinite;
-    animation: granim 3s ease infinite;
-}
-
-@-webkit-keyframes granim {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-moz-keyframes granim {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@keyframes granim {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-} */
