@@ -139,6 +139,7 @@
     .imgContainer {
         max-width: 88%;
         min-width: 90%;
+        min-height: 430px;
  
     }
 
