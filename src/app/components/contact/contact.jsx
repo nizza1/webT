@@ -72,7 +72,7 @@ const Contact = () => {
                 <ContactData />
                 
                 <div className={styles.callButtonContainer}>
-                  <FirstCall text='ERSTGESPRÄCH VEREINBAREN' position='contact' time='ca.15 Minuten'/>
+                  <FirstCall text='KOSTENLOSES ERSTGESPRÄCH' position='contact' time='ca.15 Minuten'/>
                 </div>
             </div>
         <form className={styles.contactForm}  onSubmit={hanleSubmit} >
