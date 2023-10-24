@@ -63,33 +63,8 @@
  z-index: 5;
 }
 
-.scroll {
-    padding: 1rem .4rem;
-    border: 1px dashed #000;
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    z-index: 5;
-  /*   align-self: flex-start; */
 
-}
 
-.scrollArrow {
-    animation: scrollanimation 1.8s infinite;
-    
-}
-
-@keyframes scrollanimation {
-    0% {
-        transform: translateY(-10px);
-    }
-    50% {
-        transform: translateY(16px);
-
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
 
 @media (max-width: 600px) {
     .container {
@@ -117,10 +92,6 @@
        /*  background: linear-gradient(155deg, rgba(196, 226, 0, 0.569) 0%, transparent 55%); */
         padding: 180px 0 100px;
     }
-    .scroll {
-       transform: translateY(1rem);
-       align-self: flex-start;
-
-    }
+  
 }
 

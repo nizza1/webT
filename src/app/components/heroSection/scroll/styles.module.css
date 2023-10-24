@@ -1,0 +1,38 @@
+.scroll {
+    padding: 1rem .4rem;
+    border: 1px dashed var(--new-highlight);
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    z-index: 5;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.scrollArrow {
+    animation: scrollanimation 1.8s infinite;
+    color: var(--new-highlight);
+    
+}
+
+@keyframes scrollanimation {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(16px);
+
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (min-width: 600px) {
+    .scroll {
+       transform: translateY(1rem);
+       align-self: flex-start;
+
+    }
+}
+

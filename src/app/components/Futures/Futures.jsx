@@ -39,7 +39,7 @@ const Futures = () => {
   return (
     <div className={`${styles.container}`}>
           
-           <div className={styles.innerContainer}>
+           <div className={styles.innerContainer} id='nextS'>
 
                   <div className={styles.textsContainer}>
 

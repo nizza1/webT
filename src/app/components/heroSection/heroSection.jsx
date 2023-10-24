@@ -5,12 +5,13 @@ import styles from './styles.module.css'
 import ContactButton from '@app/components/buttons/contactButton/firstCall/firstCall'
 import Highlight from '../title-gr/title-highlight/highlight'
 import Map from '@app/components/mapAnimation/map'
-
-import {PiArrowDownThin} from "react-icons/pi"
-
+import Scroll from './scroll/scrollNext'
 
 
 const HeroSection = () => {
+
+
+
   return (
     <div className={styles.container}>
         
@@ -27,9 +28,7 @@ const HeroSection = () => {
           Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p>
         <ContactButton text='ERSTGESPRÄCH VEREINBAREN' position='hero' time='ca.15 Minuten'/>
 
-        <div className={styles.scroll}>
-        <PiArrowDownThin className={styles.scrollArrow}/>
-        </div>
+        <Scroll to='#nextS'/>
 
         </div>
        
