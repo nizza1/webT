@@ -31,6 +31,12 @@ const interThin = localFont({
   variable: '--inter-thin' 
 })
 
+const interVar = localFont({ 
+  src: './fonts/Inter/vari.ttf', 
+  variable: '--inter-var' 
+})
+
+
 export const metadata = {
   title: 'Wir entwickeln professionelle Websites | Kostenlose Beratung | Design & Entwicklung',
   description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
@@ -54,7 +60,7 @@ export default function RootLayout({ children }) {
         />
     </Head>
       
-      <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable}`}>
+      <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable} ${interVar.variable}`}>
 
           <HeaderBar />
            {children}

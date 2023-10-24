@@ -29,7 +29,8 @@
 }
 
 .answer {
-    font-family: var(--inter-thin);
+    font-family: var(--inter-var);
+   font-weight: 300;
 }
 
 .questionContainer {
