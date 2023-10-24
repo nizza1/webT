@@ -15,7 +15,7 @@ import Tech from '@app/components/techstack/tech'
 import { InlineWidget } from "react-calendly";
 
 import {LuArrowRight} from "react-icons/lu"
-const FirstCall = ({text , position}) => {
+const FirstCall = ({text , position , time}) => {
   /* const [modalContent, setModalContent] = useState(<Tech/>); */
   const modalContent = <Tech/> ? <Tech/> : null;
   const { isModalOpen, toggleModal } = useModalStore();
@@ -36,7 +36,7 @@ const FirstCall = ({text , position}) => {
     <>
        <button
        onClick={handleButtonClick}
-       className={styles.contactButton}>{text} 
+       className={styles.contactButton}> <span className={styles.texts}><span className={styles.mainText}>{text}</span><span className={styles.time}>{time}</span></span>
  
         <span className={styles.span}>
         <BsFillCalendarCheckFill className={styles.icon}/></span>

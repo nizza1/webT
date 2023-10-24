@@ -4,7 +4,7 @@
     color: aliceblue;
     border-radius: 2.5rem;
     background: var(--highlight-Text);
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     display: flex ;
     justify-content: space-between;
@@ -13,10 +13,16 @@
     letter-spacing: .1rem;
     font-size: 1.5rem;
     transition-duration: .3s;
- /*    outline: 1px solid var(--border-light); */
-   /*  outline-offset: 1px;  */
     z-index: 5;
 }
+
+.time {
+  font-size: 1rem;
+  display: block;
+}
+
+
+
 .contactButton{
     background: linear-gradient(238deg,#d21c97,#5805f9,#6b05f9);
     background-size: 150% 150%;
