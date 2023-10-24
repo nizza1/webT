@@ -60,6 +60,7 @@ body {
   background-color: var(--primary-background);
   scrollbar-width: none;
   font-family: var(--inter-var);
+  font-weight: 400;
  /* Firefox */
 }
 
