@@ -1,0 +1,13 @@
+.outContainer {
+    min-height: 100vh;
+    padding: 100px var(--padding-mob);
+}
+
+.innerContainer {
+    max-width: var(--max-width);
+    margin-inline: auto;
+}
+
+.content {
+    padding: 2rem 0;
+}
