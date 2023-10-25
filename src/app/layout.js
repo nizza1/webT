@@ -38,7 +38,7 @@ const interVar = localFont({
 
 
 export const metadata = {
-  title: 'Wir entwickeln professionelle Websites | Kostenlose Beratung | Design & Entwicklung',
+  title: 'Website erstellen lassen | Kostenlose Beratung | Design & Entwicklung',
   description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
 }
 
