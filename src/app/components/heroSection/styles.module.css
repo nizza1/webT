@@ -96,3 +96,9 @@
   
 }
 
+@media (max-width:480px) {
+    .titleGr {
+        font-size: 2rem;
+    }
+}
+
