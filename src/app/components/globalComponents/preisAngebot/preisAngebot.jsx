@@ -66,7 +66,18 @@ const preisAngebot = () => {
       onScroll={handleScroll} 
       className={styles.cBody}>
         <div ref={cardRef} className={styles.questionContainer}>
-          <h1>1</h1>
+          
+          <div className={styles.an}>
+          <label className={styles.label}>
+          In welche Branche sind Sie tätig:
+          <input
+            type="text"
+            name="branche"
+           /*  value={formData.branche}
+            onChange={handleInputChange} */
+          />
+        </label>
+          </div>
         </div>
         <div ref={cardRef} className={styles.questionContainer}>
           <h1>2</h1>
