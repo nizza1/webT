@@ -7,7 +7,7 @@ import { track } from '@vercel/analytics/react'
  
 import { BsFillCalendarCheckFill } from "react-icons/bs"
 
-
+/* https://calendly.com/nuancestudio/15min */
 import Offer from '@app/components/offerModal/offer'
 //zustand 
 import useModalStore from '@app/stores/offerStore'
@@ -55,7 +55,8 @@ const FirstCall = ({text , position , time}) => {
         hideEventTypeDetails: true,
         hideLandingPageDetails: true,
       }}
-        url="https://calendly.com/nuancestudio/15min" />
+        url="https://calendly.com/nizardjassim/15min" />
+        
        </Offer>
 
        
