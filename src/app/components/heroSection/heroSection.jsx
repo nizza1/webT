@@ -24,8 +24,11 @@ const HeroSection = () => {
         <h1 className={styles.titleGr}>
         Wir entwickeln maßgeschneiderte <Highlight text='Websites'/>
         </h1>
-        <p className={styles.text}>
-          Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p>
+        {/* <p className={styles.text}>
+          Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p> */}
+          <p className={styles.text}>
+          Kreative Lösungen für digitale Präsenz und Erfolg.</p>
+          
         <ContactButton text='KOSTENLOSES ERSTGESPRÄCH' position='hero' time='ca.15 Minuten'/>
 
         <Scroll to='#nextS'/>
