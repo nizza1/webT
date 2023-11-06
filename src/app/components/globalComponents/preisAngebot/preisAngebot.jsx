@@ -7,6 +7,9 @@ import { useRef , useState , useEffect} from "react";
 import { motion, useScroll } from "framer-motion";
 
 import {MdOutlineWorkOutline} from 'react-icons/md'
+import {AiOutlineUser } from 'react-icons/ai'
+import {MdOutlineAlternateEmail} from 'react-icons/md'
+import {FiPhone} from 'react-icons/fi'
 import {BsArrowRightSquareFill, BsArrowLeftSquareFill} from 'react-icons/bs'
 
 const preisAngebot = () => {
@@ -79,7 +82,9 @@ const preisAngebot = () => {
           
           <div className={styles.an}>
          
-          <p className={styles.questionText}>In welche Branche sind Sie tätig:</p>
+          <p className={styles.questionText}>In welcher Branche sind Sie tätig:</p>
+          <div className={styles.spacingButtom}>
+          <MdOutlineWorkOutline className={styles.icons}/>
           <input
           className={styles.textInput}
             type="text"
@@ -88,6 +93,8 @@ const preisAngebot = () => {
             onChange={handleInputChange} */
             placeholder='z.B. Unternehmensberatung ....'
           />
+          </div>
+          
         
           </div>
         </div>
@@ -96,7 +103,7 @@ const preisAngebot = () => {
           <div className={styles.overlay}></div>
           <div className={styles.an}>
           
-          <p className={styles.questionText}>Wie groß soll Ihre Website werden:</p>
+          <p className={styles.questionText}>Wieviele Seiten soll Ihre Website haben:</p>
        
           <div className={styles.optionsContainer}>
             <div>
@@ -111,7 +118,12 @@ const preisAngebot = () => {
 
             <div>
             <input type="radio" name="numberOfSite" value="ab5" id='ab5op'/>
-             <label for="ab5op">ab 5</label>
+             <label for="ab5op">Ab 5</label>
+            </div>
+
+            <div>
+            <input type="radio" name="numberOfSite" value="Weiß ich noch nicht" id='Weiß ich noch nicht'/>
+             <label for="Weiß ich noch nicht">Weiß ich noch nicht</label>
             </div>
           
 
@@ -135,6 +147,11 @@ const preisAngebot = () => {
                <input type="radio" name="betreueung" value="Ihre-Agentur"  id='Ihre-Agentur'/>
                <label htmlFor="Ihre-Agentur">Ihre Agentur</label>
             </div>
+
+            <div>
+               <input type="radio" name="betreueung" value="weiß ich noch nicht"  id='weiß ich noch nicht'/>
+               <label htmlFor="weiß ich noch nicht">Weiß ich noch nicht</label>
+            </div>
              
              
           </div>
@@ -146,6 +163,7 @@ const preisAngebot = () => {
           
           <div className={styles.an}>
           <p className={styles.questionText}>Sind zukünftig Marketingmaßnahmen notwendig?</p>
+          <p className={styles.questionText}>Wenn ja</p>
 
           <div className={styles.checkBoxContainer}>
             
@@ -159,7 +177,7 @@ const preisAngebot = () => {
          </div>
          <div>
              <input type="checkbox" name="marketing" value="andere-ch" id='andere-op' />
-            <label htmlFor="andere-op"> andere</label>
+            <label htmlFor="andere-op">Andere</label>
          </div>
         
             
@@ -247,18 +265,20 @@ const preisAngebot = () => {
           <p className={styles.questionText}>Gleich geschafft! Bitte geben Sie Ihre Kontaktdaten ein:</p>
           
           <div className={styles.spacingButtom}>
+            <MdOutlineAlternateEmail className={styles.icons}/>
           <input
            className={styles.textInput}
             type="email"
             name="email"
            /*  value={formData.branche}
             onChange={handleInputChange} */
-            placeholder=' Beispiel@gmail.com'
+            placeholder='Beispiel@gmail.com'
           />
 
           </div>
 
-          <div>
+          <div className={styles.spacingButtom}>
+            <FiPhone className={styles.icons}/>
           <input
             className={styles.textInput}
             type="tel"
@@ -269,6 +289,33 @@ const preisAngebot = () => {
             required
           />
           </div>
+
+          <div className={styles.spacingButtom}>
+            <AiOutlineUser className={styles.icons} />
+          <input
+            className={styles.textInput}
+            type="text"
+            name="name"
+           /*  value={formData.branche}
+            onChange={handleInputChange} */
+            placeholder='Name'
+            
+          />
+          </div>
+
+          <div className={styles.spacingButtom}>
+            <MdOutlineWorkOutline className={styles.icons}/>
+          <input
+            className={styles.textInput}
+            type="text"
+            name="firmen name"
+           /*  value={formData.branche}
+            onChange={handleInputChange} */
+            placeholder='Firmen Name'
+            
+          />
+          </div>
+          
          
         
           </div>

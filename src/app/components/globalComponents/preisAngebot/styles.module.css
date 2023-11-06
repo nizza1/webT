@@ -49,6 +49,7 @@
     flex: 1;
     scroll-snap-align: center;
     color: aliceblue;
+    overflow-y: auto;
 }
 
 .an {
@@ -187,14 +188,17 @@
 }
 
 .textInput {
-    padding: .6rem;
+    padding: .6rem .6rem .6rem 2rem;
     font-size: 1rem;
     background-color: rgba(240, 248, 255, 0.711);
     color: black;
     border: none;
     outline: none;
     border-radius: .5rem;
+    width: 100%;
+    max-width: 600px;
 }
+
 .textInput::placeholder {
     color: var(--new-highlight);
   }
@@ -211,9 +215,17 @@
 }
 
 .spacingButtom  {
-
+    position: relative;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+}
+
+.icons {
+    color: var(--new-highlight);
+    position: absolute;
+    padding: .4rem;
+    width: 2.2rem;
+    height: 2.4rem;
 }
 
 
