@@ -40,7 +40,7 @@ const About = () => {
           <div className={styles.textContainerS}>
             
             <h2>Nizar Djassim</h2>
-            <p>ich bin Ihr Ansprechpartner für die technische Betreuung Ihrer Website.<br></br><br></br> Ich sorge dafür, dass Ihre Website immer auf dem neuesten Stand und technisch einwandfrei ist. <br></br>So können Sie sich darauf verlassen, dass Ihre Website für Ihre Kunden immer optimal funktioniert.</p>
+            <p>Ich bin Ihr Ansprechpartner für die technische Betreuung Ihrer Website.<br></br><br></br> Ich sorge dafür, dass Ihre Website immer auf dem neuesten Stand und technisch einwandfrei ist. <br></br>So können Sie sich darauf verlassen, dass Ihre Website für Ihre Kunden immer optimal funktioniert.</p>
           </div>
 
           <div className={styles.imgContainer}>
@@ -73,7 +73,7 @@ const About = () => {
           </div>
           <div className={styles.textContainerS}>
             <h2>Christian Bohdan</h2>
-            <p>ich bin verantwortlich für das visuelle und marketingtechnische Auftreten Ihrer Website.<br></br><br></br>Ich führe ein Team aus Designern, Entwicklern und Textern, die gemeinsam mit Ihnen Ihre Website zu einem einzigartigen und zeitgemäßen Erlebnis machen.</p>
+            <p>Ich bin verantwortlich für das visuelle und marketingtechnische Auftreten Ihrer Website.<br></br><br></br>Ich führe ein Team aus Designern, Entwicklern und Textern, die gemeinsam mit Ihnen Ihre Website zu einem einzigartigen und zeitgemäßen Erlebnis machen.</p>
           </div>
 
           <div className={styles.lineS}></div>
