@@ -4,10 +4,11 @@
     max-width: var(--max-width);
     margin-inline: auto;
     padding-inline: var(--padding-mob);
+    padding-top: 100px;
+   /*  padding-bottom: 100px; */
 }
 
 .phasesContainer {
-    padding: 100px 0;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;

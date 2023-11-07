@@ -28,12 +28,15 @@ export default function Home() {
 
       <main className={classNames(styles.main, '')}>
            <Hero />
+           <Advantages />
            <Futures />
-           <Phases />
+          
            {/* <Resposnsive /> */}
          {/*   <Sliderr /> */}
+      
          <Slider  />
-           <Advantages />
+           
+           <Phases />
            <About />
           {/*  <Tech /> */}
            <Contact />

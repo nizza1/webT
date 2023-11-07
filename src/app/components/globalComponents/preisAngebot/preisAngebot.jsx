@@ -31,6 +31,7 @@ const preisAngebot = () => {
       });
     };
   
+    console.log(maxScrollPosition);
     const handleScrollRight = () => {
       containerRef.current.scrollTo({
         left: scrollPosition + containerRef.current.offsetWidth,
@@ -51,7 +52,7 @@ const preisAngebot = () => {
       setMaxScrollPosition(
         containerRef.current.scrollWidth - containerRef.current.offsetWidth
       );
-    }, []);
+    }, [scrollPosition]);
 
 
   return (
@@ -103,7 +104,7 @@ const preisAngebot = () => {
           <div className={styles.overlay}></div>
           <div className={styles.an}>
           
-          <p className={styles.questionText}>Wieviele Seiten soll Ihre Website haben:</p>
+          <p className={styles.questionText}>Wie viele Seiten soll Ihre Website haben:</p>
        
           <div className={styles.optionsContainer}>
             <div>
@@ -337,9 +338,11 @@ const preisAngebot = () => {
                </span>
              Zurück
              </button>
-             <button className={styles.btnRight} 
+             <button className={`${styles.btnRight}`} 
              onClick={handleScrollRight}>
-             Weiter
+              {
+          scrollPosition >= maxScrollPosition ? 'Angebot anfordern' : 'Weiter'
+        }
              <span className={styles.iconC}>
                <BsArrowRightSquareFill  />
                </span>
