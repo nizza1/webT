@@ -7,7 +7,7 @@ import Title from '../title-gr/title-gr'
  const Advantages = () => {
   return (
     <div className={styles.outContainer}>
-        <div className={styles.innerContainer}>
+        <div className={styles.innerContainer} id='nextS'>
             
             <div className={styles.listContainer}>
             <div className={styles.titleContainer}>
