@@ -19,7 +19,7 @@ import Title from '../title-gr/title-gr'
                     className={styles.icon}/>
 
                     <li>
-                      <h3>Persönlicher Ansprechpartner</h3>
+                      <h3>Ein Ansprechpartner für alle Ihre Fragen</h3>
                       <p> Wir stellen Ihnen einen persönlichen Ansprechpartner zur Verfügung, der Ihr Projekt von Anfang bis Ende begleitet.</p>
                       </li>
                  </div>
@@ -39,7 +39,7 @@ import Title from '../title-gr/title-gr'
                     className={styles.icon}/>
 
                     <li>
-                    <h3>Versteckte Kosten</h3>
+                    <h3>Transparente Kosten</h3>
                     <p> Wir haben keine versteckten Kosten. Alle unsere Preise sind transparent und werden im Voraus festgelegt.</p>
                     </li>
                  </div>
