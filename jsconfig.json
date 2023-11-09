@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@pages/*": ["pages/*"],
+      "@config/*": ["config/*"],
       "@api/*": ["api/*"],
       "@app/*": ["src/app/*"],
       "@helpers/*": ["lib/helpers/*"],

@@ -11,16 +11,9 @@ module.exports = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-/*   webpack(config) {
-    config.infrastructureLogging = { debug: /PackFileCache/ }
-    return config;
-  } */
-/*   webpack: (config, {dev}) => {
-    config.module.loaders = [{
-      test: /\.json$/,
-      loader: 'json'
-}]
-    return config
-} */
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
+
    
 }
