@@ -53,7 +53,7 @@ const Contact = () => {
     }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact-section'>
         <div className={styles.innerContainer} id='contact-section' >
             <div className={styles.social} >
 

@@ -14,14 +14,21 @@ import { motion, useScroll ,useSpring } from "framer-motion"
 
 //componentes 
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
+import NavButton from './navButton/navButton'
+import NavList from './navList/navList'
 
 //store 
-/* import useModalStore from '@app/stores/offerStore'; */
+import useStore from '@app/stores/navStore'
 
 const logo = '/logoNuance.svg'
+const logoWithText = '/logowithtext.svg'
 
 
 const HeaderBar = () => {
+  const { isActive } = useStore();
+
+
+
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -29,9 +36,6 @@ const HeaderBar = () => {
     damping: 40,
     restDelta: 0.001
   });
-
-   // Use the Zustand store to access the state and function
-  /*  const { isModalOpen, toggleModal } = useModalStore(); */
 
 
   return (
@@ -50,28 +54,31 @@ const HeaderBar = () => {
      
         <div className={classNames(styles.logButContainer, 'inContainer')}>
 
-            <ContactButton text='Kontakt'
-            position="header"
-            />
-      
-          
-
           <Link href='/'>
           
             <Image 
-            src={logo}
-            width={40}
+            src={logoWithText}
+            width={140}
             height={40}
             alt='nuance studio'
             className={styles.logo}/>
             </Link>
-   
-          
             
         </div>
 
-        
         </section>
+        <div className={styles.navButtonContainer}>
+            <NavButton />
+        </div>
+
+        {
+          isActive ?  <div className={styles.navListContainer}>
+          <NavList />
+        </div>
+          /*   */
+          : null
+        }
+       
         </>
   )
 }

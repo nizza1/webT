@@ -11,7 +11,7 @@ const Questions = () => {
     const clickedTitle = '#C9E300'
   return (
     <>
-         <div className={styles.container}>
+         <div className={styles.container} id='FAQs'>
          <div className={styles.innerContainer}>
 
             <div className={styles.titleContainer}>

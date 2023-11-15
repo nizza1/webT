@@ -1,0 +1,65 @@
+.container {
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    pointer-events: visible;
+    border-radius: 5px;
+    background-color: rgba(226, 228, 254, 0.429);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    -moz-backdrop-filter: blur(12px) ;
+    z-index: 15;
+}
+.line1 , .line2 {
+    width: 90%;
+    left: 5%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.line1 {
+    transform: translateY(-7px);
+}
+.line2 {
+   transform: translateY(7px);
+}
+
+.active  .line1 {
+    transform: rotate(45deg);
+}
+
+.active  .line2 {
+    transform: rotate(-45deg);
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.homeLink {
+    pointer-events: visible;
+    text-decoration: none;
+    color: var(--new-highlight);
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgba(226, 228, 254, 0.429);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    -moz-backdrop-filter: blur(12px) ;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -12,7 +12,7 @@ const chrisImage = '/chrisBohdan.jpeg'
 const nizarImage = '/images/pMe.jpg'
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='aboutus'>
        <div className={styles.innerContainer}>
        
        
