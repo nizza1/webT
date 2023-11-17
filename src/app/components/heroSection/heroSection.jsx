@@ -27,7 +27,7 @@ const HeroSection = () => {
         {/* <p className={styles.text}>
           Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p> */}
           <p className={styles.text}>
-          Die Ihren Zielen entsprechen.</p>
+          Die Ihren Zielen entsprechen</p>
           
         <ContactButton text='KOSTENLOSES ERSTGESPRÄCH' position='hero' time='ca.15 Minuten'/>
 

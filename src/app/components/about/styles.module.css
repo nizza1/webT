@@ -1,12 +1,29 @@
-/* .container {
-
-} */
+.container {
+    background: var(--background-dark-g);
+    background-attachment: fixed; 
+    background-size: cover; 
+    position: relative;
+  
+}
 
 .innerContainer {
-    max-width: var(--max-width);
+    max-width: 1300px;
     margin: auto;
     padding: 100px .6rem;
+    color: aliceblue;
+    z-index: 10;
+    position: relative;
+   
 }
+
+    .singleAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        max-width: 400px;
+        padding: 0 1rem;
+    }
 
 
 .imgContainer {
@@ -29,6 +46,7 @@
 
     box-shadow: 0 70px 63px -60px #000000;
     z-index: 4;
+
 }
 
 .imgContainer::after {
@@ -45,53 +63,8 @@
 }
 
 .titleAbout {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
-
-.singleAbout {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 4rem;
-    padding: 100px 0;
-    font-size: 1.1rem;
-    position: relative;
-}
-
- .lineF {
-    height: calc(100% - 200px);
-    width: 10px ;
-    background: var(--highlight-Text);
-    left: 0;
-    position: absolute;
-    border-radius: 5px;
-}
-
-.lineS {
-    right: 0;
-    height: calc(100% - 200px);
-    width: 10px ;
-    background: var(--highlight-Text);
-    position: absolute;
-    border-radius: 5px;
-}
-
-
-.textContainerS {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-    justify-content: center;
-    padding: 0 3rem;
-}
-
-.textContainerS h2 {
-    background: var(--highlight-Text);
-    padding: 1rem;
-    color: aliceblue;
-    border-radius: .5rem;
-}
-
-
 
 .aboutTextContainer {
     max-width: 80ch;
@@ -99,52 +72,45 @@
     flex-direction: column;
     row-gap: 2rem;
     padding: 50px 0;
+    z-index: 5;
 }
 
 .aboutTextContainer .titleB {
-    color: var(--new-highlight);
+    /* color: var(--new-highlight); */
+    color: aliceblue;
 }
 
 .aboutText {
     font-weight: 400;
     font-size: 1.1rem;
-    /* text-align: start; */
 }
 
+.allImages {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-@media (max-width: 700px) {
-    .innerContainer {
-        /* padding: 50px .6rem; */
-        padding: 50px 1rem;
-    }
-    .imgTextContainer {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 100px;
-       /*  padding: 50px .6rem; */
-    }
-
-    .singleAbout {
-        align-items: center;
-       flex-direction: column;
-       row-gap: 3rem;
-    } 
-    .imgContainer {
-        max-width: 100%;
-    }
+.underImage {
+    padding: 1rem .6rem ;
+    z-index: 5;
 
 }
 
-@media (max-width: 600px ) {
-    .imgContainer {
-        max-width: 88%;
-        min-width: 90%;
-        min-height: 430px;
- 
-    }
-
-    .textContainerS {
-        padding: 0 2rem;
-    }
+.imgTitle {
+    font-size: 1.2rem ;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
+
+.imgDes {
+    font-size: .9em;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.238);border-radius: .6rem;
+    padding: .5rem;
+    max-width: 100%;
+}
+
 

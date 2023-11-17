@@ -1,0 +1,28 @@
+.container {
+      
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 120%;
+      font-family: var(--inter-bold);
+    
+  }
+  .container{
+     /*  background-image: linear-gradient(238deg,#d21c97,#712bff,#c195ff); */
+     background-image: linear-gradient(238deg,rgb(174, 160, 255),aliceblue,rgb(168, 153, 255));
+      background-size: 150% 150%;
+      animation: gradient-animation 5s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  

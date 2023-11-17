@@ -7,7 +7,7 @@ import {useState , useRef ,useEffect} from 'react'
 
 import {IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
 
-import Title from '../title-gr/title-gr'
+import Title from '../title-gr/title-highlight-d-bg/highlight'
 
 const references = [
   { key: 'giraf referens ', value: '/reference/giraf.png' },
@@ -65,7 +65,8 @@ const Slider = () => {
     <div className={styles.container} id='referenzen'>
 
       <div className={styles.titleContainer}>
-      <h1>Einige unserer Projecte </h1>
+        <h2><Title text='Einige unserer Projecte' /></h2>
+    {/*   <h1>Einige unserer Projecte </h1> */}
    
       </div>
 

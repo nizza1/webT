@@ -21,6 +21,9 @@
 
   --new-graadient : linear-gradient(35deg,   rgb(143, 108, 255),  #4900ff,#FE2F6A);
 
+  --background-dark-g : linear-gradient(to bottom ,#150147, rgb(112, 2, 208)  );
+/*  --background-dark-g : var(--highlight-Text); */
+
   --padding-mob: 1rem;
   --border-width-c: 2px;
 

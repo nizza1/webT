@@ -2,7 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 //components 
-import Title from '@app/components/title-gr/title-gr'
+import Title from '@app/components/title-gr/title-highlight-d-bg/highlight'
 
 //styles 
 import styles from './styles.module.css'
@@ -10,74 +10,123 @@ import styles from './styles.module.css'
 
 const chrisImage = '/chrisBohdan.jpeg'
 const nizarImage = '/images/pMe.jpg'
+const dashaImage = '/dasha.jpeg'
+
+import Overlay from '../globalComponents/overlay/overlay'
+
 const About = () => {
   return (
     <div className={styles.container} id='aboutus'>
+
+
+      <Overlay />
+      <div className={styles.overlay}></div>
        <div className={styles.innerContainer}>
        
-       
-
        <div className={styles.imgTextContainer}>
       
         <div className={styles.textContainer}>
         <div className={styles.titleAbout}>
-        <Title text='Die Gründer von Nuance Studio'/>
+        <h1><Title text='Wer sind wir?'/></h1>
         </div>
 
         <div className={styles.aboutTextContainer}>
-            <h2 className={styles.aboutText}>Als Unternehmer sind Sie ein Experte in Ihrer Branche. Sie haben langjährige Erfahrung und ein tiefes Verständnis für Ihre Kunden und Ihre Bedürfnisse. <br />
-             Doch auch im Marketing können Sie erfolgreich sein. <br /><br />Mit einer professionellen Website können Sie Ihre Sichtbarkeit erhöhen, neue Kunden gewinnen und Ihr Unternehmen voranbringen.<br />
-             </h2>
+            <h2 className={styles.aboutText}>
+             In der Welt des digitalen Designs und der Webentwicklung steht Nuancestudio für Qualität, Innovation und maßgeschneiderte Lösungen. <br /> Unser Team bringt eine vielfältige Palette an Fähigkeiten und Fachwissen zusammen, um Projekte zu realisieren, die nicht nur beeindrucken, sondern auch funktionale Exzellenz bieten.
+            </h2>
 
-             <h2 className={styles.titleB}>Wir haben das Know-how. <br />Sie haben die Ziele.</h2>
+          {/*    <h2 className={styles.titleB}>Wir haben das Know-how. <br />Sie haben die Ziele.</h2> */}
+             <p><Title text='Wir haben das Know-how.'/>
+             <br /><Title text='Sie haben die Ziele.'/></p>
+            
+
 
         </div>
+
+        <div className={styles.allImages}>
 
         <div className={styles.singleAbout}>
          
-          <div className={styles.lineF}></div>
-
-          <div className={styles.textContainerS}>
-            
-            <h2>Nizar Djassim</h2>
-            <p>Ich bin Ihr Ansprechpartner für die technische Betreuung Ihrer Website.<br></br><br></br> Ich sorge dafür, dass Ihre Website immer auf dem neuesten Stand und technisch einwandfrei ist. <br></br>So können Sie sich darauf verlassen, dass Ihre Website für Ihre Kunden immer optimal funktioniert.</p>
+         <div className={styles.imgContainer}>
+           <Image
+           className={styles.img}
+           src={nizarImage}
+           fill={true}
+           alt='Nizar Djassim'
+           style={{
+             objectFit: 'cover',
+           }}
+           />
+         </div>
+         <div className={styles.underImage}>
+         <div className={styles.uberMichText}>
+          <p className={styles.imgTitle}>Nizar  </p>
+          <p className={styles.imgDes}>
+            "Webentwiclker" <br /> Ich sorge dafür, dass Ihre digitale Präsenz nicht nur optisch ansprechend, sondern auch technisch einwandfrei ist.</p>
+        
           </div>
+         </div>
+        
+       </div>
 
-          <div className={styles.imgContainer}>
-            <Image
-            className={styles.img}
-            src={nizarImage}
-            fill={true}
-            alt='Nizar Djassim'
-            style={{
-              objectFit: 'cover',
-            }}
-            />
+       <div className={styles.singleAbout}>
+         <div className={styles.imgContainer}>
+           <Image
+           className={styles.img}
+           src={chrisImage}
+         /*   width={400}
+           height={500} */
+           fill={true}
+           alt='chris Bohdan'
+           style={{
+             objectFit: 'cover',
+           }}
+           />
+         </div>
+         <div className={styles.underImage}>
+          <div className={styles.uberMichText}>
+          <p className={styles.imgTitle}>Christian  </p>
+          <p className={styles.imgDes}> "Marketing und Kundensupport" <br />Ich bin Ihr erster Ansprechpartner und sorge dafür, dass Ihre Bedürfnisse verstanden und erfüllt werden.</p>
+        
           </div>
+       
+      
+         </div>
+         
+       
+       </div>
+
+       <div className={styles.singleAbout}>
+         <div className={styles.imgContainer}>
+           <Image
+           className={styles.img}
+           src={dashaImage}
+         /*   width={400}
+           height={500} */
+           fill={true}
+           alt='dasha'
+           style={{
+             objectFit: 'cover',
+           }}
+           />
+         </div>
+         <div className={styles.underImage}>
+         <div className={styles.uberMichText}>
+          <p className={styles.imgTitle}>Dascha  </p>
+          <p className={styles.imgDes}>
+            "Grafik und Webdesign" <br />
+            Unsere kreative Kraft im Grafikdesign.<br /> Dasha bringt Ideen zum Leben und sorgt dafür, dass jedes Projekt visuell heraussticht.</p>
+        
+          </div>
+         </div>
+         
+       
+       </div>
+
+
+       
         </div>
 
-
-        <div className={styles.singleAbout}>
-          <div className={styles.imgContainer}>
-            <Image
-            className={styles.img}
-            src={chrisImage}
-          /*   width={400}
-            height={500} */
-            fill={true}
-            alt='chris Bohdan'
-            style={{
-              objectFit: 'cover',
-            }}
-            />
-          </div>
-          <div className={styles.textContainerS}>
-            <h2>Christian Bohdan</h2>
-            <p>Ich bin verantwortlich für das visuelle und marketingtechnische Auftreten Ihrer Website.<br></br><br></br>Ich führe ein Team aus Designern, Entwicklern und Textern, die gemeinsam mit Ihnen Ihre Website zu einem einzigartigen und zeitgemäßen Erlebnis machen.</p>
-          </div>
-
-          <div className={styles.lineS}></div>
-        </div>
 
 
     

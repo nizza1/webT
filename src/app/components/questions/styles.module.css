@@ -1,13 +1,18 @@
 .container {
-    background-color: var(--card-light);
-    background: var(--highlight-Text);
+
+    background: var(--background-dark-g);
+  /*   background-attachment: fixed;  */
+  /*   object-fit: cover; */
     color: aliceblue;
+    position: relative;
 
 }
 .innerContainer {
    max-width: 900px;
     margin-inline: auto;
     padding: 100px .6rem ;
+    z-index: 4;
+    position: relative;
 
 }
 

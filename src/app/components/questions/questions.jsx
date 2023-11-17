@@ -1,17 +1,18 @@
 "use client"
 
+import React from 'react'
 import styles from './styles.module.css'
 
 import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
 
-
-import React from 'react'
+import Overlay from '../globalComponents/overlay/overlay';
 
 const Questions = () => {
     const clickedTitle = '#C9E300'
   return (
     <>
          <div className={styles.container} id='FAQs'>
+          <Overlay />
          <div className={styles.innerContainer}>
 
             <div className={styles.titleContainer}>
