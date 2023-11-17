@@ -57,10 +57,12 @@
       z-index: 5;
       padding: 2rem .9rem;
       border-radius: 1rem;
-      background: var(--highlight-Text); 
+      background: var(--card-light); 
       position: sticky;
       top: 90px;
-      border: 1px solid rgba(240, 248, 255, 0.618);
+     /*  border: 1px solid rgba(240, 248, 255, 0.618); */
+     border: 1px solid rgba(86, 82, 118, 0.125);
+      color: rgb(86, 82, 118);
  /*      backdrop-filter: blur(6rem);
       -webkit-backdrop-filter: blur(6rem);    */   
      
@@ -95,7 +97,8 @@
       text-align: start;
       font-size: 1.1rem;
 
-      background-image:linear-gradient(60deg, #d3daff, #eed7fc 100%);
+     /*  background-image:linear-gradient(60deg, #d3daff, #eed7fc 100%); */
+     background-image:linear-gradient(60deg, black, rgb(86, 82, 118) 100%);
    /*  background: black; */
 
       background-clip: text;
@@ -107,7 +110,7 @@
    .title {
       font-size: 2rem;
       padding-bottom: .6rem;
-      background-image:linear-gradient(60deg, #d3e8ff, #d7d7fc 100%);
+      background-image:linear-gradient(60deg, black, rgb(86, 82, 118) 100%);
     
  
    }
