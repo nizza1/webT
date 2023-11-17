@@ -62,7 +62,7 @@ const About = () => {
          <div className={styles.uberMichText}>
           <p className={styles.imgTitle}>Nizar  </p>
           <p className={styles.imgDes}>
-            "Webentwiclker" <br /> Ich sorge dafür, dass Ihre digitale Präsenz nicht nur optisch ansprechend, sondern auch technisch einwandfrei ist.</p>
+            "Webentwickler" <br /> Ich sorge dafür, dass Ihre digitale Präsenz nicht nur optisch ansprechend, sondern auch technisch einwandfrei ist.</p>
         
           </div>
          </div>
