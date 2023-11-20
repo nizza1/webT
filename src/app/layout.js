@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 import HeaderBar from '@app/components/headerBar/headerBar'
 import Footer from '@app/components/footer/footer'
 
+
 //analysis
 import { Analytics } from '@vercel/analytics/react';
 import GoogleAnalytics from '@bradgarropy/next-google-analytics';
@@ -61,6 +62,7 @@ export default function RootLayout({ children }) {
     </Head>
       
       <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable} ${interVar.variable}`}>
+
 
           <HeaderBar />
            {children}
