@@ -41,10 +41,10 @@ const renderTitle = (title, highlightWord) => {
       // Check if the word is the one to be highlighted
       if (word === highlightWord) {
           // Add a space after the highlighted word
-          return <span key={index}><Highlight text={word} /> </span>;
+          return <Highlight text={word} /> ;
       } else {
           // Add a space after regular words
-          return <span key={index}>{word} </span>;
+          return <span key={index}> {word} </span>;
       }
   });
 };
@@ -61,8 +61,6 @@ const renderTitle = (title, highlightWord) => {
                     style={{ opacity: backgroundOpacity }}
                     className={styles.cardBackground}
                 />
-            
-     {/*  <h1>{renderTitle(title)}</h1> */}
      <h1>{renderTitle(title, highlightWord)}</h1>
         <div className={styles.body}>
           <div className={styles.description}>

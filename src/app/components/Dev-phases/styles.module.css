@@ -5,6 +5,7 @@
     margin-inline: auto;
     padding-inline: var(--padding-mob);
     padding-top: 100px;
+    padding-bottom: 100px;
    /*  padding-bottom: 100px; */
 }
 
@@ -54,6 +55,9 @@
 
 
 @media (max-width:600px ) {
+    .outContainer {
+        padding-bottom: 50px;
+    }
     .phase {
         column-gap: 0;
     }

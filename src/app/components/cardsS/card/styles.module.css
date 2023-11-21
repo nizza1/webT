@@ -55,7 +55,7 @@
 
   .cardBackground {
     /* background-color: rgb(1, 24, 48); */
-    background: linear-gradient(to bottom,rgb(150, 146, 254),rgb(198, 202, 248),  rgb(210, 212, 255));
+    background: linear-gradient(to bottom,rgb(150, 146, 254),rgb(198, 202, 248),  rgb(209, 213, 255));
     position: absolute;
     inset: 0;
     z-index: 0;
