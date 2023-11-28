@@ -1,8 +1,9 @@
 import createImageUrlBuilder from "@sanity/image-url";
 /* import { dataset, projectId } from "@/lib/sanity/config"; */
-
-const projectId = 'j8d0v991';
-const dataset = 'production';
+const Sanity_id = process.env.sanity_id
+const Sanity_project = process.env.sanity_project
+const projectId = Sanity_id;
+const dataset = Sanity_project;
 const imageBuilder = createImageUrlBuilder({ 
     projectId, dataset 
 });

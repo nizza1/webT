@@ -4,11 +4,14 @@ import { createClient } from '@sanity/client'
 
 import createImageUrlBuilder from '@sanity/image-url';
 
-
+const Sanity_id = process.env.sanity_id
+const Sanity_project = process.env.sanity_project
+/* const projectId = Sanity_id;
+const dataset = Sanity_project; */
 export const config = {
 
-    projectId: 'j8d0v991', // you can find this in your sanity.json
-    dataset: 'production', // or the name you chose in sanity.json
+    projectId: Sanity_id, // you can find this in your sanity.json
+    dataset: Sanity_project, // or the name you chose in sanity.json
     useCdn: false, // `false` if you want to ensure fresh data
     apiVersion: '2021-03-25', // use a UTC date string
   };
