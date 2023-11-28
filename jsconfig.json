@@ -6,6 +6,7 @@
       "@api/*": ["api/*"],
       "@app/*": ["src/app/*"],
       "@helpers/*": ["lib/helpers/*"],
+      "@config/*": ["config/*"],
       "react-icons/Tb": ["node_modules/react-icons/Tb"]
     }
     

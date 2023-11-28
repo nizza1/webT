@@ -38,6 +38,10 @@
 --border-gradient: linear-gradient(30deg, rgb(245, 221, 4) 18%, rgb(56, 227, 164) 52%, rgb(255, 176, 79) 94%);
 
 
+
+--gray-1: #1d2129;;
+--gray-2: #29303b;
+--gray-3: #57667c;
 /*   --font-mono: Inter,'Inter' , HelveticaNeue, 'Helvetica Neue', ui-monospace, Display, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono',  monospace; */
