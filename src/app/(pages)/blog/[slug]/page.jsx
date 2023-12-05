@@ -13,6 +13,19 @@ import client from '@config/sanityClient'
 import imageUrlBuilder from '@sanity/image-url';
 
 
+export async function generateMetadata({ params: { slug } }) {
+  const postMeta = await getPostBySlug(slug);
+  const description = postMeta.body[0].children[0].text;
+  if (!postMeta || postMeta.length === 0) {
+    return {
+      title: 'post not found'
+    }
+  }
+  
+  return {
+    title: postMeta.title ,
+   description
+}}
 
 async function PostContent({ slug }) {
 
@@ -93,11 +106,3 @@ export default async function Page({ params: { slug } }) {
     </>
   );
 }
-/* 
-export default function Page({ params }) {
-  const post = async () => {
-    const data = await getPostBySlug(params);
-  }
-
-    return <div>My Post: {params.slug}</div>
-  } */
