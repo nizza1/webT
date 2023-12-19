@@ -1,0 +1,28 @@
+.container {
+    min-height: 100vh;
+    padding: 0 1.2rem ;
+}
+
+.innerContainer {
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 70px 0;
+}
+
+.body {
+    padding: 2rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
+
+}
+
+.body p {
+    line-height: 1.7rem;
+}
+
+.body ul li {
+    line-height: 1.7rem;
+}
+
+

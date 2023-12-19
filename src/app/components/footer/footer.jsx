@@ -17,6 +17,8 @@ const Footer = () => {
     </div>
     <div className={styles.rights}>
       <Link href="/impressum">Impressum & Datenschutzerklärung</Link>
+      <Link href="/agb">Allgemeine Geschäftsbedingungen</Link>
+      
     </div>
     </div>
     
