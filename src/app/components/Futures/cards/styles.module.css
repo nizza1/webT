@@ -1,5 +1,6 @@
 .container {
-    background-color: rgb(247, 191, 191);
+
+    min-height: 60vh;
 }
 
 .show {

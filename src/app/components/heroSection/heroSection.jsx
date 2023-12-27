@@ -29,7 +29,8 @@ const HeroSection = () => {
           <p className={styles.text}>
           Die Ihren Zielen entsprechen</p>
           
-        <ContactButton text='KOSTENLOSES ERSTGESPRÄCH' position='hero' time='ca.15 Minuten'/>
+        <ContactButton text='ERSTGESPRÄCH VEREINBAREN'
+        position='hero' time='ca.15 Minuten'/>
 
         <Scroll to='#nextS'/>
 
