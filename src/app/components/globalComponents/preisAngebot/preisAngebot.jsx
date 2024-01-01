@@ -10,7 +10,10 @@ import {MdOutlineWorkOutline} from 'react-icons/md'
 import {AiOutlineUser } from 'react-icons/ai'
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import {FiPhone} from 'react-icons/fi'
-import {BsArrowRightSquareFill, BsArrowLeftSquareFill} from 'react-icons/bs'
+
+import { TiArrowLeft , TiArrowRight } from "react-icons/ti";
+
+
 
 const preisAngebot = () => {
   
@@ -334,7 +337,7 @@ const preisAngebot = () => {
             }`} 
              onClick={handleScrollLeft}>
                <span className={styles.iconC}>
-               <BsArrowLeftSquareFill  />
+               <TiArrowLeft />
                </span>
              Zurück
              </button>
@@ -344,7 +347,7 @@ const preisAngebot = () => {
           scrollPosition >= maxScrollPosition ? 'Angebot anfordern' : 'Weiter'
         }
              <span className={styles.iconC}>
-               <BsArrowRightSquareFill  />
+             <TiArrowRight />
                </span>
              
            </button>
