@@ -16,25 +16,51 @@
     max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+ /*    align-items: center; */
 
+}
+.contactData {
+    color: black;
+}
+
+.contactData div {
+    display: flex;
+    column-gap: .7rem;
+   /*  align-items: center; */
+    padding: .4rem 0;   
+  /*   justify-content: center; */
+
+}
+
+.contactData div a {
+    color : black;
+    text-decoration: none;
+}
+
+.icons {
+    color : black;
 }
 
 .rights {
     display: flex;
-   column-gap: 1rem;
-    align-items: center;
+    flex-direction: column;
 
- 
 }
 
-.rights a {
+.rights div {
+    display: flex;
+    column-gap: .7rem;
+    align-items: center;
+    padding: .4rem 0; 
+}
+
+.rights div a {
     text-decoration: none ;
     color : black;
     transition-duration: .3s;
 
 }
-.rights a:hover {
+.rights div a:hover {
     color : rgb(60, 60, 255);
 }
 
@@ -71,6 +97,6 @@
 
     .rights {
         flex-direction: column;
-        row-gap: 2rem;
+      /*   row-gap: 2rem; */
     }
 }

@@ -8,6 +8,15 @@ import Social from '@app/components/social/social'
 
 import Highlight from '../title-gr/title-highlight/highlight'
 
+
+import {FiPhoneCall} from 'react-icons/fi'
+import {MdAlternateEmail} from 'react-icons/md'
+import {BsFillPinMapFill} from 'react-icons/bs'
+
+import { IoIosLink } from "react-icons/io";
+
+
+
 const Footer = () => {
   return (
     <div className={classNames(styles.container )}> 
@@ -15,10 +24,38 @@ const Footer = () => {
     <div >
     <Social />
     </div>
+
+
+    <div className={styles.contactData}>
+      <div>
+            <BsFillPinMapFill className={styles.icons} />
+            <p >Schnieglinger Str. 264, Nürnberg</p>
+        </div>
+
+        <div>
+            <FiPhoneCall className={styles.icons} />
+            <a href="tel:+4991137433917">+49 911 37433917</a>
+        </div>
+
+        <div>
+            <MdAlternateEmail className={styles.icons}/>
+            <a href = "mailto: info@nuancestudio.de">info@nuancestudio.de
+            </a>
+        </div>
+
+    </div>
     <div className={styles.rights}>
+
+      <div>
+      <IoIosLink className={styles.icons}/>
       <Link href="/impressum">Impressum & Datenschutzerklärung</Link>
-      
-      <Link href="/agb">Allgemeine Geschäftsbedingungen</Link>
+      </div>
+    
+      <div>
+      <IoIosLink className={styles.icons}/>
+      <Link href="/agb">AGB</Link>
+      </div>
+     
       
     </div>
     </div>
