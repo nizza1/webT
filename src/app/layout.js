@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 import HeaderBar from '@app/components/headerBar/headerBar'
 import Footer from '@app/components/footer/footer'
 
+import Bg from '@app/components/globalComponents/bg/bg'
 
 //analysis
 import { Analytics } from '@vercel/analytics/react';
@@ -62,6 +63,8 @@ export default function RootLayout({ children }) {
     </Head>
       
       <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable} ${interVar.variable}`}>
+
+        <Bg />
 
 
           <HeaderBar />

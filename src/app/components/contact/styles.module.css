@@ -30,29 +30,9 @@
     max-width: 700px;
     row-gap: .2rem;
     position: relative;
-    background: var(--highlight-Text);
+    background: var(--blur-bg);
+    border: 1px solid var(--card-border);
 
-}
-
-.contactForm::after {
-    position: absolute;
-    content: '';
-    inset: var(--border-width-c);
-    border-radius: .9rem;
-    background: var(--primary-background);
-/*    background-color: rgba(226, 226, 226, 0.948); */
-
-   backdrop-filter: blur(50px);
-    z-index: 1;
-}
-
-.contactForm::before {
-    position: absolute;
-    content: '';
-    inset: 2px;
-    border-radius: .9rem;
-    /* background: var(--gradient-card); */
-    z-index: 2;
 }
 
 
@@ -169,5 +149,9 @@
         flex-direction: column-reverse;
         row-gap: 100px;
         
+    }
+
+    .social {
+        height: clamp(300px , 400px, 500px);
     }
 }

@@ -32,14 +32,16 @@
     border-radius: var(--border-radius);
     transition-duration: .3s;
 
-    background: #E1E4FE;
+    background: var(--blur-bg);
     color: rgb(69, 66, 95);
+    backdrop-filter: blur(var(--blur-bg-o));
+/*     border: 2px solid var(--card-border); */
 
 }
 
-.listAndIcon:hover {
+/* .listAndIcon:hover {
     transform: scale(1.03);
-}
+} */
 .listContainer ul {
     color: var(--primary-background);
     margin-top: 2rem;

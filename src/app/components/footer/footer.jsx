@@ -62,7 +62,10 @@ const Footer = () => {
     
 
     <div className={styles.nuance}>
+      <div className={styles.inNuance}>
       <h2><Highlight text='NUANCESTUDIO'/></h2>
+      </div>
+      
     </div>
     
     </div>
