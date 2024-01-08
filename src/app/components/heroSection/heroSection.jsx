@@ -34,7 +34,11 @@ const HeroSection = () => {
           Die Ihren Zielen entsprechen</p>
           
         <Link className={styles.link} href='/contact'>ERSTGESPRÄCH VEREINBAREN 
-        <FiArrowRight className={styles.cIcon}/></Link>
+     
+        <FiArrowRight className={styles.coIcon} />
+     
+       
+        </Link>
        
 
         <Scroll to='#nextS'/>

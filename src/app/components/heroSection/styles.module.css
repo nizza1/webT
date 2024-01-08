@@ -72,7 +72,7 @@
     border-radius: 3rem;
     font-size: 1.5rem;
     transition-duration: .3s;
-    background: var(--highlight-Text);
+    background: var(--new-highlight);
     display: flex;
     align-items: center;
     column-gap: .7rem;
@@ -80,13 +80,17 @@
 }
 
 .link:hover {
-    transform: scale(.97);
+    /* transform: scale(.98); */
 }
-/* 
-link:hover  .cIcon {
-    transform: translateX(.5rem);
-    padding-left: .6rem;
-} */
+.coIcon {
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.link:hover .coIcon {
+
+    margin-left: .6rem;
+}
 
 
 
