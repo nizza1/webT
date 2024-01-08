@@ -13,6 +13,25 @@ import { Analytics } from '@vercel/analytics/react';
 import GoogleAnalytics from '@bradgarropy/next-google-analytics';
 
 
+//tatmanager
+const firstScript = <Script
+strategy="afterInteractive"
+src="https://www.googletagmanager.com/gtag/js?id=AW-11459365015" />;
+
+
+const secondScript = <Script id="gtag"
+ dangerouslySetInnerHTML={{
+   __html: `
+   window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+  gtag('config', 'AW-11459365015/GAKYCPqX2IYZEJeRoNgq', {
+    'phone_conversion_number': '+49 911 37433917' ,
+     page_path: window.location.pathname
+  });
+` }} />;
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -39,7 +58,7 @@ const interVar = localFont({
 
 
 export const metadata = {
-  title: 'Website erstellen lassen | Kostenlose Beratung | Design & Entwicklung',
+  title: 'Website erstellen lassen | Design & Entwicklung',
   description: 'Professionelle Webentwicklung, Design und Marketing aus Nürnberg'
 }
 
@@ -59,6 +78,9 @@ export default function RootLayout({ children }) {
           href="https://www.nuastudio.de/"
           key="canonical"
         />
+
+        {firstScript}
+        {secondScript}
     </Head>
       
       <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable} ${interVar.variable}`}>
@@ -82,6 +104,8 @@ export default function RootLayout({ children }) {
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
            </Script>
+
+           
       </body>
     </html>
   )

@@ -159,6 +159,11 @@
 
 }
 
+.star {
+    color: rgb(250, 112, 112);
+    font-size: .9rem;
+}
+
 
 
 @media (min-width:880px ) {

@@ -81,7 +81,7 @@ const Contact = () => {
                < label htmlFor='theName'
                 className={styles.label}
                 >
-                  Name
+                  Name<span className={styles.star}> *</span>
                 </label>
                < input type='text'
                 name='theName'
@@ -94,7 +94,8 @@ const Contact = () => {
              < div className={styles.inputContainer} >
                < label htmlFor='email'
                className={styles.label}
-               >E-Mail</label>
+               >E-Mail
+               <span className={styles.star}> *</span></label>
                 
                < input type='email'
                 name='email' 
@@ -108,7 +109,7 @@ const Contact = () => {
                className={styles.label}
                >Telefonnummer</label>
                
-               < input type='number'
+               < input type='tel'
                 name='subject'
                 className={styles.inputField} 
                 placeholder='Ihre Telefonnummer'

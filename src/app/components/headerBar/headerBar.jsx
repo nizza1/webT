@@ -13,14 +13,14 @@ import { motion, useScroll ,useSpring } from "framer-motion"
 
 
 //componentes 
-import ContactButton from '@app/components/buttons/contactButton/contactButton'
+
 import NavButton from './navButton/navButton'
 import NavList from './navList/navList'
 
 //store 
 import useStore from '@app/stores/navStore'
 
-const logo = '/logoNuance.svg'
+/* const logo = '/logoNuance.svg' */
 const logoWithText = '/logowithtext.svg'
 
 
@@ -75,7 +75,7 @@ const HeaderBar = () => {
           isActive ?  <div className={styles.navListContainer}>
           <NavList />
         </div>
-          /*   */
+   
           : null
         }
        
