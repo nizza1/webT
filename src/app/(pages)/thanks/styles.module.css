@@ -1,0 +1,22 @@
+.main {
+    min-height: 75vh;
+    min-height: 75dvh;
+    padding: 50px 1.2rem;
+}
+
+.titleCo {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    text-align: center;
+}
+
+.imgCo {
+ 
+    width: clamp(300px , 100%, 100%);
+    height: clamp(300px , 400px , 500px);
+    position: relative;
+}
+
+.img {
+    position: absolute;
+}

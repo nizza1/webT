@@ -8,7 +8,7 @@ import Image from 'next/image'
 //components
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
 import { sendContactForm } from '@helpers/sendForm';
-
+import Title from '@app/components/title-gr/title-gr'
 
 //icons
 import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
@@ -53,6 +53,11 @@ const Contact = () => {
 
   return (
     <div className={styles.container} id='contact-section'>
+      <div className={styles.titleCo}>
+
+        <Title text='Lassen Sie uns unverbindlich sprechen' />
+    
+      </div>
         <div className={styles.innerContainer} id='contact-section' >
           
         <form className={styles.contactForm}  onSubmit={hanleSubmit} >

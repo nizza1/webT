@@ -7,14 +7,17 @@ const Contactill = () => {
 
 
   return (
-  
-        <Image
+
+
+    <Image
             className={styles.img}
             src={img}
             alt="contact-form-image"
             fill={true}
 
         />
+  
+        
 
   )
 }

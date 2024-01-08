@@ -64,6 +64,30 @@
  z-index: 5;
 }
 
+.link {
+    text-decoration: none;
+    /* background-color: var(--new-highlight); */
+    color: aliceblue;
+    padding: .8rem 1.3rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    transition-duration: .3s;
+    background: var(--highlight-Text);
+    display: flex;
+    align-items: center;
+    column-gap: .7rem;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.link:hover {
+    transform: scale(.97);
+}
+/* 
+link:hover  .cIcon {
+    transform: translateX(.5rem);
+    padding-left: .6rem;
+} */
+
 
 
 

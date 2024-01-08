@@ -1,9 +1,14 @@
-
+.titleCo {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding: 100px 1rem 50px;
+/*     text-align: end; */
+}
 
 .innerContainer {
     max-width: var(--max-width);
     margin-inline: auto;
-    padding: 100px .6rem;
+    padding: 0 .6rem 100px;
     display: flex;
     column-gap: 2rem;
     justify-content: space-between;
@@ -170,4 +175,8 @@
         row-gap: 100px;
         
     }
+
+   /*  .titleCo {
+        padding: 50px 1rem;
+    } */
 }
