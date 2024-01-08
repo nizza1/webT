@@ -2,6 +2,7 @@
 /* require('dotenv').config()
 const PASSWORD = process.env.password */
 
+
 import { mailOptions, transporter } from "@config/nodemailer";
 
 /* sollte SMTP stattdessen Port 587 nutzen  */
@@ -26,6 +27,7 @@ import { mailOptions, transporter } from "@config/nodemailer";
         })
 
         return res.status(200).json({ message: 'Ihre Nachricht wurde gesendet' });
+       
 
       } catch (error) {
         console.log(error);

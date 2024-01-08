@@ -79,9 +79,6 @@
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.link:hover {
-    /* transform: scale(.98); */
-}
 .coIcon {
     transition-duration: .3s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);

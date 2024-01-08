@@ -3,6 +3,11 @@ import React , { useState } from 'react'
 import styles from './styles.module.css'
  
 
+//next 
+import { useRouter } from 'next/navigation'
+ 
+
+
 //components
 /* import ContactButton from '@app/components/buttons/contactButton/contactButton' */
 import { sendContactForm } from '@helpers/sendForm';
@@ -23,6 +28,10 @@ const initState = {values: initValues};
 
 const Contact = () => {
 
+  const router = useRouter()
+ 
+
+
     const [state , setState ] = useState(initState);
     const {values}= state;
 
@@ -34,13 +43,17 @@ const Contact = () => {
         }
     }))
 
-    const hanleSubmit = async(e)=> {
+
+    const handleSubmit = async(e)=> {
+  /*     'use server' */
         e.preventDefault();
         try {
           const response = await sendContactForm(values)
           if (response.ok) {
             const data = await response.json();
-            alert(data.message);
+     /*        alert(data.message); */
+            router.push('/thanks', { scroll: false })
+
           } else {
             const errorData = await response.json();
             alert(errorData.message);
@@ -51,6 +64,8 @@ const Contact = () => {
         }
     }
 
+   
+
   return (
     <div className={styles.container} id='contact-section'>
       <div className={styles.titleCo}>
@@ -60,7 +75,7 @@ const Contact = () => {
       </div>
         <div className={styles.innerContainer} id='contact-section' >
           
-        <form className={styles.contactForm}  onSubmit={hanleSubmit} >
+        <form className={styles.contactForm}  onSubmit={handleSubmit} >
 
             < div className={styles.inputContainer} >
                < label htmlFor='theName'
