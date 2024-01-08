@@ -1,10 +1,10 @@
 "use client"
 import React , { useState } from 'react'
 import styles from './styles.module.css'
-
+ 
 
 //components
-import ContactButton from '@app/components/buttons/contactButton/contactButton'
+/* import ContactButton from '@app/components/buttons/contactButton/contactButton' */
 import { sendContactForm } from '@helpers/sendForm';
 import Title from '@app/components/title-gr/title-gr'
 
@@ -12,7 +12,11 @@ import Title from '@app/components/title-gr/title-gr'
 import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import {FiPhone} from 'react-icons/fi'
+import { IoIosSend } from "react-icons/io";
+
+
 import Contactill from './contactill/contactill'
+
 
 const initValues = {theName: '',email: '' , subject: '', message: ''};
 const initState = {values: initValues};
@@ -112,13 +116,16 @@ const Contact = () => {
                <AiOutlineMessage className={styles.iconInput} />
              </div>
              <div className={styles.buttonContainer}>
-             <ContactButton text='Senden' type='submit' position='contactForm'/>
+
+               <button type='submit' className={styles.contactButton}> Senden 
+               <IoIosSend className={styles.coIcon}/>
+                </button>
              </div>
             
         </form>
 
         <div className={styles.social} >
-              <Contactill />
+              <Contactill  />
                 
             </div>
         </div>

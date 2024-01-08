@@ -2,7 +2,7 @@
 /* require('dotenv').config()
 const PASSWORD = process.env.password */
 
-import { mailOptions, transporter } from "@config/nodemailer";
+import { mailOptions, transporter } from "/config/nodemailer";
 
 /* sollte SMTP stattdessen Port 587 nutzen  */
 
@@ -36,45 +36,3 @@ import { mailOptions, transporter } from "@config/nodemailer";
      return res.status(405).json({ message: 'Method not allowed' });
   };
    export default handler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
-    auth: {
-      user: 'nizar.code@gmail.com',
-      pass: 'wobjdmxcarlsaiau',
-    },
-    secure: true,
-   });
-
-   const mailData = {
-    from: 'demo@demo.com',
-    to: 'nizardjassim@gmail.com',
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message,
-    html: <div>{req.body.message}</div>
-   }
-   transporter.sendMail(mailData, function (err, info) {
-    if(err)
-      console.log(err)
-    else
-      console.log(info)
-  })
-  res.status(200)
-    console.log(req.body) */

@@ -132,24 +132,34 @@
     justify-content: center;
     padding-top: 0rem;
 }
-
-.mapContainer {
-    overflow: hidden;
-/*     border: 2px solid var(--new-highlight); */
-   border-radius: var(--border-radius);
-   position: relative;
+.contactButton {
+    padding: .5rem 1.2rem ;
+    border-radius: 2rem;
+    background: var(--new-highlight);
+    color : aliceblue;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.contactButton:hover {
+    transform: scale(.98);
 }
 
-.mapContainer::before {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: var(--highlight-Text);
-    opacity: .1;
+.coIcon {
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-left: .8rem;
 }
+
+.contactButton:hover .coIcon {
+    transform: rotate(360deg);
+
+}
+
+
 
 @media (min-width:880px ) {
     .inputField {
