@@ -2,8 +2,6 @@
 import React , { useState } from 'react'
 import styles from './styles.module.css'
 
-import Image from 'next/image'
-//lottie 
 
 //components
 import ContactButton from '@app/components/buttons/contactButton/contactButton'
@@ -15,8 +13,6 @@ import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import {FiPhone} from 'react-icons/fi'
 import Contactill from './contactill/contactill'
-
-const map = '/die-adresse-min.jpg'
 
 const initValues = {theName: '',email: '' , subject: '', message: ''};
 const initState = {values: initValues};
