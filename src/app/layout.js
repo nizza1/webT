@@ -10,27 +10,13 @@ import Footer from '@app/components/footer/footer'
 
 //analysis
 import { Analytics } from '@vercel/analytics/react';
-import GoogleAnalytics from '@bradgarropy/next-google-analytics';
+/* import GoogleAnalytics from '@bradgarropy/next-google-analytics'; */
+/* import { GoogleAnalytics } from '@next/third-parties/google'*/
+import { GoogleTagManager } from '@next/third-parties/google'
 
+import GTMEventSender from './gtmEvent/gtmEvent'; 
 
-//tatmanager
-const firstScript = <Script
-strategy="afterInteractive"
-src="https://www.googletagmanager.com/gtag/js?id=AW-11459365015" />;
-
-
-const secondScript = <Script id="gtag"
- dangerouslySetInnerHTML={{
-   __html: `
-   window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-  gtag('config', 'AW-11459365015/GAKYCPqX2IYZEJeRoNgq', {
-    'phone_conversion_number': '+49 911 37433917' ,
-     page_path: window.location.pathname
-  });
-` }} />;
+import { Src , GoogleTagManagerScript ,Conversion} from './googleAds/googleAds'
 
 
 
@@ -66,8 +52,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
  /*  const Gtm = process.env.GTM */
-  const analytics = process.env.GOOGLE_ANALYTICS
-  const hot = process.env.HOT_JAR
+/*   const analytics = process.env.GOOGLE_ANALYTICS */
+ /*  const hot = process.env.HOT_JAR */
+
+  const testTag = process.env.GTM_TAG
+
+ /*  const adrianAnalytics = process.env.ADRIAN_AD */
+
+
 
   
   return (
@@ -79,9 +71,10 @@ export default function RootLayout({ children }) {
           key="canonical"
         />
 
-        {firstScript}
-        {secondScript}
+    
+       
     </Head>
+
       
       <body className={`${interBold.variable} ${interReg.variable} ${interThin.variable} ${interVar.variable}`}>
 
@@ -90,7 +83,7 @@ export default function RootLayout({ children }) {
            {children}
            <Footer />
            <Analytics debug={true}/>
-           <GoogleAnalytics measurementId={analytics} />
+           {/* <GoogleAnalytics measurementId={analytics} /> */}
 
            <Script strategy='afterInteractive'>
            {`
@@ -103,10 +96,25 @@ export default function RootLayout({ children }) {
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
-           </Script>
+           </Script>  
 
            
+
+           
+           
+          
+          
+          
+           <GTMEventSender />
+         
       </body>
+      <Src />
+      
+      <GoogleTagManagerScript />
+      <Conversion />
+
+      <GoogleTagManager gtmId={testTag}/>
+
     </html>
   )
 }

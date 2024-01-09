@@ -19,7 +19,8 @@ import Slider from './components/slider/slider';
 import Cards from '@app/components/cardsS/cards'
 //providers 
 
-//Modal
+//GTMConversion
+import GTMConversion from './gtmEvent/gtmConv';
 
 
   
@@ -27,21 +28,18 @@ export default function Home() {
   return (
 
       <main className={classNames(styles.main, '')}>
+
            <Hero />
            <Advantages />
            <Cards />
            <Futures />
-          
-           {/* <Resposnsive /> */}
-         {/*   <Sliderr /> */}
-      
-         <Slider  />
-           
+           <Slider  />
            <Phases />
            <About />
-          {/*  <Tech /> */}
            <Contact />
            <Questions/>
+           
+           <GTMConversion />
      
       </main>
   
