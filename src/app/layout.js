@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
 
   const testTag = process.env.GTM_TAG
 
- /*  const adrianAnalytics = process.env.ADRIAN_AD */
+
 
 
 
