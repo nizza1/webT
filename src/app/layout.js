@@ -9,14 +9,16 @@ import Footer from '@app/components/footer/footer'
 
 
 //analysis
-import { Analytics } from '@vercel/analytics/react';
+/* import { Analytics } from '@vercel/analytics/react'; */
 /* import GoogleAnalytics from '@bradgarropy/next-google-analytics'; */
 /* import { GoogleAnalytics } from '@next/third-parties/google'*/
-import { GoogleTagManager } from '@next/third-parties/google'
 
-import GTMEventSender from './gtmEvent/gtmEvent'; 
+/* import { GoogleTagManager } from '@next/third-parties/google'
+
+import GTMEventSender from './gtmEvent/gtmEvent';  */
 
 import { Src , GoogleTagManagerScript ,Conversion} from './googleAds/googleAds'
+import { GoogleTagManagerScriptHead , GoogleTagManagerNoscriptBody} from './googleAds/googleAdsScripts'
 
 
 
@@ -55,7 +57,7 @@ export default function RootLayout({ children }) {
 /*   const analytics = process.env.GOOGLE_ANALYTICS */
  /*  const hot = process.env.HOT_JAR */
 
-  const testTag = process.env.GTM_TAG
+ /*  const testTag = process.env.GTM_TAG */
 
 
 
@@ -82,7 +84,7 @@ export default function RootLayout({ children }) {
           <HeaderBar />
            {children}
            <Footer />
-           <Analytics debug={true}/>
+           {/* <Analytics debug={true}/> */}
            {/* <GoogleAnalytics measurementId={analytics} /> */}
 
            <Script strategy='afterInteractive'>
@@ -105,15 +107,17 @@ export default function RootLayout({ children }) {
           
           
           
-           <GTMEventSender />
-         
+          {/*  <GTMEventSender /> */}
+         <GoogleTagManagerNoscriptBody />
       </body>
+
       <Src />
-      
       <GoogleTagManagerScript />
       <Conversion />
 
-      <GoogleTagManager gtmId={testTag}/>
+      <GoogleTagManagerScriptHead />
+
+      {/* <GoogleTagManager gtmId={testTag}/> */}
 
     </html>
   )
