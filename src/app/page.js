@@ -20,7 +20,7 @@ import Cards from '@app/components/cardsS/cards'
 //providers 
 
 //GTMConversion
-import GTMConversion from './gtmEvent/gtmConv';
+/* import GTMConversion from './gtmEvent/gtmConv'; */
 
 
   
@@ -39,7 +39,7 @@ export default function Home() {
            <Contact />
            <Questions/>
            
-           <GTMConversion />
+           {/* <GTMConversion /> */}
      
       </main>
   
