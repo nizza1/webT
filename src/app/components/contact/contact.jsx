@@ -1,4 +1,6 @@
 "use client"
+
+
 import React , { useState } from 'react'
 import styles from './styles.module.css'
  
@@ -9,7 +11,7 @@ import { useRouter } from 'next/navigation'
 
 
 //components
-/* import ContactButton from '@app/components/buttons/contactButton/contactButton' */
+
 import { sendContactForm } from '@helpers/sendForm';
 import Title from '@app/components/title-gr/title-gr'
 
@@ -18,6 +20,9 @@ import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import {FiPhone} from 'react-icons/fi'
 import { IoIosSend } from "react-icons/io";
+
+//loader 
+import { BiLoaderAlt } from "react-icons/bi";
 
 
 import Contactill from './contactill/contactill'
@@ -28,11 +33,12 @@ const initState = {values: initValues};
 
 const Contact = () => {
 
-  const router = useRouter()
- 
+    const router = useRouter();
 
+    const [loading, setLoading] = useState(false);
 
     const [state , setState ] = useState(initState);
+    
     const {values}= state;
 
     const handleChange = ({target}) => setState((prev)=> ({
@@ -47,6 +53,8 @@ const Contact = () => {
     const handleSubmit = async(e)=> {
   /*     'use server' */
         e.preventDefault();
+        setLoading(true);
+
         try {
           const response = await sendContactForm(values)
           if (response.ok) {
@@ -57,10 +65,12 @@ const Contact = () => {
           } else {
             const errorData = await response.json();
             alert(errorData.message);
+            setLoading(false);
           }
 
         } catch (e) {
           alert(e);
+          setLoading(false);
         }
     }
 
@@ -133,9 +143,16 @@ const Contact = () => {
              </div>
              <div className={styles.buttonContainer}>
 
-               <button type='submit' className={styles.contactButton}> Senden 
-               <IoIosSend className={styles.coIcon}/>
-                </button>
+              {
+                loading ?
+                   <button className={styles.contactButton} disabled={loading}>
+                    <BiLoaderAlt className={styles.loadingIcon}/>
+                   </button> 
+                : <button type='submit' className={styles.contactButton} disabled={loading}> Senden 
+                    <IoIosSend className={styles.coIcon}/>
+                  </button>
+              }
+               
              </div>
             
         </form>

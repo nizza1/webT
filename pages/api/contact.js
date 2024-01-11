@@ -11,9 +11,12 @@ import { mailOptions, transporter } from "@config/nodemailer";
 
     if (req.method === 'POST'){
       const data = req.body;
-      console.log(data);
+
       if (!data.theName ) {
-        return res.status(400).json({message:'name is required'})
+        return res.status(400).json({message:'Bitte geben Sie Ihren Namen an'})
+      }
+      if (!data.email) {
+        return res.status(400).json({ message: 'Bitte geben Sie Ihre E-Mail-Adresse an' });
       }
 
       try {
