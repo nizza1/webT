@@ -104,7 +104,7 @@ const About = () => {
          /*   width={400}
            height={500} */
            fill={true}
-           alt='dasha'
+           alt='Sofia'
            style={{
              objectFit: 'cover',
            }}
@@ -112,7 +112,7 @@ const About = () => {
          </div>
          <div className={styles.underImage}>
          <div className={styles.uberMichText}>
-          <p className={styles.imgTitle}>Dascha  </p>
+          <p className={styles.imgTitle}>Sofia  </p>
           <p className={styles.imgDes}>
             "Grafik und Webdesign" <br />
             Unsere kreative Kraft im Grafikdesign.<br /> Dasha bringt Ideen zum Leben und sorgt dafür, dass jedes Projekt visuell heraussticht.</p>
