@@ -115,7 +115,7 @@ const About = () => {
           <p className={styles.imgTitle}>Sofia  </p>
           <p className={styles.imgDes}>
             "Grafik und Webdesign" <br />
-            Unsere kreative Kraft im Grafikdesign.<br /> Dasha bringt Ideen zum Leben und sorgt dafür, dass jedes Projekt visuell heraussticht.</p>
+            Unsere kreative Kraft im Grafikdesign.<br /> Sofia bringt Ideen zum Leben und sorgt dafür, dass jedes Projekt visuell heraussticht.</p>
         
           </div>
          </div>
