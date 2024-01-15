@@ -2,6 +2,14 @@
 import React from 'react'
 import styles from './styles.module.css'
 
+//icons 
+import { AiOutlineQuestion } from "react-icons/ai";
+import { IoCodeSlash } from "react-icons/io5";
+import { PiRocket } from "react-icons/pi";
+
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+
+
 
 
 //components 
@@ -20,7 +28,8 @@ const Phases = () => {
             >
 
            <div className={styles.circle}>
-                   <p># 1</p>
+           <AiOutlineQuestion className={styles.icon}/>
+
             </div>
         
             <div className={styles.content}>
@@ -36,7 +45,8 @@ const Phases = () => {
             >
 
            <div className={styles.circle}>
-                   <p># 2</p>
+
+                   <IoCodeSlash className={styles.icon}/>
             </div>
         
             <div className={styles.content}>
@@ -52,7 +62,9 @@ const Phases = () => {
             >
 
            <div className={styles.circle}>
-                   <p># 3</p>
+        
+                     
+            <IoShieldCheckmarkOutline className={styles.icon}/>
             </div>
         
             <div className={styles.content}>
@@ -68,7 +80,8 @@ const Phases = () => {
             >
 
            <div className={styles.circle}>
-                   <p># 4</p>
+
+                   <PiRocket className={styles.icon} />
             </div>
         
             <div className={styles.content}>

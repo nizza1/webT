@@ -35,6 +35,10 @@
     color: aliceblue;
 }
 
+.icon {
+    font-size: 1.5rem;
+}
+
 
 .content {
     max-width: 80ch;
