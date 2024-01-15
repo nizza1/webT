@@ -48,7 +48,12 @@ const Footer = () => {
 
       <div>
       <IoIosLink className={styles.icons}/>
-      <Link href="/impressum">Impressum & Datenschutzerklärung</Link>
+      <Link href="/impressum">Impressum </Link>
+      </div>
+
+      <div>
+      <IoIosLink className={styles.icons}/>
+      <Link href="/datanschutz">Datenschutzerklärung</Link>
       </div>
     
       <div>
