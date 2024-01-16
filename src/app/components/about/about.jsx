@@ -8,9 +8,13 @@ import Title from '@app/components/title-gr/title-highlight-d-bg/highlight'
 import styles from './styles.module.css'
 
 
-const chrisImage = '/chrisBohdan.jpeg'
+/* const chrisImage = '/chrisBohdan.jpeg'
 const nizarImage = '/images/pMe.jpg'
-const dashaImage = '/dasha.jpeg'
+const dashaImage = '/dasha.jpeg' */
+
+import chrisImage from 'public/chrisBohdan.jpeg'
+import nizarImage from 'public/images/pMe.jpg'
+import dashaImage from 'public/dasha.jpeg'
 
 import Overlay from '../globalComponents/overlay/overlay'
 
@@ -52,6 +56,7 @@ const About = () => {
            className={styles.img}
            src={nizarImage}
            fill={true}
+           placeholder='blur'
            alt='Nizar Djassim'
            style={{
              objectFit: 'cover',
@@ -76,6 +81,7 @@ const About = () => {
            src={chrisImage}
          /*   width={400}
            height={500} */
+           placeholder='blur'
            fill={true}
            alt='chris Bohdan'
            style={{
@@ -103,6 +109,7 @@ const About = () => {
            src={dashaImage}
          /*   width={400}
            height={500} */
+           placeholder='blur'
            fill={true}
            alt='Sofia'
            style={{

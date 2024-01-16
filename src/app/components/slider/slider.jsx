@@ -9,16 +9,28 @@ import {IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
 
 import Title from '../title-gr/title-highlight-d-bg/highlight'
 
+
+import girafI from 'public/reference/giraf.png'
+import avisaI from 'public/reference/avisa.png'
+import comservI from 'public/reference/comserv.jpg'
+import horosI from 'public/reference/horos.jpg'
+import industrialI from 'public/reference/industrial.jpg'
+import quantumI from 'public/reference/quantum.jpg'
+import rostockI from 'public/reference/rostock.png'
+import yachtI from 'public/reference/yacht-travel.jpg'
+
 const references = [
-  { key: 'giraf referens ', value: '/reference/giraf.png' },
-  { key: 'avisa referens', value: '/reference/avisa.png' },
-  { key: 'reference', value: '/reference/comserv.jpg' },
-  { key: 'reference', value: '/reference/horos.jpg' },
-  { key: 'reference', value: '/reference/industrial.jpg' },
-  { key: 'reference', value: '/reference/quantum.jpg' },
-  { key: 'reference', value: '/reference/rostock.png' },
-  { key: 'reference', value: '/reference/yacht-travel.jpg' },
+
+  { key: 'avisa referens', value: avisaI },
+  { key: 'reference', value: comservI },
+  { key: 'reference', value: industrialI },
+  { key: 'reference', value: quantumI },
+  { key: 'giraf referens ', value: girafI },
+  { key: 'reference', value: horosI },
+  { key: 'reference', value: yachtI },
+  { key: 'reference', value: rostockI },
   
+
 ];
 
 
@@ -65,9 +77,7 @@ const Slider = () => {
     <div className={styles.container} id='referenzen'>
 
       <div className={styles.titleContainer}>
-        <h2><Title text='Einige unserer Projekte' /></h2>
-    {/*   <h1>Einige unserer Projecte </h1> */}
-   
+        <h2><Title text='Einige unserer Projekte' /></h2>   
       </div>
 
     
@@ -90,7 +100,7 @@ const Slider = () => {
                src={reference.value}
                width={300}
                height={400}
-               
+               placeholder='blur'
                alt={reference.key}
              />
            </div>
