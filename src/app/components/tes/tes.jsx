@@ -1,81 +1,50 @@
 "use client"
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, {  useRef } from 'react';
 import styles from './styles.module.css';
-/* import Lottie from 'lottie-react'; */
-/* import myAnimation from '@app/animations/animation_ll5965nn.json'; */
 
-import { motion, useScroll , useSpring ,useMotionValueEvent} from "framer-motion"
+
+import {  useScroll ,useTransform ,useMotionValueEvent} from "framer-motion"
 
 const Tes = () => {
+ 
 
-    const ref = useRef(null);
+    
     const animatedLineRef = useRef(null);
-
-    const { scrollYProgress } = useScroll({ container: ref });
-
-    const refTes = useRef(null);
+    const containerRef = useRef(null);
 
 
-      useMotionValueEvent(scrollYProgress, "change", (latest) => {
 
-        console.log("Page scroll: ", (latest * 100).toFixed(2) )
+    const { scrollYProgress } = useScroll({
+      target: containerRef,
+      offset: ["start start", "end end"]
+  })
 
-        animatedLineRef.current.style.left = `${(latest * 100).toFixed(2)}%`;
-    
-      })
-    
-      const handlePostion = () => {
-        const rect = refTes.instance.getBoundingClientRect().top;
-    
-        console.log('View Offset:', rect);
-      }
-      
+
+  const Y = useTransform(scrollYProgress, [0, 1], [1, 100])
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+
+    console.log("Page scroll: ", (latest * 100).toFixed(2) )
+
+    animatedLineRef.current.style.left = `${(latest * 100).toFixed(2)}%`;
+
+  })
+
+
+
+
 
     return (
       <div  className={styles.container}>
 
-        <div className={styles.placeHolder}>
+ 
 
-          <div className={styles.newContainer}>
+         <div  className={styles.refContainer} /* ref={ref} */ ref={containerRef} >
 
-            <div className={styles.firsSlider}>
-              <div className={styles.project}>
-                <h1>1</h1>
-              </div>
+               
 
-              <div className={styles.project}>
-                <h1>2</h1>
-              </div>
-
-              <div className={styles.project}>
-                <h1>3</h1>
-              </div>
-
-              <div className={styles.project}>
-                <h1>4</h1>
-              </div>
-
-              <div className={styles.project}>
-                <h1>5</h1>
-              </div>
-
-              <div className={styles.project}>
-                <h1>6</h1>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        
-        
-
-         <div  className={styles.refContainer} >
-
-               <div ref={ref} className={styles.li}>
-
-                   <div  className={styles.lic}>
+                  
 
                    <div className={styles.stickyChild}>
 
@@ -85,7 +54,8 @@ const Tes = () => {
 
                         <div className={styles.progressBar}>
                              
-                               <div className={styles.animatedLineWrapper}>
+                               <div className={styles.animatedLineWrapper}
+                               >
                                        <div
                                          className={styles.animatedLine}
                                          ref={animatedLineRef}
@@ -231,9 +201,9 @@ const Tes = () => {
                     </div>
                 
 
-                   </div>
+                 
 
-                   </div>
+                 
               
               </div>
             
@@ -248,6 +218,3 @@ const Tes = () => {
   export default Tes;
 
 
-  /* 
-  <Lottie animationData={animationData} progress={animationProgress} />
-  */
