@@ -206,6 +206,11 @@
         
     }
 
+    .social {
+        max-height: 250px;
+      /*   background-color: red; */
+    }
+
    /*  .titleCo {
         padding: 50px 1rem;
     } */
