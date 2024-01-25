@@ -161,7 +161,7 @@ const About = () => {
   <p className={styles.imgDes}>
     "Copywriter" <br />
     
-    Ich verleihe Ihren Ideen überzeugende Worte. Meine Mission ist es, Ihre Botschaft prägnant und wirkungsvoll zu formulieren</p>
+    Ich verleihe Ihren Ideen überzeugende Worte. Meine Mission ist es, Ihre Botschaft prägnant und wirkungsvoll zu formulieren.</p>
 
   </div>
  </div>
