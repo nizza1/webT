@@ -73,7 +73,7 @@ const About = () => {
  <div className={styles.uberMichText}>
   <p className={styles.imgTitle}>Nizar  </p>
   <p className={styles.imgDes}>
-    "Webentwickler" <br /> Ich sorge dafür, dass Ihre digitale Präsenz nicht nur optisch ansprechend, sondern auch technisch einwandfrei ist.</p>
+    <span>Webentwickler</span> <br /> Ich sorge dafür, dass Ihre digitale Präsenz nicht nur optisch ansprechend, sondern auch technisch einwandfrei ist.</p>
 
   </div>
  </div>
@@ -98,7 +98,7 @@ const About = () => {
  <div className={styles.underImage}>
   <div className={styles.uberMichText}>
   <p className={styles.imgTitle}>Christian  </p>
-  <p className={styles.imgDes}> "Marketing und Kundensupport" <br />Ich bin Ihr erster Ansprechpartner und sorge dafür, dass Ihre Bedürfnisse verstanden und erfüllt werden.</p>
+  <p className={styles.imgDes}> <span>Marketing und Kundensupport</span> <br />Ich bin Ihr erster Ansprechpartner und sorge dafür, dass Ihre Bedürfnisse verstanden und erfüllt werden.</p>
 
   </div>
 
@@ -131,7 +131,7 @@ const About = () => {
  <div className={styles.uberMichText}>
   <p className={styles.imgTitle}>Sofia  </p>
   <p className={styles.imgDes}>
-    "Grafik und Webdesign" <br />
+    <span>Grafik und Webdesign</span><br />
     Unsere kreative Kraft im Grafikdesign.<br /> Sofia bringt Ideen zum Leben und sorgt dafür, dass jedes Projekt visuell heraussticht.</p>
 
   </div>
@@ -159,7 +159,7 @@ const About = () => {
  <div className={styles.uberMichText}>
   <p className={styles.imgTitle}>Alex  </p>
   <p className={styles.imgDes}>
-    "Copywriter" <br />
+    <span>Copywriter</span><br />
     
     Ich verleihe Ihren Ideen überzeugende Worte. Meine Mission ist es, Ihre Botschaft prägnant und wirkungsvoll zu formulieren.</p>
 
