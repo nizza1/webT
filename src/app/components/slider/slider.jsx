@@ -16,21 +16,22 @@ import comservI from 'public/reference/comserv.jpg'
 import horosI from 'public/reference/horos.jpg'
 import industrialI from 'public/reference/industrial.jpg'
 import quantumI from 'public/reference/quantum.jpg'
-import rostockI from 'public/reference/rostock.png'
+import rostockI from 'public/reference/rostock-reference.jpg'
 import yachtI from 'public/reference/yacht-travel.jpg'
+import mecotec from 'public/reference/mecotec-reference.jpg'
 
 const references = [
 
-  { key: 'avisa referens', value: avisaI },
+  { key: 'avisa referece', value: avisaI },
+  { key: 'mecotec reference', value: mecotec },
+  { key: 'rostock reference', value: rostockI },
   { key: 'reference', value: comservI },
   { key: 'reference', value: industrialI },
   { key: 'reference', value: quantumI },
   { key: 'giraf referens ', value: girafI },
   { key: 'reference', value: horosI },
-  { key: 'reference', value: yachtI },
-  { key: 'reference', value: rostockI },
-  
-
+  { key: 'reference', value: yachtI }
+ 
 ];
 
 
