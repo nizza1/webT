@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 const Contactsec = () => {
   return (
-    <div className={styles.co}>
+    <div className={styles.co} id='contact-section'>
      
         <div className={styles.inCo}>
             <div className={styles.imgCoOut}>
