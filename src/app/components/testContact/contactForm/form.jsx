@@ -1,38 +1,23 @@
 "use client"
 
-
 import React , { useState } from 'react'
 import styles from './styles.module.css'
- 
-
 //next 
 import { useRouter } from 'next/navigation'
- 
-
-
-//components
-
 import { sendContactForm } from '@helpers/sendForm';
-import Title from '@app/components/title-gr/title-gr'
-
 //icons
 import {AiOutlineUser , AiOutlineMessage} from 'react-icons/ai'
 import {MdOutlineAlternateEmail} from 'react-icons/md'
 import {FiPhone} from 'react-icons/fi'
 import { IoIosSend } from "react-icons/io";
-
 //loader 
 import { BiLoaderAlt } from "react-icons/bi";
 
 
-import Contactill from './contactill/contactill'
+const Form = () => {
 
-
-const initValues = {theName: '',email: '' , subject: '', message: ''};
-const initState = {values: initValues};
-
-const Contact = () => {
-
+    const initValues = {theName: '',email: '' , subject: '', message: ''};
+    const initState = {values: initValues};
     const router = useRouter();
 
     const [loading, setLoading] = useState(false);
@@ -48,8 +33,6 @@ const Contact = () => {
             [target.name]: target.value
         }
     }))
-
-
     const handleSubmit = async(e)=> {
   /*     'use server' */
         e.preventDefault();
@@ -74,18 +57,8 @@ const Contact = () => {
         }
     }
 
-   
-
   return (
-    <div className={styles.container} id='contact-section'>
-      <div className={styles.titleCo}>
-
-        <Title text='Lassen Sie uns unverbindlich sprechen' />
-    
-      </div>
-        <div className={styles.innerContainer} id='contact-section' >
-          
-        <form className={styles.contactForm}  onSubmit={handleSubmit} >
+    <form className={styles.contactForm}  onSubmit={handleSubmit} >
 
             < div className={styles.inputContainer} >
                < label htmlFor='theName'
@@ -95,7 +68,7 @@ const Contact = () => {
                 </label>
                < input type='text'
                 name='theName'
-                placeholder='z.b John'
+                placeholder='z.b David'
                 className={styles.inputField} 
                 /* value={values.name} */
                onChange={handleChange}/>  
@@ -109,7 +82,7 @@ const Contact = () => {
                 
                < input type='email'
                 name='email' 
-                placeholder='z.b John@gmail.com'
+                placeholder='z.b David@gmail.com'
                 className={styles.inputField} 
                onChange={handleChange}/>
                <MdOutlineAlternateEmail className={styles.iconInput} />
@@ -156,14 +129,7 @@ const Contact = () => {
              </div>
             
         </form>
-
-           <div className={styles.social} >
-              <Contactill  />
-                
-            </div>
-        </div>
-    </div>
   )
 }
 
-export default Contact
+export default Form

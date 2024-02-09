@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '@app/components/contact/contact'
+import Contact from '@app/components/testContact/cont'
 
 const ContactPage = () => {
   return (

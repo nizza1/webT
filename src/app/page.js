@@ -16,6 +16,9 @@ import Phases from './components/Dev-phases/phases';
 import Advantages from './components/advantages/advantages';
 import Slider from './components/slider/slider';
 import Cards from '@app/components/cardsS/cards'
+
+//test 
+import Contactsec from '@app/components/testContact/cont';
 //providers 
 
 //GTMConversion
@@ -35,7 +38,8 @@ export default function Home() {
            <Slider  />
            <Phases />
            <About />
-           <Contact />
+           <Contactsec />
+          {/*  <Contact /> */}
            <Questions/>
            
            {/* <GTMConversion /> */}

@@ -26,12 +26,12 @@ const HeroSection = () => {
         <div className={styles.textContainer}>
 
         <h1 className={styles.titleGr}>
-        Wir entwickeln maßgeschneiderte <Highlight text='Websites'/>
+        Maßgeschneiderte <Highlight text='Webseiten'/> für den Mittelstand 
         </h1>
         {/* <p className={styles.text}>
           Mit einer professionellen Website die Sichtbarkeit erhöhen, Bewerber und neue Kunden gewinnen.</p> */}
           <p className={styles.text}>
-          Die Ihren Zielen entsprechen</p>
+          Für mehr Kunden und passende Fachkräfte</p>
           
         <Link className={styles.link} href='/contact'>ERSTGESPRÄCH VEREINBAREN 
      

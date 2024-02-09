@@ -27,14 +27,14 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: 'transparent'}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Wie siehts mit Wartung und Pflege aus?
+          Wie sieht mit der Pflege aus?
 
         </Box>
          <AccordionIcon />
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Wir legen großen Wert auf langfristige Partnerschaften mit unseren Kunden. Nach der Einführung Ihrer Website besprechen wir gerne mit Ihnen, wie wir die Website in Zukunft warten, pflegen und weiterentwickeln können.
+         Wir legen großen Wert auf langfristige Partnerschaften mit unseren Kunden. Nach der Einführung Ihrer Webseite besprechen wir gerne mit Ihnen, wie wir die Webseite in Zukunft pflegen und weiterentwickeln können.
 
          </AccordionPanel>
          </AccordionItem>
@@ -43,13 +43,13 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: '' }}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Wie lange dauert es, bis meine neue Website live gehen kann?
+          Wie lange dauert es, bis meine neue Webseite live gehen kann?
         </Box>
          <AccordionIcon />
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Abhängig vom Projekt dauert die Entwicklung einer Website vom Erstgespräch bis zur Fertigstellung zwischen 4-8 Wochen.
+         Abhängig vom Projekt dauert die Entwicklung einer Webseite vom Erstgespräch bis zur Fertigstellung zwischen 4-8 Wochen.
 
          </AccordionPanel>
          </AccordionItem>
@@ -58,14 +58,14 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Ich besitze schon eine Website. Kann diese angepasst werden?
+          Ich besitze schon eine Webseite. Kann diese angepasst werden?
         </Box>
          <AccordionIcon />
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Ja, wir können Ihre Website an Ihre Bedürfnisse anpassen.
-         Wir freuen uns darauf, Ihre Website gemeinsam mit Ihnen zu besprechen und herauszufinden, wie wir sie verbessern können.
+         Ja, wir können Ihre Webseite an Ihre Bedürfnisse anpassen.
+         Wir freuen uns darauf, Ihre Webseite gemeinsam mit Ihnen zu besprechen und herauszufinden, wie wir sie verbessern können.
         
          </AccordionPanel>
          </AccordionItem>
@@ -74,13 +74,13 @@ const Questions = () => {
         <h2 >
           <AccordionButton _expanded={{ bg: ''}}className={styles.questionContainer}  >
           <Box  as="span" flex='1' textAlign='left'>
-          Welche Unterstützung bieten Sie bei der Übertragung meiner Website?
+          Welche Unterstützung bieten Sie bei der Übertragung meiner Webseite?
         </Box>
          <AccordionIcon />
          </AccordionButton>
        </h2>
          <AccordionPanel className={styles.answer}>
-         Sie haben die Wahl, wo Ihre Website gehostet wird und welche Domain Sie verwenden möchten. Wir helfen Ihnen, die beste Lösung für Ihre Bedürfnisse zu finden und unterstützen Sie bei der Übertragung. 
+         Sie haben die Wahl, wo Ihre Webseite gehostet wird und welche Domain Sie verwenden möchten. Wir helfen Ihnen, die beste Lösung für Ihre Bedürfnisse zu finden und unterstützen Sie bei der Übertragung. 
 
          </AccordionPanel>
          </AccordionItem>

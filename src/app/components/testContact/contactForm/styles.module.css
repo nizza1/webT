@@ -1,67 +1,20 @@
-.titleCo {
-    max-width: var(--max-width);
-    margin-inline: auto;
-    padding: 100px 1rem 50px;
-/*     text-align: end; */
-}
-
-.innerContainer {
-    max-width: var(--max-width);
-    margin-inline: auto;
-    padding: 0 .6rem 100px;
-    display: flex;
-    column-gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: clamp(300px , 380px, 100%);
-    height: clamp(300px , 550px, 700px);
-    border-radius: var(--border-radius);
-   /*  overflow: hidden; */
-    /* background-color: red; */
-
-}
-
-
 .contactForm {
     border-radius: 1rem;
     padding: 2.5rem 1rem;
     display: flex;
     flex-direction: column;
     min-width: fit-content;
-    max-width: 700px;
+    max-width: 550px;
     row-gap: .2rem;
     position: relative;
-    background: var(--highlight-Text);
-
+ /*    background: linear-gradient(to bottom , #f9f8ff14, #eae6ff5c); */
+   /*  background-color: rgba(240, 248, 255, 0.16); */
+    /* backdrop-filter: blur(20px); */
+   /*  border: 1px solid #3c00ff36; */
+    /* box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0.1); */
 }
 
-.contactForm::after {
-    position: absolute;
-    content: '';
-    inset: var(--border-width-c);
-    border-radius: .9rem;
-    background: var(--primary-background);
-/*    background-color: rgba(226, 226, 226, 0.948); */
 
-   backdrop-filter: blur(50px);
-    z-index: 1;
-}
-
-.contactForm::before {
-    position: absolute;
-    content: '';
-    inset: 2px;
-    border-radius: .9rem;
-    /* background: var(--gradient-card); */
-    z-index: 2;
-}
 
 
 .inputContainer {
@@ -71,12 +24,14 @@
     display: flex;
     flex-direction: column;
 
+  
+
 }
 
 .label {
   
     font-size: 1.1rem;
-    color: rgb(26, 26, 26);
+    color: aliceblue;
     padding-left: .2rem;
     pointer-events: none;
     transition-duration: .3s;
@@ -92,11 +47,17 @@
     margin-bottom: 1.4rem;
     border: none;
     font-size: 1.1rem;
-    background-color: var(--card-light);
+    
     opacity: .8;
     border-radius: .6rem;
     font-family: var(--font-mono);
     position: relative;
+
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #180e37;
+
+    background-color: #E1E4FE;
  
 }
 
@@ -107,9 +68,9 @@
 /* Platzhaltertext für E-Mail-Feld */
 .inputField::placeholder {
     font-size: .9rem;
-    color: #1b0cef94;
-    font-style: italic;
-  /*   padding-left: 2.2rem; */
+  
+    color: #180e37;
+
 }
 
 .iconInput {
@@ -121,6 +82,7 @@
     height:1.8rem;
     padding: .3rem;
     color: var(--new-highlight);
+    color: #180e37;
     transition-duration: .3s;
     opacity: 1;
     z-index: 5;
@@ -131,15 +93,17 @@
 
 .buttonContainer {
     z-index: 4;
-    display: flex;
-    justify-content: center;
+ /*    display: flex;
+    justify-content: center; */
     padding-top: 0rem;
 }
 .contactButton {
     padding: .5rem 1.2rem ;
     border-radius: 2rem;
-    background: var(--new-highlight);
-    color : aliceblue;
+    color : var(--new-highlight);
+    /* background : #E1E4FE; */
+    /* background-color: #C7B8EF; */
+    background-color: #a2cf67;
     border: none;
     outline: none;
     font-size: 1.2rem;
@@ -207,11 +171,6 @@
         flex-direction: column-reverse;
         row-gap: 100px;
         
-    }
-
-    .social {
-        max-height: 600px;
-      /*   background-color: red; */
     }
 
    /*  .titleCo {

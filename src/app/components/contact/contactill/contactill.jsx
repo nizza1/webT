@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './styles.module.css'
-const img = '/illustrations/Mailbox-bro.svg'
+const img = '/up-Chris.jpg'
 
 const Contactill = () => {
 
 
   return (
 
-
+<>
     <Image
             className={styles.img}
             src={img}
@@ -17,7 +17,11 @@ const Contactill = () => {
 
         />
   
-        
+  <div className={styles.nameCo}>
+    <h2>Christian Bohdan</h2>
+    <p>Ihr Ansprechpartner</p>
+  </div>
+  </>
 
   )
 }

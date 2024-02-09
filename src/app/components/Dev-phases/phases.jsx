@@ -52,7 +52,7 @@ const Phases = () => {
             <div className={styles.content}>
                 <h2>Design & Entwicklung</h2>
 
-                <p>Nachdem wir Ihre Anforderungen verstanden haben, beginnen wir mit der Gestaltung und Entwicklung Ihrer Website.</p>
+                <p>Nachdem wir Ihre Anforderungen verstanden haben, beginnen wir mit der Gestaltung und Entwicklung Ihrer Webseite.</p>
                 <p>Während dieses Prozesses halten wir Sie regelmäßig auf dem Laufenden und sammeln Ihr Feedback, um sicherzustellen, dass wir Ihre Erwartungen erfüllen.
                 </p>
             </div>
@@ -70,7 +70,7 @@ const Phases = () => {
             <div className={styles.content}>
                 <h2>Zwischenüberprüfung</h2>
 
-                <p>Nach Abschluss der Hauptentwicklungsphase präsentieren wir Ihnen das Zwischenergebnis Ihrer Website.</p>
+                <p>Nach Abschluss der Hauptentwicklungsphase präsentieren wir Ihnen das Zwischenergebnis Ihrer Webseite.</p>
 
                 <p>Wir sind offen für Anpassungen und Verbesserungsvorschläge, um sicherzustellen, dass das Endprodukt genau Ihren Wünschen entspricht.</p>
             </div>
@@ -87,7 +87,7 @@ const Phases = () => {
             <div className={styles.content}>
                 <h2>Bereitstellung</h2>
 
-                <p>Nach erfolgreicher Überprüfung und Implementierung Ihrer Anpassungen sind wir bereit, Ihre Website live zu schalten.
+                <p>Nach erfolgreicher Überprüfung und Implementierung Ihrer Anpassungen sind wir bereit, Ihre Webseite live zu schalten.
                 </p>
 
                 <p>

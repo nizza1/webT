@@ -39,7 +39,7 @@ import Title from '../title-gr/title-gr'
                     className={styles.icon}/>
 
                     <li>
-                    <h3>Transparente Kosten</h3>
+                    <h3>Transparente Investitionen</h3>
                     <p> Wir haben keine versteckten Kosten. Alle unsere Preise sind transparent und werden im Voraus festgelegt.</p>
                     </li>
                  </div>
@@ -50,7 +50,7 @@ import Title from '../title-gr/title-gr'
 
                     
                     <li>
-                    <h3>Kein Wartungsvertrag</h3>
+                    <h3>Keine Folgekosten</h3>
                     <p>Wir bieten keinen Wartungsvertrag an, wenn Sie jedoch Unterstützung benötigen, sprechen Sie uns gerne an.</p>
                     </li>
                  </div>

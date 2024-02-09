@@ -1,0 +1,80 @@
+.co {
+    background-color: #E1E4FE;
+    position: relative;
+
+  
+}
+.inCo {
+    position: relative;
+    max-width: 1200px;
+    min-height: 900px;
+    padding: 100px 1.2rem;
+    margin-inline: auto;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.imgCoOut {
+    border-radius: 2rem;
+    background: var(--background-dark-g);
+    width: 100%;
+    display: flex;
+    color: aliceblue;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+    padding-right: 2rem;
+
+}
+
+.imgCo {
+    position: relative;
+    max-width: 500px;
+    min-width: 400px;
+    min-height: 600px;
+    max-height: 440px;
+    
+    border-radius: 1rem;
+
+}
+
+.imgCard {
+    padding: 1rem 0 1rem 2rem;
+    height: calc(100% - 20%);
+    width: 100%;
+}
+
+.imgCard p , .imgCard h2 {
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+
+.bg {
+   z-index: 0;
+   object-fit: cover;
+}
+
+
+@media (max-width: 700px) {
+    .imgCoOut {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    .inCo {
+        padding: 100px 1rem;
+
+    }
+    .imgCard {
+        /*  background-color:  rgba(240, 248, 255, 0.128); */
+         padding: 1rem 0 1rem 0rem;
+         height: calc(100% - 20%);
+         width: 100%;
+     }
+
+     .imgCo {
+        width: 100%;
+        padding: 0 2rem ;
+     }
+}
