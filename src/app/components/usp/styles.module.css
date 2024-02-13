@@ -1,0 +1,50 @@
+.co {
+    width: 100%;
+    padding: 100px 1.2rem;
+}
+
+.innerCo {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    text-align: center;
+    position: relative;
+
+}
+
+.titleCo {
+    font-size: 2rem;
+    padding-bottom: 1em;
+    z-index: 2;
+}
+
+.textCo {
+    font-size: 1.5rem ;
+    z-index: 2;
+    position: relative;
+    
+}
+
+/* .rocket {
+    position: absolute;
+    font-size: 8rem;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    color: rgb(74, 74, 74);
+    transform: translate(-50%, -50%);
+} */
+
+
+
+@media (max-width: 700px) {
+  /*   .rocket {
+        font-size: 140%;
+    } */
+    .textCo {
+        line-height: 2.2rem;
+    }
+
+    .titleCo {
+        font-size: 1.5rem;
+    }
+}

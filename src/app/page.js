@@ -11,11 +11,11 @@ import Hero from '@app/components/heroSection/heroSection'
 import Questions from './components/questions/questions';
 import Futures from './components/Futures/Futures';
 import About from './components/about/about';
-import Contact from './components/contact/contact';
 import Phases from './components/Dev-phases/phases';
 import Advantages from './components/advantages/advantages';
 import Slider from './components/slider/slider';
 import Cards from '@app/components/cardsS/cards'
+import Usp from './components/usp/usp';
 
 //test 
 import Contactsec from '@app/components/testContact/cont';
@@ -32,7 +32,8 @@ export default function Home() {
       <main className={classNames(styles.main, '')}>
 
            <Hero />
-           <Advantages />
+           <Usp/>
+      {/*      <Advantages /> */}
            <Cards />
            <Futures />
            <Slider  />
