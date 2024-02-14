@@ -8,7 +8,7 @@ import Title from '@app/components/title-gr/title-highlight-d-bg/highlight'
 import styles from './styles.module.css'
 
 
-import chrisImage from 'public/chrisEd.jpg'
+import chrisImage from 'public/Chris min.jpeg'
 import nizarImage from 'public/Nizar-min.jpeg'
 import dashaImage from 'public/Sofia min.jpeg'
 import alexImage from 'public/Alex min.jpeg'
