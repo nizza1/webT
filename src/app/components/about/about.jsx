@@ -8,14 +8,10 @@ import Title from '@app/components/title-gr/title-highlight-d-bg/highlight'
 import styles from './styles.module.css'
 
 
-/* const chrisImage = '/chrisBohdan.jpeg'
-const nizarImage = '/images/pMe.jpg'
-const dashaImage = '/dasha.jpeg' */
-
-import chrisImage from 'public/up-Chris.jpg'
-import nizarImage from 'public/up-Nizar.jpg'
-import dashaImage from 'public/up-Sofia.jpg'
-import alexImage from 'public/up-Alex.jpg'
+import chrisImage from 'public/chrisEd.jpg'
+import nizarImage from 'public/Nizar-min.jpeg'
+import dashaImage from 'public/Sofia min.jpeg'
+import alexImage from 'public/Alex min.jpeg'
 
 import Overlay from '../globalComponents/overlay/overlay'
 
