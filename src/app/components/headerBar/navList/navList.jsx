@@ -49,7 +49,7 @@ const NavList = () => {
             }
           }> 
           <TiLocationArrow  className={styles.icon}/>
-          Referenzen</button>
+          Projekte</button>
 
 
         </motion.div>
@@ -67,7 +67,7 @@ const NavList = () => {
             }
           }>
             <TiLocationArrow  className={styles.icon}/>
-            Wer sind wir?</button>
+            Team</button>
             
         </motion.div>
 
