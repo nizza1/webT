@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
     <Head>
     <link
           rel="canonical"
-          href="https://www.nuastudio.de/"
+          href="https://www.nizzar.de/"
           key="canonical"
         />
 
