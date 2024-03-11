@@ -51,7 +51,7 @@ const About = () => {
         <div className={styles.imagesContAll}>
            <div className={styles.allImages}>
 
-<div className={styles.singleAbout}>
+{/* <div className={styles.singleAbout}>
  
  <div className={styles.imgContainer}>
    <Image
@@ -74,7 +74,8 @@ const About = () => {
   </div>
  </div>
 
-</div>
+</div> */}
+
 
 <div className={styles.singleAbout}>
  <div className={styles.imgContainer}>
@@ -104,10 +105,6 @@ const About = () => {
 
 </div>
 
-
-           </div>
-
-            <div className={styles.allImages}>
 <div className={styles.singleAbout}>
  <div className={styles.imgContainer}>
    <Image
@@ -164,6 +161,7 @@ const About = () => {
  
 
 </div>
+
 
            </div>
           
