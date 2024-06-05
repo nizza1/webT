@@ -25,28 +25,28 @@ import Contactsec from '@app/components/testContact/cont';
 /* import GTMConversion from './gtmEvent/gtmConv'; */
 
 
-  
+
 export default function Home() {
-  return (
+     return (
 
-      <main className={classNames(styles.main, '')}>
+          <main className={classNames(styles.main, '')}>
 
-           <Hero />
-           <Usp/>
-      {/*      <Advantages /> */}
-           <Cards />
-           <Futures />
-           <Slider  />
-           <Phases />
-           <About />
-           <Contactsec />
-          {/*  <Contact /> */}
-           <Questions/>
-           
-           {/* <GTMConversion /> */}
-     
-      </main>
-  
-    
-  )
+               <Hero />
+               {/* <Usp/> */}
+               {/*      <Advantages /> */}
+               <Cards />
+               <Futures />
+               <Slider />
+               <Phases />
+               <About />
+               <Contactsec />
+               {/*  <Contact /> */}
+               <Questions />
+
+               {/* <GTMConversion /> */}
+
+          </main>
+
+
+     )
 }
